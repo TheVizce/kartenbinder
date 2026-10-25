@@ -1,6 +1,8 @@
 {
  "schema": 1,
- "updated": null,
+ "updated": "2026-10-25T15:46:47.463Z",
  "tcg": {},
- "pocket": {}
+ "pocket": {
+  "A1-1": 1
+ }
 }
