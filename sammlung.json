@@ -1,7 +1,30 @@
 {
  "schema": 1,
- "updated": "2026-10-25T19:02:28.957Z",
- "tcg": {},
+ "updated": "2026-10-25T19:31:23.486Z",
+ "tcg": {
+  "bw6-27": {
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-25T19:31:23.486Z",
+   "name": "Feebas",
+   "set": "bw6",
+   "setName": "Dragons Exalted",
+   "serie": "bw",
+   "num": "27",
+   "official": 124,
+   "img": "https://assets.tcgdex.net/en/bw/bw6/27",
+   "rarity": "Common",
+   "cardLang": "en",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.16,
+    "trendHolo": 0.96,
+    "at": "2026-10-25T17:48:09.097Z"
+   },
+   "lng": "de"
+  }
+ },
  "pocket": {
   "A1-1": 1,
   "A1-2": 1,
