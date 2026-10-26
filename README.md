@@ -11,7 +11,8 @@ Meine Pokémon-Kartensammlung – das echte Sammelkartenspiel (TCG) und TCG Pock
 
 ## Wo wird meine Sammlung gespeichert?
 
-- **Automatisch im Browser** – jede Änderung wird sofort lokal gesichert.
+- **Automatisch im Browser** – jede Änderung wird sofort lokal gesichert, und zwar in der IndexedDB-Datenbank `kartenbinder` (Sammlung, GitHub-Einstellungen, Zwischenspeicher für Kartendaten). Im localStorage liegt nur `kartenbinder.settings` (Ansicht und Filter, wenige hundert Byte). So nimmt das Tool den übrigen GitHub-Pages-Tools auf derselben Adresse keinen localStorage-Platz weg.
+- Schlägt das Speichern fehl (z. B. Speicher voll), erscheint oben ein roter Hinweis mit „Exportieren“ und „Erneut speichern“. Solange er sichtbar ist, warnt der Browser auch beim Schließen der Seite.
 - **Dauerhaft im Repo** als `sammlung.json`. Zwei Wege dorthin:
   - **Einfach:** ⚙︎ → *Sammlung exportieren* und die Datei im Repo ersetzen.
   - **Komfortabel (empfohlen fürs Handy):** ⚙︎ → *Direkt auf GitHub speichern*. Dafür einmal einen Token erstellen: GitHub → *Settings → Developer settings → Personal access tokens → Fine-grained tokens* → *Only select repositories* → dein Kartenbinder-Repo → *Repository permissions → Contents: Read and write*. Token im Tool eintragen. Ab dann wird jede Änderung nach ein paar Sekunden automatisch committet, und jedes Gerät lädt beim Öffnen den neuesten Stand.
