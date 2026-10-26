@@ -182,7 +182,8 @@ dialog::backdrop{background:rgba(5,7,12,.65);backdrop-filter:blur(3px)}
 hr{border:0;border-top:1px solid var(--line);margin:4px 0}
 
 #banner:not(:empty){background:color-mix(in srgb,var(--warn) 18%,var(--panel));border-bottom:1px solid var(--line)}
-#banner .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 16px;font-size:14px}
+#banner .wrap,#storeBanner .wrap{display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 16px;font-size:14px}
+#storeBanner:not(:empty){background:color-mix(in srgb,var(--danger) 22%,var(--panel));border-bottom:1px solid var(--danger)}
 #toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(30px);opacity:0;background:var(--text);color:var(--bg);padding:10px 16px;border-radius:10px;font-weight:600;font-size:14px;transition:.2s;pointer-events:none;z-index:50;max-width:90vw}
 #toast.show{opacity:1;transform:translateX(-50%)}
 #toast.bad{background:var(--danger);color:#fff}
@@ -213,6 +214,7 @@ footer{font-size:12px;color:var(--muted);padding:24px 0 40px;border-top:1px soli
   <button id="syncState" class="sync" type="button"></button>
   <button id="btnSettings" class="icon-btn" type="button" title="Speichern &amp; Einstellungen" aria-label="Einstellungen">⚙︎</button>
 </div></header>
+<div id="storeBanner" role="alert"></div>
 <div id="banner"></div>
 <nav class="subnav"><div class="wrap" id="subnav"></div></nav>
 <main><div class="wrap" id="view"></div></main>
@@ -276,16 +278,176 @@ function replaceTile(key, html) {
   if (el) el.outerHTML = html;
 }
 
-/* fetch with memory + optional localStorage cache */
+/* ================= Speicher: IndexedDB „kartenbinder“ =================
+   Store "kv":    collection, dirty, gh (GitHub-Einstellungen inkl. Token), ghSeen
+   Store "cache": API-Antworten (URL -> {t, d}), Einträge älter als 7 Tage werden gelöscht
+   localStorage:  nur "kartenbinder.settings" (Ansicht/Filter)                          */
+const DB_NAME = 'kartenbinder', DB_VERSION = 1;
+const SETTINGS_KEY = 'kartenbinder.settings';
+const OLD_KEYS = { collection: 'kb.collection', dirty: 'kb.dirty', gh: 'kb.gh', ghSeen: 'kb.ghSeen', settings: 'kb.settings' };
+const OLD_CACHE_PREFIX = 'kb.c:https://api.tcgdex.net/';
+let db = null;
+
+function idbOpen() {
+  return new Promise((res, rej) => {
+    if (!window.indexedDB) return rej(new Error('IndexedDB wird von diesem Browser nicht unterstützt'));
+    let r;
+    try { r = indexedDB.open(DB_NAME, DB_VERSION); } catch (e) { return rej(e); }
+    r.onupgradeneeded = () => {
+      const d = r.result;
+      if (!d.objectStoreNames.contains('kv')) d.createObjectStore('kv');
+      if (!d.objectStoreNames.contains('cache')) d.createObjectStore('cache');
+    };
+    r.onsuccess = () => res(r.result);
+    r.onerror = () => rej(r.error || new Error('Datenbank konnte nicht geöffnet werden'));
+    r.onblocked = () => rej(new Error('Datenbank blockiert – bitte andere Tabs des Kartenbinders schließen und neu laden'));
+  });
+}
+/* fn bekommt den Object Store; gibt sie einen Request zurück, wird dessen Ergebnis geliefert.
+   Erfolgreich ist erst, was die Transaktion vollständig geschrieben hat (oncomplete). */
+function idbTx(store, mode, fn) {
+  return new Promise((res, rej) => {
+    if (!db) return rej(new Error('Datenbank nicht geöffnet'));
+    let tx, out, req;
+    try { tx = db.transaction(store, mode); req = fn(tx.objectStore(store)); } catch (e) { return rej(e); }
+    if (req) req.onsuccess = () => { out = req.result; };
+    tx.oncomplete = () => res(out);
+    tx.onerror = () => rej(tx.error || (req && req.error) || new Error('Speichern fehlgeschlagen'));
+    tx.onabort = () => rej(tx.error || new Error('Speichern abgebrochen'));
+  });
+}
+const idbGet = (store, k) => idbTx(store, 'readonly', s => s.get(k));
+
+/* Schreib-Warteschlange: fasst schnelle Änderungen zusammen, wiederholt nach Fehlern */
+const pendingSaves = new Map();
+let flushing = null, storeErr = null;
+function queueSave(key, value) {
+  pendingSaves.set(key, value);
+  if (!flushing) flushing = flushSaves();
+  return flushing;
+}
+async function flushSaves() {
+  await Promise.resolve();
+  try {
+    while (pendingSaves.size) {
+      if (!db) { pendingSaves.clear(); storageFail(null, true); return; }
+      const items = [...pendingSaves]; pendingSaves.clear();
+      try {
+        await idbTx('kv', 'readwrite', s => { for (const [k, v] of items) s.put(v, k); });
+        storageOk();
+      } catch (e) {
+        for (const [k, v] of items) if (!pendingSaves.has(k)) pendingSaves.set(k, v);
+        storageFail(e);
+        return;
+      }
+    }
+  } finally { flushing = null; }
+}
+function storageFail(e, noDb) {
+  storeErr = e || new Error('no-db');
+  const quota = e && (e.name === 'QuotaExceededError' || /quota/i.test(e.message || ''));
+  const msg = noDb
+    ? 'Dieser Browser erlaubt hier keine dauerhafte Speicherung (IndexedDB nicht verfügbar, z. B. im privaten Fenster). Änderungen gehen beim Schließen der Seite verloren.'
+    : quota ? 'Der Browser-Speicher ist voll – deine letzten Änderungen sind NICHT gespeichert.'
+      : `Deine letzten Änderungen konnten nicht gespeichert werden (${(e && (e.message || e.name)) || 'unbekannter Fehler'}).`;
+  $('#storeBanner').innerHTML = `<div class="wrap"><span>⚠ ${esc(msg)} Bitte exportiere die Sammlung als Sicherung.</span>`
+    + `<button class="btn primary" type="button" data-sb="export">⬇ Exportieren</button>`
+    + (noDb ? '' : `<button class="btn" type="button" data-sb="retry">Erneut speichern</button>`) + `</div>`;
+}
+function storageOk() {
+  if (!storeErr) return;
+  storeErr = null; $('#storeBanner').innerHTML = ''; toast('Gespeichert ✓');
+}
+$('#storeBanner').addEventListener('click', e => {
+  const a = e.target.dataset && e.target.dataset.sb;
+  if (a === 'export') exportCol();
+  if (a === 'retry') { queueSave('collection', col); queueSave('dirty', dirty); if (gh) queueSave('gh', gh); if (ghSeen) queueSave('ghSeen', ghSeen); }
+});
+window.addEventListener('beforeunload', e => { if (pendingSaves.size || flushing || (storeErr && db)) { e.preventDefault(); e.returnValue = ''; } });
+
+async function pruneCache() {
+  if (!db) return;
+  const limit = Date.now() - WEEK;
+  await idbTx('cache', 'readwrite', s => {
+    const r = s.openCursor();
+    r.onsuccess = () => { const c = r.result; if (!c) return; if (!c.value || !(c.value.t > limit)) c.delete(); c.continue(); };
+  });
+}
+const clearCache = () => idbTx('cache', 'readwrite', s => { s.clear(); });
+
+/* Start: Datenbank öffnen, alten localStorage-Stand übernehmen, danach alte Schlüssel entfernen */
+async function initStore() {
+  try {
+    db = await idbOpen();
+    db.onversionchange = () => { db.close(); db = null; storageFail(new Error('Datenbank wurde in einem anderen Tab aktualisiert – bitte Seite neu laden')); };
+  } catch (e) { db = null; storageFail(e, true); }
+
+  let stored = null;
+  if (db) {
+    try {
+      const [c, d, g, s] = await Promise.all(['collection', 'dirty', 'gh', 'ghSeen'].map(k => idbGet('kv', k)));
+      stored = c || null; dirty = !!d; gh = g || null; ghSeen = s || null;
+    } catch (e) { storageFail(e); }
+  }
+
+  // Migration aus dem localStorage (Version vor der Umstellung)
+  const oldCol = LS.get(OLD_KEYS.collection, null), oldGh = LS.get(OLD_KEYS.gh, null);
+  const writes = [];
+  let useOld = false;
+  if (oldCol && (!stored || (oldCol.updated || '') > (stored.updated || ''))) {
+    useOld = true; stored = oldCol;
+    dirty = !!LS.get(OLD_KEYS.dirty, false); ghSeen = LS.get(OLD_KEYS.ghSeen, null);
+    writes.push(['collection', oldCol], ['dirty', dirty], ['ghSeen', ghSeen]);
+  }
+  const useOldGh = !!(oldGh && !gh);
+  if (useOldGh) { gh = oldGh; writes.push(['gh', oldGh]); }
+  if (db && writes.length) {
+    try {
+      await idbTx('kv', 'readwrite', s => { for (const [k, v] of writes) s.put(v, k); });
+      const back = await Promise.all(writes.map(([k]) => idbGet('kv', k)));
+      const verified = writes.every(([, v], i) => JSON.stringify(back[i] ?? null) === JSON.stringify(v ?? null));
+      if (!verified) throw new Error('Prüfung nach der Übernahme fehlgeschlagen');
+      if (useOld) for (const k of ['collection', 'dirty', 'ghSeen']) try { localStorage.removeItem(OLD_KEYS[k]); } catch { }
+      if (useOldGh) try { localStorage.removeItem(OLD_KEYS.gh); } catch { }
+      if (useOld) setTimeout(() => toast('Sammlung in die neue Datenbank übernommen ✓'), 600);
+    } catch (e) { storageFail(e); }  // alte Schlüssel bleiben dann unangetastet
+  } else if (db && oldCol) {
+    // Datenbank ist bereits neuer – der alte Stand ist überholt
+    for (const k of ['collection', 'dirty', 'ghSeen']) try { localStorage.removeItem(OLD_KEYS[k]); } catch { }
+  }
+  if (db && oldGh && !useOldGh) try { localStorage.removeItem(OLD_KEYS.gh); } catch { }
+
+  // Alter API-Zwischenspeicher (nur eigene, eindeutig erkennbare Schlüssel) – lässt sich jederzeit neu laden
+  try {
+    const ks = [];
+    for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k && k.startsWith(OLD_CACHE_PREFIX)) ks.push(k); }
+    ks.forEach(k => localStorage.removeItem(k));
+  } catch { }
+
+  // Ansichts-Einstellungen unter neuen Schlüssel umziehen
+  const oldSettings = LS.get(OLD_KEYS.settings, null);
+  if (oldSettings && LS.get(SETTINGS_KEY, null) == null) { Object.assign(S, oldSettings); if (LS.set(SETTINGS_KEY, S)) try { localStorage.removeItem(OLD_KEYS.settings); } catch { } }
+  else if (oldSettings) try { localStorage.removeItem(OLD_KEYS.settings); } catch { }
+
+  hadLocal = !!stored;
+  col = normalizeCol(stored);
+
+  if (navigator.storage && navigator.storage.persist) {
+    navigator.storage.persisted().then(p => p || navigator.storage.persist()).catch(() => { });
+  }
+  pruneCache().catch(() => { });
+}
+
+/* fetch mit Memory-Cache und optionalem IndexedDB-Cache (cache = Gültigkeit in ms) */
 const memo = new Map();
-function getJSON(url, { ls = 0 } = {}) {
+function getJSON(url, { cache = 0 } = {}) {
   if (memo.has(url)) return memo.get(url);
   const p = (async () => {
-    if (ls) { const c = LS.get('kb.c:' + url); if (c && Date.now() - c.t < ls) return c.d; }
+    if (cache && db) { try { const c = await idbGet('cache', url); if (c && Date.now() - c.t < cache) return c.d; } catch { } }
     const r = await fetch(url);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     const d = await r.json();
-    if (ls) LS.set('kb.c:' + url, { t: Date.now(), d });
+    if (cache && db) idbTx('cache', 'readwrite', s => { s.put({ t: Date.now(), d }, url); }).catch(() => { });
     return d;
   })();
   memo.set(url, p); p.catch(() => memo.delete(url));
@@ -297,8 +459,14 @@ async function pool(items, n, fn) {
 }
 
 /* ================= Settings & collection ================= */
-const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get('kb.settings', {}));
-const saveSettings = () => LS.set('kb.settings', S);
+const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
+let settingsWarned = false;
+const saveSettings = () => {
+  if (!LS.set(SETTINGS_KEY, S) && !settingsWarned) {
+    settingsWarned = true;
+    toast('Ansichts-Einstellungen konnten nicht gespeichert werden (localStorage voll). Deine Sammlung ist davon nicht betroffen.', true);
+  }
+};
 
 function emptyCol() { return { schema: 1, updated: null, tcg: {}, pocket: {} }; }
 function normalizeCol(d) {
@@ -310,17 +478,12 @@ function normalizeCol(d) {
   }
   return c;
 }
-let col = LS.get('kb.collection', null);
-let hadLocal = !!col;
-col = normalizeCol(col);
-let dirty = LS.get('kb.dirty', false);
+let col = emptyCol(), hadLocal = false, dirty = false, gh = null, ghSeen = null;
 
-function persist() {
-  if (LS.set('kb.collection', col)) return;
-  for (const k of Object.keys(localStorage)) if (k.startsWith('kb.c:')) localStorage.removeItem(k);
-  if (!LS.set('kb.collection', col)) toast('Browser-Speicher voll – bitte Sammlung exportieren!', true);
-}
-function setDirty(v) { dirty = v; LS.set('kb.dirty', v); updateSyncState(); }
+function persist() { queueSave('collection', col); }
+function setDirty(v) { dirty = v; queueSave('dirty', v); updateSyncState(); }
+function setGh(cfg) { gh = cfg; queueSave('gh', cfg); }
+function setSeen(v) { ghSeen = v; queueSave('ghSeen', v); }
 function saveCol() {
   col.updated = new Date().toISOString();
   persist(); setDirty(true); scheduleAutoSync();
@@ -333,7 +496,7 @@ function ghDefaults() {
   const repo = first && !first.includes('.') ? first : (owner ? owner + '.github.io' : '');
   return { owner, repo, branch: 'main', path: DATA_FILE, token: '', auto: true };
 }
-const ghCfg = () => Object.assign(ghDefaults(), LS.get('kb.gh', {}));
+const ghCfg = () => Object.assign(ghDefaults(), gh || {});
 const b64enc = s => { const b = new TextEncoder().encode(s); let bin = ''; for (let i = 0; i < b.length; i += 0x8000) bin += String.fromCharCode.apply(null, b.subarray(i, i + 0x8000)); return btoa(bin); };
 const b64dec = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
 const ghUrl = c => `https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${c.path.split('/').map(encodeURIComponent).join('/')}`;
@@ -362,10 +525,10 @@ async function syncNow(silent) {
   if (syncing) return; syncing = true; updateSyncState();
   try {
     const remote = await ghGet(c);
-    const ru = remote.data && remote.data.updated, lastSeen = LS.get('kb.ghSeen', null);
+    const ru = remote.data && remote.data.updated, lastSeen = ghSeen;
     if (ru && ru !== lastSeen && col.updated && ru > col.updated && !confirm('Auf GitHub liegt ein neuerer Stand (von einem anderen Gerät?). Trotzdem mit diesem Gerät überschreiben?')) return;
     await ghPut(c, col, remote.sha);
-    LS.set('kb.ghSeen', col.updated);
+    setSeen(col.updated);
     setDirty(false);
     if (!silent) toast('Auf GitHub gespeichert ✓');
   } catch (e) { toast('Speichern auf GitHub fehlgeschlagen – ' + e.message, true); }
@@ -397,7 +560,7 @@ async function checkRemote() {
   if (!rd || !rd.updated) return;
   rd = normalizeCol(rd);
   if (rd.updated === col.updated) return;
-  const apply = () => { col = rd; persist(); setDirty(false); LS.set('kb.ghSeen', rd.updated); showBanner(''); route(); };
+  const apply = () => { col = rd; persist(); setDirty(false); setSeen(rd.updated); showBanner(''); route(); };
   if (!hadLocal || (!dirty && (!col.updated || rd.updated > col.updated))) { apply(); if (hadLocal) toast('Neuester Stand geladen'); return; }
   if (rd.updated > (col.updated || '')) {
     showBanner(`<span>Es gibt einen neueren gespeicherten Stand vom ${new Date(rd.updated).toLocaleString('de-DE')}.</span><button class="btn primary" id="bnLoad">Übernehmen</button><button class="btn" id="bnKeep">Diesen Browser behalten</button>`);
@@ -415,7 +578,10 @@ function exportCol() {
 $('#importFile').addEventListener('change', async e => {
   const f = e.target.files[0]; e.target.value = ''; if (!f) return;
   try {
-    const d = normalizeCol(JSON.parse(await f.text()));
+    const raw = JSON.parse(await f.text());
+    const isObj = x => x && typeof x === 'object' && !Array.isArray(x);
+    if (!isObj(raw) || !(isObj(raw.tcg) || isObj(raw.pocket))) throw new Error('Das ist keine Kartenbinder-Sammlung (sammlung.json).');
+    const d = normalizeCol(raw);
     const n = Object.keys(d.tcg).length + Object.keys(d.pocket).length;
     if (!confirm(`Datei enthält ${n} Karten-Einträge. Aktuelle Sammlung in diesem Browser ersetzen?`)) return;
     col = d; saveCol(); $('#settingsDlg').close(); route(); toast('Importiert ✓');
@@ -428,7 +594,8 @@ function openSettings() {
   $('#settingsBody').innerHTML = `<div class="settings">
     <h2>Speichern &amp; Einstellungen</h2>
     <p>Deine Sammlung wird automatisch in diesem Browser gespeichert (${nf(nT)} Sammelkarten, ${nf(nP)} Pocket-Karten${col.updated ? ', zuletzt ' + new Date(col.updated).toLocaleString('de-DE') : ''}). Damit sie dauerhaft und auf allen Geräten verfügbar ist, liegt sie als <code>${DATA_FILE}</code> im Repository.</p>
-    <div class="row"><button class="btn" id="stExport">⬇ Sammlung exportieren</button><button class="btn" id="stImport">⬆ Datei importieren</button></div>
+    <div class="row"><button class="btn" id="stExport">⬇ Sammlung exportieren</button><button class="btn" id="stImport">⬆ Datei importieren</button>${db ? '<button class="btn" id="stCache">Zwischenspeicher leeren</button>' : ''}</div>
+    <p id="stInfo" style="font-size:12px">Speicherort: ${db ? 'IndexedDB „' + DB_NAME + '“' : '<b style="color:var(--danger)">nur im Arbeitsspeicher – nicht dauerhaft!</b>'}</p>
     <hr>
     <h2 style="font-size:17px">Direkt auf GitHub speichern <span class="muted" style="font-weight:400;font-size:13px">(optional)</span></h2>
     <p>Mit einem Token schreibt das Tool Änderungen selbst als Commit in dein Repo – praktisch fürs Handy. Erstelle auf GitHub unter <i>Settings → Developer settings → Fine-grained tokens</i> einen Token nur für dieses Repository mit <b>Contents: Read and write</b>. Der Token bleibt nur in diesem Browser gespeichert.</p>
@@ -444,17 +611,24 @@ function openSettings() {
   </div>`;
   const read = () => ({ owner: $('#ghOwner').value.trim(), repo: $('#ghRepo').value.trim(), branch: $('#ghBranch').value.trim() || 'main', path: $('#ghPath').value.trim() || DATA_FILE, token: $('#ghToken').value.trim(), auto: $('#ghAuto').checked });
   $('#stExport').onclick = exportCol;
+  if ($('#stCache')) $('#stCache').onclick = () => clearCache().then(() => { memo.clear(); toast('Zwischenspeicher geleert'); }).catch(e => toast(e.message, true));
+  if (db && navigator.storage) (async () => {
+    let t = '';
+    try { t += ' · dauerhaft geschützt: ' + ((await navigator.storage.persisted()) ? 'ja' : 'nein'); } catch { }
+    try { const est = await navigator.storage.estimate(); if (est.usage != null) t += ` · belegt auf ${location.host}: ${(est.usage / 1048576).toLocaleString('de-DE', { maximumFractionDigits: 1 })} MB`; } catch { }
+    const el = $('#stInfo'); if (el) el.insertAdjacentText('beforeend', t);
+  })();
   $('#stImport').onclick = () => $('#importFile').click();
-  $('#ghSave').onclick = async () => { LS.set('kb.gh', read()); updateSyncState(); dlg.close(); await syncNow(false); };
+  $('#ghSave').onclick = async () => { setGh(read()); updateSyncState(); dlg.close(); await syncNow(false); };
   $('#ghLoad').onclick = async () => {
     const cfg = read(); if (!cfg.token) return toast('Bitte zuerst einen Token eintragen', true);
-    LS.set('kb.gh', cfg);
+    setGh(cfg);
     try { const r = await ghGet(cfg); if (!r.data) return toast('Auf GitHub gibt es noch keine Sammlung', true);
       if (!confirm('Sammlung in diesem Browser durch den Stand auf GitHub ersetzen?')) return;
-      col = normalizeCol(r.data); persist(); setDirty(false); LS.set('kb.ghSeen', col.updated); dlg.close(); route(); toast('Von GitHub geladen ✓');
+      col = normalizeCol(r.data); persist(); setDirty(false); setSeen(col.updated); dlg.close(); route(); toast('Von GitHub geladen ✓');
     } catch (e) { toast(e.message, true); }
   };
-  if ($('#ghForget')) $('#ghForget').onclick = () => { const k = read(); k.token = ''; LS.set('kb.gh', k); updateSyncState(); openSettings(); };
+  if ($('#ghForget')) $('#ghForget').onclick = () => { const k = read(); k.token = ''; setGh(k); updateSyncState(); openSettings(); };
   if (!dlg.open) dlg.showModal();
 }
 $('#btnSettings').onclick = openSettings;
@@ -551,8 +725,8 @@ async function fillTcgDetails(id) {
 }
 
 async function tcgCatalog(lang) {
-  const series = await getJSON(`${TDX}/${lang}/series`, { ls: DAY });
-  const det = await Promise.all(series.filter(s => s.id !== 'tcgp').map(s => getJSON(`${TDX}/${lang}/series/${s.id}`, { ls: DAY }).catch(() => null)));
+  const series = await getJSON(`${TDX}/${lang}/series`, { cache: DAY });
+  const det = await Promise.all(series.filter(s => s.id !== 'tcgp').map(s => getJSON(`${TDX}/${lang}/series/${s.id}`, { cache: DAY }).catch(() => null)));
   return det.filter(Boolean);
 }
 
@@ -665,9 +839,9 @@ async function viewTcgSet(id) {
   const rid = ++renderId, lang = S.tcgLang;
   V.innerHTML = loading('Lade Set …');
   let set;
-  try { set = await getJSON(`${TDX}/${lang}/sets/${encodeURIComponent(id)}`, { ls: DAY }); }
+  try { set = await getJSON(`${TDX}/${lang}/sets/${encodeURIComponent(id)}`, { cache: DAY }); }
   catch (e) {
-    try { set = await getJSON(`${TDX}/en/sets/${encodeURIComponent(id)}`, { ls: DAY }); }
+    try { set = await getJSON(`${TDX}/en/sets/${encodeURIComponent(id)}`, { cache: DAY }); }
     catch { if (rid === renderId) V.innerHTML = errBox('Set konnte nicht geladen werden.', e); return; }
   }
   if (rid !== renderId) return;
@@ -841,7 +1015,7 @@ async function pocketData() {
   for (const c of cards) { c.key = `${c.set}-${c.number}`; data.byKey[c.key] = c; (data.bySet[c.set] = data.bySet[c.set] || []).push(c); }
   for (const k in data.bySet) data.bySet[k].sort((a, b) => a.number - b.number);
   data.setList = data.setList.filter(s => data.bySet[s.code]);
-  try { const s = await getJSON(`${TDX}/de/series/tcgp`, { ls: DAY }); data.deAvail = new Set(s.sets.map(x => x.id)); } catch { }
+  try { const s = await getJSON(`${TDX}/de/series/tcgp`, { cache: DAY }); data.deAvail = new Set(s.sets.map(x => x.id)); } catch { }
   P = data;
   loadAllDe();
   return P;
@@ -849,7 +1023,7 @@ async function pocketData() {
 async function pocketDeSet(code) {
   if (P.deNames[code]) return;
   const id = tdxSet(code); if (!P.deAvail.has(id)) return;
-  const d = await getJSON(`${TDX}/de/sets/${encodeURIComponent(id)}`, { ls: WEEK });
+  const d = await getJSON(`${TDX}/de/sets/${encodeURIComponent(id)}`, { cache: WEEK });
   const names = {}; for (const c of d.cards || []) names[parseInt(c.localId, 10)] = c.name;
   const packs = {}; for (const b of d.boosters || []) if (b.name) packs[norm(b.id.split('-').slice(1).join('-'))] = b.name;
   P.dePacks[code] = packs; P.deNames[code] = names;
@@ -1114,10 +1288,14 @@ function openPocketCard(key, after) {
 }
 
 /* ================= Start ================= */
-window.addEventListener('hashchange', route);
-updateSyncState();
-route();
-checkRemote();
+(async () => {
+  V.innerHTML = loading('Lade Sammlung …');
+  await initStore();
+  window.addEventListener('hashchange', route);
+  updateSyncState();
+  route();
+  checkRemote();
+})();
 </script>
 </body>
 </html>
