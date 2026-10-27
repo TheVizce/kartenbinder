@@ -134,6 +134,12 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent)}
 .packs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:18px}
 .pack{padding:12px 14px;text-align:left;border:1px solid var(--line);background:var(--panel);border-radius:var(--r);display:flex;flex-direction:column;gap:6px}
 .pack.on{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 10%,var(--panel))}
+.pack.gone .big,.pack.gone b{color:var(--muted)}
+.avail{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;white-space:normal}
+.avail.soon{background:color-mix(in srgb,var(--warn) 22%,transparent);color:var(--text)}
+.avail.gone{background:var(--panel2);color:var(--muted)}
+.adv .gone-list{display:flex;flex-direction:column;gap:6px;margin-top:8px}
+.adv .gone-list a{grid-template-columns:1fr auto;opacity:.75}
 .pack b{font-size:15px}
 .pack .big{font-size:22px;font-weight:800;letter-spacing:-.02em}
 .pack small{color:var(--muted);font-size:12px}
@@ -1066,6 +1072,27 @@ function packStats(code, pack, inc) {
   }
   return { total, missing, cost, pAny, exp, hasRates: vs.length > 0 };
 }
+/* ---- Pack-Verfügbarkeit ----
+   Packs, die man nicht mehr (oder nur noch begrenzt) öffnen kann.
+   Schlüssel: "<Set-Kürzel>|<Packname>" oder "<Set-Kürzel>|*" für alle Packs eines Sets.
+   until: Zeitpunkt (mit Zeitzone), ab dem das Pack weg ist; null = schon nicht mehr erhältlich. */
+const PACK_END = {
+  'A4b|*': { until: null },                          // Deluxepack-ex
+  'B4b|*': { until: '2026-10-29T01:59:00+01:00' },   // Deluxepack: Mega – bis 29.10.2026, 01:59 Uhr
+};
+const packEnd = (code, p) => PACK_END[code + '|' + p] || PACK_END[code + '|*'] || null;
+const packOpen = (code, p) => { const e = packEnd(code, p); return !e || (!!e.until && Date.now() < Date.parse(e.until)); };
+const fmtEnd = iso => new Date(iso).toLocaleString('de-DE', { timeZone: 'Europe/Berlin', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' }) + ' Uhr';
+function packAvail(code, p) {
+  const e = packEnd(code, p);
+  if (!e) return null;
+  if (!packOpen(code, p)) return { gone: true, text: 'nicht mehr erhältlich' };
+  const left = Date.parse(e.until) - Date.now();
+  const soon = left < 2 * DAY ? ` (noch ${left < 3600e3 ? Math.max(1, Math.round(left / 60e3)) + ' Min.' : Math.round(left / 3600e3) + ' Std.'})` : '';
+  return { gone: false, text: `nur noch bis ${fmtEnd(e.until)}${soon}` };
+}
+const availTag = a => a ? `<span class="avail ${a.gone ? 'gone' : 'soon'}">${a.gone ? '✕' : '⏳'} ${esc(a.text)}</span>` : '';
+
 function cardChance(c, pack) {
   const n = (packPools(c.set, pack)[c.rarity] || []).length; if (!n) return 0;
   let p = 0;
@@ -1123,7 +1150,10 @@ async function viewPocketSets() {
           <h3>${esc(setTitle(s))}</h3>
           <div class="row"><span>${esc(s.code)}${s.releaseDate ? ' · ' + fmtDate(s.releaseDate) : ''}</span><span>${h} / ${t}</span></div>${bar(h, t)}
           <div class="groups">${GROUPS.filter(([k]) => g[k]).map(([k, l]) => `<span>${l.split(' ')[0]} ${g[k][0]}/${g[k][1]}</span>`).join('')}</div>
-          ${packs.length ? `<div class="groups">${packs.map(x => `<span title="Chance auf mindestens eine neue Karte pro Pack">${esc(packName(s.code, x.p))}: <b style="color:var(--text)">${pct(x.st.pAny)}</b></span>`).join('')}</div>` : ''}
+          ${packs.length ? `<div class="groups">${packs.map(x => packOpen(s.code, x.p)
+            ? `<span title="Chance auf mindestens eine neue Karte pro Pack">${esc(packName(s.code, x.p))}: <b style="color:var(--text)">${pct(x.st.pAny)}</b></span>`
+            : `<span>${esc(packName(s.code, x.p))}: nicht mehr erhältlich</span>`).join('')}</div>` : ''}
+          ${packs.some(x => packOpen(s.code, x.p) && packEnd(s.code, x.p)) ? availTag(packAvail(s.code, packs.find(x => packOpen(s.code, x.p) && packEnd(s.code, x.p)).p)) : ''}
         </a>`;
       }).join('')}</div>`;
   };
@@ -1168,8 +1198,10 @@ async function viewPocketSet(code, q) {
     const box = (p, label) => {
       const on = st.pack === p;
       if (!p) return `<button type="button" class="pack ${on ? 'on' : ''}" data-pack=""><b>Alle Karten</b><small>${set.packs.length > 1 ? 'Packs anklicken, um zu filtern' : 'ganzes Set'}</small></button>`;
-      const s = packStats(code, p, inc);
-      return `<button type="button" class="pack ${on ? 'on' : ''}" data-pack="${esc(p)}"><b>${esc(label)}</b>
+      const s = packStats(code, p, inc), av = packAvail(code, p);
+      if (av && av.gone) return `<button type="button" class="pack gone ${on ? 'on' : ''}" data-pack="${esc(p)}"><b>${esc(label)}</b>
+        ${availTag(av)}<small>fehlen ${s.missing}/${s.total} · kann nicht mehr geöffnet werden</small></button>`;
+      return `<button type="button" class="pack ${on ? 'on' : ''}" data-pack="${esc(p)}"><b>${esc(label)}</b>${availTag(av)}
         <span class="big">${pct(s.pAny)}</span><small>Chance auf neue Karte pro Pack</small>
         <small>Ø ${s.exp.toLocaleString('de-DE', { maximumFractionDigits: 2 })} neue/Pack · fehlen ${s.missing}/${s.total}${s.pAny > 0 && s.pAny < 0.5 ? ` · etwa jedes ${Math.round(1 / s.pAny)}. Pack` : ''}</small></button>`;
     };
@@ -1205,10 +1237,13 @@ async function viewPocketPacks() {
   if (!await pocketReady(rid)) return;
   const draw = () => {
     if (rid !== renderId) return;
-    const inc = new Set(S.groups), rows = [];
+    const inc = new Set(S.groups), rows = [], gone = [];
     for (const s of P.setList) {
       if (!P.pull[s.code]) continue;
-      for (const p of s.packs || []) { const st = packStats(s.code, p, inc); if (st.total) rows.push({ s, p, ...st }); }
+      for (const p of s.packs || []) {
+        const st = packStats(s.code, p, inc); if (!st.total) continue;
+        (packOpen(s.code, p) ? rows : gone).push({ s, p, ...st, av: packAvail(s.code, p) });
+      }
     }
     rows.sort((a, b) => b.pAny - a.pAny || b.exp - a.exp);
     V.innerHTML = `<h1 style="font-size:24px;letter-spacing:-.02em">Welches Pack soll ich öffnen?</h1>
@@ -1216,11 +1251,13 @@ async function viewPocketPacks() {
       <div class="toolbar">${groupChips()}</div>
       <div class="adv">${rows.map((r, i) => `<a class="panel" href="#/pocket/set/${encodeURIComponent(r.s.code)}?pack=${encodeURIComponent(r.p)}">
           <span class="rank">${i + 1}</span>
-          <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · fehlen ${r.missing}/${r.total}</span></span>
+          <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · fehlen ${r.missing}/${r.total}</span>${r.av ? `<span style="display:block;margin-top:4px">${availTag(r.av)}</span>` : ''}</span>
           <span><span class="v">${pct(r.pAny)}</span><br><span class="k">Chance auf neue Karte</span></span>
           <span class="hide-s"><span class="v">${r.exp.toLocaleString('de-DE', { maximumFractionDigits: 2 })}</span><br><span class="k">Ø neue Karten/Pack</span></span>
           <span class="hide-s"><span class="v">${nf(r.cost)}</span><br><span class="k">Pack-Punkte für Rest</span></span>
-        </a>`).join('') || '<div class="empty">Alles komplett – Glückwunsch! 🎉</div>'}</div>
+        </a>`).join('') || '<div class="empty">Alles komplett – Glückwunsch! 🎉</div>'}
+        ${gone.length ? `<div class="sec-t" style="margin-top:22px">Nicht mehr erhältlich – zählt nicht mit</div><div class="gone-list">${gone.map(r => `<a class="panel" href="#/pocket/set/${encodeURIComponent(r.s.code)}?pack=${encodeURIComponent(r.p)}">
+            <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · fehlen ${r.missing}/${r.total}</span></span>${availTag(r.av)}</a>`).join('')}</div>` : ''}</div>
       <p class="note">Berechnet aus den offiziellen Raten je Kartenplatz (inkl. seltener Packs und 6-Karten-Packs) und deinem aktuellen Stand. Innerhalb einer Seltenheit gilt jede Karte eines Packs als gleich wahrscheinlich. Karten, die in mehreren Packs eines Sets vorkommen, zählen für jedes dieser Packs.</p>`;
   };
   V.onclick = e => { const g = e.target.closest('[data-grp]'); if (g && toggleGroup(g.dataset.grp)) draw(); };
@@ -1269,8 +1306,12 @@ function openPocketCard(key, after) {
           <dt>Tauschen</dt><dd>${r.tradeable === false ? 'nicht tauschbar' : r.tradePrice ? nf(r.tradePrice) + ' Shinedust' : 'ohne Shinedust'}</dd>
         </dl>
         <div class="sec-t">Ziehbar aus</div>
-        <div class="packlist">${packs.length ? packs.map(p => `<div><span>${esc(packName(c.set, p))}</span>${hasRates ? `<b title="Wahrscheinlichkeit, diese Karte in einem Pack zu ziehen">${pct(cardChance(c, p))} pro Pack</b>` : ''}</div>`).join('') : '<div><span>Nicht aus Boostern – Promo, Event oder Shop</span></div>'}</div>
-        ${hasRates && packs.length ? `<p class="muted" style="font-size:12px;margin:8px 0 0">${(() => { const best = Math.max(...packs.map(p => cardChance(c, p))); return best > 0 ? `Im Schnitt etwa alle ${nf(Math.round(1 / best))} Packs.` : ''; })()}</p>` : ''}
+        <div class="packlist">${packs.length ? packs.map(p => { const av = packAvail(c.set, p);
+          return `<div><span>${esc(packName(c.set, p))}${av && !av.gone ? '<br>' + availTag(av) : ''}</span>${av && av.gone ? availTag(av) : hasRates ? `<b title="Wahrscheinlichkeit, diese Karte in einem Pack zu ziehen">${pct(cardChance(c, p))} pro Pack</b>` : ''}</div>`; }).join('') : '<div><span>Nicht aus Boostern – Promo, Event oder Shop</span></div>'}</div>
+        ${hasRates && packs.length ? `<p class="muted" style="font-size:12px;margin:8px 0 0">${(() => {
+          const open = packs.filter(p => packOpen(c.set, p));
+          if (!open.length) return 'Aus keinem aktuell erhältlichen Pack ziehbar.';
+          const best = Math.max(...open.map(p => cardChance(c, p))); return best > 0 ? `Im Schnitt etwa alle ${nf(Math.round(1 / best))} Packs.` : ''; })()}</p>` : ''}
         <div class="sec-t">In meiner Sammlung</div>
         <div class="stepper"><span>Anzahl</span><div class="ctl"><button type="button" data-d="-1" aria-label="weniger">−</button><output>${n}</output><button type="button" data-d="1" aria-label="mehr">+</button></div></div>
         ${n >= 2 && r.tradeable !== false ? `<p class="muted" style="font-size:13px;margin:6px 0 0">${n - 1} doppelt – zum Tauschen verfügbar.</p>` : ''}
