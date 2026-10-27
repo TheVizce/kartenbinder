@@ -173,6 +173,8 @@ dialog::backdrop{background:rgba(5,7,12,.65);backdrop-filter:blur(3px)}
 .stepper .ctl{display:flex;align-items:center;gap:6px}
 .stepper button{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--panel2);font-size:18px;font-weight:700;line-height:1}
 .stepper output{min-width:30px;text-align:center;font-weight:800;font-size:17px}
+.stepper .seg button{width:auto;min-width:32px;height:28px;border:0;background:none;font-size:14px}
+.stepper .seg button.on{background:var(--accent);color:var(--accent-ink)}
 .field{display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--muted)}
 .fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .fields textarea{grid-column:1/-1}
@@ -465,7 +467,7 @@ async function pool(items, n, fn) {
 }
 
 /* ================= Settings & collection ================= */
-const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
+const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, quickPocketN: 2, groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
 let settingsWarned = false;
 const saveSettings = () => {
   if (!LS.set(SETTINGS_KEY, S) && !settingsWarned) {
@@ -1113,9 +1115,12 @@ function toggleGroup(g) {
   S.groups = GROUPS.map(x => x[0]).filter(x => on.has(x)); saveSettings(); return true;
 }
 const pocketTile = c => tile({ key: c.key, srcs: [thumb(c)], name: pName(c), num: '#' + c.number, count: pc(c.key), sub: rarIcon(c.rarity) });
+/* Schnellerfassung: Antippen setzt auf 1 bzw. 2 (Deck-Maximum) und beim nächsten Antippen zurück auf 0.
+   Hat eine Karte schon mehr als den Zielwert, öffnet sich stattdessen die Kartenansicht. */
 function pocketQuick(key) {
-  const n = pc(key); if (n > 1) return false;
-  if (n) delete col.pocket[key]; else col.pocket[key] = 1;
+  const n = pc(key), target = S.quickPocketN === 1 ? 1 : 2;
+  if (n > target) return false;
+  if (n === target) delete col.pocket[key]; else col.pocket[key] = target;
   saveCol(); return true;
 }
 async function pocketReady(rid) {
@@ -1183,6 +1188,7 @@ async function viewPocketSet(code, q) {
       <div class="seg" id="segF"><button data-f="all" class="on">Alle</button><button data-f="own">Habe ich</button><button data-f="miss">Fehlen</button></div>
       <input type="search" id="q" placeholder="Name oder Nummer">
       ${quickSwitch('quickPocket', 'Schnellerfassung')}
+      <div class="seg" id="segN" title="Auf welche Anzahl Antippen eine Karte setzt"><button type="button" data-qn="1" class="${S.quickPocketN === 1 ? 'on' : ''}">Antippen = 1</button><button type="button" data-qn="2" class="${S.quickPocketN === 1 ? '' : 'on'}">Antippen = 2</button></div>
     </div>
     <div class="grid" id="grid"></div>
     ${hasRates ? `<p class="note">Chance = Wahrscheinlichkeit, in einem Pack mindestens eine Karte zu ziehen, die dir noch fehlt (nur gewählte Seltenheiten). Grundlage sind die offiziellen Raten pro Kartenplatz inkl. seltener Packs; innerhalb einer Seltenheit wird jede Karte des Packs als gleich wahrscheinlich angenommen. Pack-Punkte = Kosten, um alle fehlenden Karten mit Pack-Punkten zu holen.</p>` : `<p class="note">Promo-Karten gibt es nicht in Boostern, sondern über Events, Missionen oder den Shop.</p>`}`;
@@ -1220,6 +1226,8 @@ async function viewPocketSet(code, q) {
   V.onclick = e => {
     const g = e.target.closest('[data-grp]');
     if (g) { if (toggleGroup(g.dataset.grp)) { for (const b of $('#grp', V).children) b.classList.toggle('on', S.groups.includes(b.dataset.grp)); head(); packs(); grid(); } return; }
+    const qn = e.target.closest('[data-qn]');
+    if (qn) { S.quickPocketN = +qn.dataset.qn; saveSettings(); for (const b of $('#segN', V).children) b.classList.toggle('on', b === qn); return; }
     const pk = e.target.closest('[data-pack]');
     if (pk) { st.pack = pk.dataset.pack === st.pack ? '' : pk.dataset.pack; packs(); grid(); return; }
     const sb = e.target.closest('[data-f]');
@@ -1311,18 +1319,18 @@ function openPocketCard(key, after) {
         ${hasRates && packs.length ? `<p class="muted" style="font-size:12px;margin:8px 0 0">${(() => {
           const open = packs.filter(p => packOpen(c.set, p));
           if (!open.length) return 'Aus keinem aktuell erhältlichen Pack ziehbar.';
-          const best = Math.max(...open.map(p => cardChance(c, p))); return best > 0 ? `Im Schnitt etwa alle ${nf(Math.round(1 / best))} Packs.` : ''; })()}</p>` : ''}
+          const best = Math.max(...open.map(p => cardChance(c, p))); return best >= 0.5 ? 'Kommt in den meisten Packs vor.' : best > 0 ? `Im Schnitt etwa jedes ${nf(Math.round(1 / best))}. Pack.` : ''; })()}</p>` : ''}
         <div class="sec-t">In meiner Sammlung</div>
-        <div class="stepper"><span>Anzahl</span><div class="ctl"><button type="button" data-d="-1" aria-label="weniger">−</button><output>${n}</output><button type="button" data-d="1" aria-label="mehr">+</button></div></div>
-        ${n >= 2 && r.tradeable !== false ? `<p class="muted" style="font-size:13px;margin:6px 0 0">${n - 1} doppelt – zum Tauschen verfügbar.</p>` : ''}
+        <div class="stepper"><span>Anzahl</span><div class="ctl"><div class="seg" style="margin-right:6px">${[0, 1, 2].map(k => `<button type="button" data-set="${k}" class="${n === k ? 'on' : ''}">${k}</button>`).join('')}</div><button type="button" data-d="-1" aria-label="weniger">−</button><output>${n}</output><button type="button" data-d="1" aria-label="mehr">+</button></div></div>
+        <p class="muted" style="font-size:13px;margin:6px 0 0">${n >= 2 ? '✓ Genug für ein Deck (max. 2 pro Karte).' : n === 1 ? 'Für ein Deck fehlt noch 1 Exemplar.' : ''}${n > 2 && r.tradeable !== false ? ` ${n - 2} übrig zum Tauschen.` : ''}</p>
       </div></div>`;
   };
   openModal('');
   draw();
   $('#modalBody').onclick = e => {
     if (e.target.closest('[data-close]')) { modal.close(); return; }
-    const b = e.target.closest('[data-d]'); if (!b) return;
-    const v = Math.max(0, pc(key) + +b.dataset.d);
+    const sb = e.target.closest('[data-set]'), b = e.target.closest('[data-d]'); if (!sb && !b) return;
+    const v = sb ? +sb.dataset.set : Math.max(0, pc(key) + +b.dataset.d);
     if (v) col.pocket[key] = v; else delete col.pocket[key];
     saveCol(); draw(); after && after();
   };
