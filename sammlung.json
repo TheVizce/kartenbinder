@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:24:39.985Z",
+ "updated": "2026-10-29T20:25:05.583Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23601,6 +23601,90 @@
     "at": "2026-10-29T17:48:09.151Z"
    },
    "rarity": "None"
+  },
+  "pop8-12": {
+   "name": "Chimchar",
+   "set": "pop8",
+   "setName": "POP Series 8",
+   "serie": "pop",
+   "num": "12",
+   "official": 17,
+   "img": "https://assets.tcgdex.net/en/pop/pop8/12",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:56.027Z",
+   "price": {
+    "trend": 1.14,
+    "avg30": 0.91,
+    "trendHolo": 22.95,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "pop8-15": {
+   "name": "Piplup",
+   "set": "pop8",
+   "setName": "POP Series 8",
+   "serie": "pop",
+   "num": "15",
+   "official": 17,
+   "img": "https://assets.tcgdex.net/en/pop/pop8/15",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:57.219Z",
+   "price": {
+    "trend": 1.79,
+    "avg30": 3.63,
+    "trendHolo": 0.09,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pop8-17": {
+   "name": "Turtwig",
+   "set": "pop8",
+   "setName": "POP Series 8",
+   "serie": "pop",
+   "num": "17",
+   "official": 17,
+   "img": "https://assets.tcgdex.net/en/pop/pop8/17",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:57.798Z",
+   "price": {
+    "trend": 1.26,
+    "avg30": 1.11,
+    "trendHolo": 0.1,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "pop6-4": {
+   "name": "Pachirisu",
+   "set": "pop6",
+   "setName": "POP Series 6",
+   "serie": "pop",
+   "num": "4",
+   "official": 17,
+   "img": "https://assets.tcgdex.net/en/pop/pop6/4",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:25:05.582Z",
+   "price": {
+    "trend": 2.64,
+    "avg30": 2.43,
+    "trendHolo": 6.09,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare"
   }
  },
  "pocket": {
