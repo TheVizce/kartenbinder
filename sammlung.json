@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:46:13.509Z",
+ "updated": "2026-10-29T19:48:01.834Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -5251,6 +5251,1098 @@
     "at": "2026-10-29T17:48:09.205Z"
    },
    "rarity": "Common"
+  },
+  "pl4-1": {
+   "name": "Charizard",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "1",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/1",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:09.243Z",
+   "price": {
+    "trend": 84.61,
+    "avg30": 54.73,
+    "trendHolo": 45.86,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl4-3": {
+   "name": "Heatran",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "3",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/3",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:12.566Z",
+   "price": {
+    "trend": 7.06,
+    "avg30": 5.28,
+    "trendHolo": 2.62,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl4-4": {
+   "name": "Kabutops",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "4",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/4",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:13.001Z",
+   "price": {
+    "trend": 10.62,
+    "avg30": 9.32,
+    "trendHolo": 5.71,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl4-5": {
+   "name": "Luxray",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "5",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/5",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:13.286Z",
+   "price": {
+    "trend": 1.27,
+    "avg30": 1.64,
+    "trendHolo": 6.48,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl4-9": {
+   "name": "Swalot",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "9",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/9",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:14.462Z",
+   "price": {
+    "trend": 2.04,
+    "avg30": 1.68,
+    "trendHolo": 2.89,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl4-10": {
+   "name": "Tangrowth",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "10",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/10",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:16.848Z",
+   "price": {
+    "trend": 1.05,
+    "avg30": 1.06,
+    "trendHolo": 2.19,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl4-15": {
+   "name": "Cherrim",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "15",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/15",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:18.101Z",
+   "price": {
+    "trend": 1.57,
+    "avg30": 1.15,
+    "trendHolo": 6.43,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl4-18": {
+   "name": "Glalie",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "18",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/18",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:18.506Z",
+   "price": {
+    "trend": 0.78,
+    "avg30": 0.7,
+    "trendHolo": 1.15,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl4-22": {
+   "name": "Manectric",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "22",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/22",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:22.196Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.36,
+    "trendHolo": 3.31,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl4-30": {
+   "name": "Sceptile",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "30",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/30",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:24.807Z",
+   "price": {
+    "trend": 2.63,
+    "avg30": 2.69,
+    "trendHolo": 4.37,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl4-29": {
+   "name": "Raticate",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "29",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/29",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:25.683Z",
+   "price": {
+    "trend": 0.58,
+    "avg30": 0.55,
+    "trendHolo": 2.76,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl4-35": {
+   "name": "Charmeleon",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "35",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:26.396Z",
+   "price": {
+    "trend": 1.27,
+    "avg30": 1.01,
+    "trendHolo": 18.59,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-39": {
+   "name": "Grovyle",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "39",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/39",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:28.443Z",
+   "price": {
+    "trend": 0.52,
+    "avg30": 0.39,
+    "trendHolo": 0.91,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-38": {
+   "name": "Grovyle",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "38",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/38",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:29.223Z",
+   "price": {
+    "trend": 0.52,
+    "avg30": 0.39,
+    "trendHolo": 0.91,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-42": {
+   "name": "Haunter",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "42",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/42",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:30.138Z",
+   "price": {
+    "trend": 2.24,
+    "avg30": 1.84,
+    "trendHolo": 24.18,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-41": {
+   "name": "Haunter",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "41",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/41",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:30.446Z",
+   "price": {
+    "trend": 2.24,
+    "avg30": 1.84,
+    "trendHolo": 24.18,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-40": {
+   "name": "Gulpin",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "40",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:30.835Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.36,
+    "trendHolo": 1.52,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-43": {
+   "name": "Luxio",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "43",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:31.556Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.16,
+    "trendHolo": 2.15,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-44": {
+   "name": "Manectric",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "44",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/44",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:31.916Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.36,
+    "trendHolo": 3.31,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-46": {
+   "name": "Ponyta",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "46",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:33.506Z",
+   "price": {
+    "trend": 91.71,
+    "avg30": 78.79,
+    "trendHolo": 19.58,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-47": {
+   "name": "Rapidash",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "47",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/47",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:33.881Z",
+   "price": {
+    "trend": 1.65,
+    "avg30": 1.15,
+    "trendHolo": 4.27,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-49": {
+   "name": "Wormadam Plant Cloak",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "49",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/49",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:34.893Z",
+   "price": {
+    "trend": 0.31,
+    "avg30": 0.2,
+    "trendHolo": 0.89,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-50": {
+   "name": "Wormadam Sandy Cloak",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "50",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:35.193Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.25,
+    "trendHolo": 1.25,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-51": {
+   "name": "Wormadam Trash Cloak",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "51",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/51",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:35.561Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.19,
+    "trendHolo": 0.52,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-54": {
+   "name": "Bronzor",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "54",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/54",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:36.581Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.3,
+    "trendHolo": 1.56,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-52": {
+   "name": "Bagon",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "52",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:37.203Z",
+   "price": {
+    "trend": 88.2,
+    "avg30": 62.36,
+    "trendHolo": 19.33,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-55": {
+   "name": "Buneary",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "55",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:39.559Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.2,
+    "trendHolo": 0.99,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-56": {
+   "name": "Burmy Plant Cloak",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "56",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:40.181Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.18,
+    "trendHolo": 1.19,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-57": {
+   "name": "Burmy Sandy Cloak",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "57",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/57",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:40.623Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.24,
+    "trendHolo": 3.04,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-60": {
+   "name": "Cherubi",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "60",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:41.245Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.21,
+    "trendHolo": 2.24,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-59": {
+   "name": "Charmander",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "59",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:41.546Z",
+   "price": {
+    "trend": 1.03,
+    "avg30": 0.74,
+    "trendHolo": 18.07,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-58": {
+   "name": "Burmy Trash Cloak",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "58",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:41.883Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.15,
+    "trendHolo": 1.6,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-61": {
+   "name": "Croagunk",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "61",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:42.213Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.33,
+    "trendHolo": 8.93,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-62": {
+   "name": "Electrike",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "62",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:42.536Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.09,
+    "trendHolo": 1.05,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-63": {
+   "name": "Electrike",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "63",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:42.843Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.09,
+    "trendHolo": 1.05,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-64": {
+   "name": "Gastly",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "64",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:46.421Z",
+   "price": {
+    "trend": 0.85,
+    "avg30": 0.81,
+    "trendHolo": 10.27,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-65": {
+   "name": "Geodude",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "65",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:47.372Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.15,
+    "trendHolo": 2.06,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-66": {
+   "name": "Gulpin",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "66",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:47.764Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.36,
+    "trendHolo": 1.52,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-67": {
+   "name": "Kabuto",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "67",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/67",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:48.791Z",
+   "price": {
+    "trend": 10.62,
+    "avg30": 9.32,
+    "trendHolo": 5.71,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-68": {
+   "name": "Makuhita",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "68",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:49.121Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.15,
+    "trendHolo": 2.69,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-69": {
+   "name": "Nosepass",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "69",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/69",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:49.466Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.13,
+    "trendHolo": 1.07,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-70": {
+   "name": "Omanyte",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "70",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:50.838Z",
+   "price": {
+    "trend": 0.29,
+    "avg30": 0.23,
+    "trendHolo": 4.41,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-71": {
+   "name": "Pikachu",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "71",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:51.130Z",
+   "price": {
+    "trend": 2.76,
+    "avg30": 2.54,
+    "trendHolo": 83.73,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-73": {
+   "name": "Rattata",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "73",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/73",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:52.631Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.18,
+    "trendHolo": 1.44,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-74": {
+   "name": "Shinx",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "74",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/74",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:53.043Z",
+   "price": {
+    "trend": 52.26,
+    "avg30": 52.65,
+    "trendHolo": 26.13,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-75": {
+   "name": "Snorunt",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "75",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:54.063Z",
+   "price": {
+    "trend": 0.36,
+    "avg30": 0.54,
+    "trendHolo": 11.32,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-76": {
+   "name": "Tangela",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "76",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/76",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:55.002Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.17,
+    "trendHolo": 1.59,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-77": {
+   "name": "Tangela",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "77",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/77",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:55.354Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.17,
+    "trendHolo": 1.59,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-79": {
+   "name": "Treecko",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "79",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/79",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:56.215Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.33,
+    "trendHolo": 10.42,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-81": {
+   "name": "Wingull",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "81",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/81",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:47:56.839Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.16,
+    "trendHolo": 2.25,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-82": {
+   "name": "Beginning Door",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "82",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:01.444Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.26,
+    "trendHolo": 3.9,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-83": {
+   "name": "Bench Shield",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "83",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/83",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:01.834Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.2,
+    "trendHolo": 0.86,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
