@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:27:35.429Z",
+ "updated": "2026-10-29T19:27:54.269Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -45,6 +45,27 @@
     "at": "2026-10-29T08:33:43.526Z"
    },
    "lng": "de"
+  },
+  "bw6-60": {
+   "name": "Cubone",
+   "set": "bw6",
+   "setName": "Dragons Exalted",
+   "serie": "bw",
+   "num": "60",
+   "official": 124,
+   "img": "https://assets.tcgdex.net/en/bw/bw6/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:27:54.269Z",
+   "price": {
+    "trend": 2.36,
+    "avg30": 1.17,
+    "trendHolo": 8.3,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
   }
  },
  "pocket": {
