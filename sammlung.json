@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:11:48.725Z",
+ "updated": "2026-10-29T20:12:15.627Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -20827,6 +20827,174 @@
     "at": "2026-10-29T17:48:09.133Z"
    },
    "rarity": "Uncommon"
+  },
+  "ex3-37": {
+   "name": "Meditite",
+   "set": "ex3",
+   "setName": "Dragon",
+   "serie": "ex",
+   "num": "37",
+   "official": 97,
+   "img": "https://assets.tcgdex.net/en/ex/ex3/37",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:08.854Z",
+   "price": {
+    "trend": 0.77,
+    "avg30": 1.07,
+    "trendHolo": 2.5,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex3-43": {
+   "name": "Shuppet",
+   "set": "ex3",
+   "setName": "Dragon",
+   "serie": "ex",
+   "num": "43",
+   "official": 97,
+   "img": "https://assets.tcgdex.net/en/ex/ex3/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:09.493Z",
+   "price": {
+    "trend": 16.31,
+    "avg30": 12.03,
+    "trendHolo": 89.35,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex3-52": {
+   "name": "Corphish",
+   "set": "ex3",
+   "setName": "Dragon",
+   "serie": "ex",
+   "num": "52",
+   "official": 97,
+   "img": "https://assets.tcgdex.net/en/ex/ex3/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:11.412Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.32,
+    "trendHolo": 1.93,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex3-56": {
+   "name": "Geodude",
+   "set": "ex3",
+   "setName": "Dragon",
+   "serie": "ex",
+   "num": "56",
+   "official": 97,
+   "img": "https://assets.tcgdex.net/en/ex/ex3/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:13.054Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 0.46,
+    "trendHolo": 5.36,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "ex3-60": {
+   "name": "Magikarp",
+   "set": "ex3",
+   "setName": "Dragon",
+   "serie": "ex",
+   "num": "60",
+   "official": 97,
+   "img": "https://assets.tcgdex.net/en/ex/ex3/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:13.422Z",
+   "price": {
+    "trend": 1.53,
+    "avg30": 1.45,
+    "trendHolo": 61.95,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex3-70": {
+   "name": "Numel",
+   "set": "ex3",
+   "setName": "Dragon",
+   "serie": "ex",
+   "num": "70",
+   "official": 97,
+   "img": "https://assets.tcgdex.net/en/ex/ex3/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:15.012Z",
+   "price": {
+    "trend": 0.38,
+    "avg30": 0.41,
+    "trendHolo": 3.48,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "ex3-68": {
+   "name": "Nincada",
+   "set": "ex3",
+   "setName": "Dragon",
+   "serie": "ex",
+   "num": "68",
+   "official": 97,
+   "img": "https://assets.tcgdex.net/en/ex/ex3/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:15.313Z",
+   "price": {
+    "trend": 0.49,
+    "avg30": 0.57,
+    "trendHolo": 2.23,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "ex3-72": {
+   "name": "Slugma",
+   "set": "ex3",
+   "setName": "Dragon",
+   "serie": "ex",
+   "num": "72",
+   "official": 97,
+   "img": "https://assets.tcgdex.net/en/ex/ex3/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:15.627Z",
+   "price": {
+    "trend": 0.33,
+    "avg30": 0.37,
+    "trendHolo": 4.11,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
   }
  },
  "pocket": {
