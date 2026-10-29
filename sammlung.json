@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:07:36.892Z",
+ "updated": "2026-10-29T20:08:23.745Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -19439,6 +19439,258 @@
     "avg30": 1.38,
     "trendHolo": 4.5,
     "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex10-35": {
+   "name": "Bayleef",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "35",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:08.535Z",
+   "price": {
+    "trend": 0.62,
+    "avg30": 0.43,
+    "trendHolo": 17.76,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex10-52": {
+   "name": "Chinchou",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "52",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:11.760Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.35,
+    "trendHolo": 14.42,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-51": {
+   "name": "Chikorita",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "51",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/51",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:12.502Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.27,
+    "trendHolo": 42.14,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-58": {
+   "name": "Gloom",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "58",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:14.137Z",
+   "price": {
+    "trend": 0.46,
+    "avg30": 0.49,
+    "trendHolo": 16.24,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-60": {
+   "name": "Houndour",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "60",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:14.475Z",
+   "price": {
+    "trend": 0.71,
+    "avg30": 0.64,
+    "trendHolo": 39.26,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-66": {
+   "name": "Pineco",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "66",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:16.596Z",
+   "price": {
+    "trend": 0.46,
+    "avg30": 0.33,
+    "trendHolo": 15.46,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-75": {
+   "name": "Spinarak",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "75",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:18.097Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.25,
+    "trendHolo": 21.35,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-74": {
+   "name": "Snubbull",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "74",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/74",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:18.554Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 0.22,
+    "trendHolo": 32.98,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-87": {
+   "name": "Poké Ball",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "87",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:20.309Z",
+   "price": {
+    "trend": 0.38,
+    "avg30": 1.22,
+    "trendHolo": 7.74,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex10-94": {
+   "name": "Energy Search",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "94",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:21.817Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.08,
+    "trendHolo": 19.76,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-95": {
+   "name": "Potion",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "95",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/95",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:22.102Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.1,
+    "trendHolo": 5.1,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "ex10-102": {
+   "name": "Espeon ex",
+   "set": "ex10",
+   "setName": "Unseen Forces",
+   "serie": "ex",
+   "num": "102",
+   "official": 115,
+   "img": "https://assets.tcgdex.net/en/ex/ex10/102",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:23.745Z",
+   "price": {
+    "trend": 818.39,
+    "avg30": 580.29,
+    "trendHolo": 83.33,
+    "at": "2026-10-29T17:48:09.159Z"
    },
    "rarity": "Rare"
   }
