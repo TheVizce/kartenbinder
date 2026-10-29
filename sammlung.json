@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:23:54.407Z",
+ "updated": "2026-10-29T20:24:25.765Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23458,6 +23458,90 @@
     "avg30": 1.02,
     "trendHolo": 0,
     "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "None"
+  },
+  "tk-ex-m-2": {
+   "name": "Charmander",
+   "set": "tk-ex-m",
+   "setName": "EX trainer Kit 2 (Minun)",
+   "serie": "tk",
+   "num": "2",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/tk/tk-ex-m/2",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:15.265Z",
+   "price": {
+    "trend": 0.76,
+    "avg30": 0.86,
+    "trendHolo": 0.24,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "None"
+  },
+  "tk-ex-m-4": {
+   "name": "Growlithe",
+   "set": "tk-ex-m",
+   "setName": "EX trainer Kit 2 (Minun)",
+   "serie": "tk",
+   "num": "4",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/tk/tk-ex-m/4",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:16.366Z",
+   "price": {
+    "trend": 0.55,
+    "avg30": 0.61,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "None"
+  },
+  "tk-ex-m-7": {
+   "name": "Vulpix",
+   "set": "tk-ex-m",
+   "setName": "EX trainer Kit 2 (Minun)",
+   "serie": "tk",
+   "num": "7",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/tk/tk-ex-m/7",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:16.854Z",
+   "price": {
+    "trend": 0.66,
+    "avg30": 0.44,
+    "trendHolo": 5,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "None"
+  },
+  "tk-ex-p-2": {
+   "name": "Electrike",
+   "set": "tk-ex-p",
+   "setName": "EX trainer Kit 2 (Plusle)",
+   "serie": "tk",
+   "num": "2",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/tk/tk-ex-p/2",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:25.764Z",
+   "price": {
+    "trend": 0.34,
+    "avg30": 0.21,
+    "trendHolo": 0,
+    "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "None"
   }
