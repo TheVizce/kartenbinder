@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:20:31.423Z",
+ "updated": "2026-10-29T20:21:11.820Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22932,6 +22932,363 @@
     "trend": 0.54,
     "avg30": 0.43,
     "trendHolo": 0.3,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-6": {
+   "name": "Gyarados",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "6",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/6",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:45.321Z",
+   "price": {
+    "trend": 20.1,
+    "avg30": 22.38,
+    "trendHolo": 14.3,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Rare"
+  },
+  "base1-24": {
+   "name": "Charmeleon",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "24",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/24",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:52.214Z",
+   "price": {
+    "trend": 3.96,
+    "avg30": 3.39,
+    "trendHolo": 13.83,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "base1-29": {
+   "name": "Haunter",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "29",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/29",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:53.896Z",
+   "price": {
+    "trend": 2.4,
+    "avg30": 3.04,
+    "trendHolo": 1.85,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "base1-32": {
+   "name": "Kadabra",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "32",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/32",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:54.142Z",
+   "price": {
+    "trend": 2.09,
+    "avg30": 2.68,
+    "trendHolo": 3.32,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "base1-31": {
+   "name": "Jynx",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "31",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/31",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:54.449Z",
+   "price": {
+    "trend": 1.79,
+    "avg30": 2.12,
+    "trendHolo": 0.35,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "base1-47": {
+   "name": "Diglett",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "47",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/47",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:57.246Z",
+   "price": {
+    "trend": 0.81,
+    "avg30": 0.97,
+    "trendHolo": 2,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-48": {
+   "name": "Doduo",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "48",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/48",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:57.613Z",
+   "price": {
+    "trend": 1.61,
+    "avg30": 1.67,
+    "trendHolo": 0.02,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-51": {
+   "name": "Koffing",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "51",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/51",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:58.469Z",
+   "price": {
+    "trend": 3.17,
+    "avg30": 1.88,
+    "trendHolo": 0.2,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-53": {
+   "name": "Magnemite",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "53",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/53",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:59.091Z",
+   "price": {
+    "trend": 0.91,
+    "avg30": 1.23,
+    "trendHolo": 0.05,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-58": {
+   "name": "Pikachu",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "58",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:21:01.491Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 19.14,
+    "trendHolo": 36.37,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-60": {
+   "name": "Ponyta",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "60",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:21:02.279Z",
+   "price": {
+    "trend": 0.47,
+    "avg30": 0.87,
+    "trendHolo": 0,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-57": {
+   "name": "Pidgey",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "57",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/57",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:21:02.646Z",
+   "price": {
+    "trend": 3.63,
+    "avg30": 2.57,
+    "trendHolo": 0.3,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-65": {
+   "name": "Staryu",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "65",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:21:05.399Z",
+   "price": {
+    "trend": 1.02,
+    "avg30": 0.93,
+    "trendHolo": 0.49,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-69": {
+   "name": "Weedle",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "69",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/69",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:21:05.774Z",
+   "price": {
+    "trend": 0.94,
+    "avg30": 0.93,
+    "trendHolo": 4.57,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-94": {
+   "name": "Potion",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "94",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:21:10.746Z",
+   "price": {
+    "trend": 0.34,
+    "avg30": 0.35,
+    "trendHolo": 0.3,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-97": {
+   "name": "Fighting Energy",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "97",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:21:11.376Z",
+   "price": {
+    "trend": 0.38,
+    "avg30": 0.5,
+    "trendHolo": 4.06,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "base1-99": {
+   "name": "Grass Energy",
+   "set": "base1",
+   "setName": "Base Set",
+   "serie": "base",
+   "num": "99",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/base/base1/99",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:21:11.819Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.28,
+    "trendHolo": 5.05,
     "at": "2026-10-29T08:33:43.532Z"
    },
    "rarity": "Common"
