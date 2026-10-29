@@ -1191,7 +1191,7 @@ async function viewPocketSet(code, q) {
       <div class="seg" id="segN" title="Auf welche Anzahl Antippen eine Karte setzt"><button type="button" data-qn="1" class="${S.quickPocketN === 1 ? 'on' : ''}">Antippen = 1</button><button type="button" data-qn="2" class="${S.quickPocketN === 1 ? '' : 'on'}">Antippen = 2</button></div>
     </div>
     <div class="grid" id="grid"></div>
-    ${hasRates ? `<p class="note">Chance = Wahrscheinlichkeit, in einem Pack mindestens eine Karte zu ziehen, die dir noch fehlt (nur gewählte Seltenheiten). Grundlage sind die offiziellen Raten pro Kartenplatz inkl. seltener Packs; innerhalb einer Seltenheit wird jede Karte des Packs als gleich wahrscheinlich angenommen. Pack-Punkte = Kosten, um alle fehlenden Karten mit Pack-Punkten zu holen.</p>` : `<p class="note">Promo-Karten gibt es nicht in Boostern, sondern über Events, Missionen oder den Shop.</p>`}`;
+    ${hasRates ? `<p class="note">Chance = Wahrscheinlichkeit, in einem Pack mindestens eine Karte zu ziehen, die dir noch fehlt (nur gewählte Seltenheiten). Grundlage sind die offiziellen Raten pro Kartenplatz inkl. seltener Packs; innerhalb einer Seltenheit wird jede Karte des Packs als gleich wahrscheinlich angenommen. Pack-Punkte = Kosten, um alle fehlenden Karten mit Pack-Punkten zu holen.</p>` : /^PROMO/.test(code) ? `<p class="note">Promo-Karten gibt es nicht in Boostern, sondern über Events, Missionen oder den Shop.</p>` : `<p class="note">Für dieses Set sind noch keine Zieh-Raten veröffentlicht. Sobald die Datenbank sie nachliefert, erscheinen hier und im Pack-Berater automatisch die Chancen.</p>`}`;
   const head = () => {
     const inc = new Set(S.groups);
     let t = 0, h = 0, cost = 0;
