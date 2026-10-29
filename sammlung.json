@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:44:29.836Z",
+ "updated": "2026-10-29T19:44:49.180Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -4228,6 +4228,48 @@
     "at": "2026-10-29T17:48:09.208Z"
    },
    "rarity": "Promo"
+  },
+  "hgss1-1": {
+   "name": "Arcanine",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "1",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/1",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:44:47.184Z",
+   "price": {
+    "trend": 5.81,
+    "avg30": 6.68,
+    "trendHolo": 16.03,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "hgss1-8": {
+   "name": "Noctowl",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "8",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/8",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:44:49.179Z",
+   "price": {
+    "trend": 4.82,
+    "avg30": 4.29,
+    "trendHolo": 5.58,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Holo Rare"
   }
  },
  "pocket": {
