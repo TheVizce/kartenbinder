@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:30:35.243Z",
+ "updated": "2026-10-29T19:31:31.607Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -422,6 +422,384 @@
     "avg30": 0.15,
     "trendHolo": 0.89,
     "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-32": {
+   "name": "Vanillish",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "32",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/32",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:38.611Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.15,
+    "trendHolo": 0.5,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-39": {
+   "name": "Pikachu",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "39",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/39",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:41.528Z",
+   "price": {
+    "trend": 2.49,
+    "avg30": 2.98,
+    "trendHolo": 12.53,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-40": {
+   "name": "Raichu",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "40",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:42.960Z",
+   "price": {
+    "trend": 3.27,
+    "avg30": 1.53,
+    "trendHolo": 6.13,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-43": {
+   "name": "Shinx",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "43",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:45.375Z",
+   "price": {
+    "trend": 0.07,
+    "avg30": 0.19,
+    "trendHolo": 4.54,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-44": {
+   "name": "Luxio",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "44",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/44",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:48.511Z",
+   "price": {
+    "trend": 0.37,
+    "avg30": 0.37,
+    "trendHolo": 1.02,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-46": {
+   "name": "Luxray",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "46",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:56.153Z",
+   "price": {
+    "trend": 2.67,
+    "avg30": 4.35,
+    "trendHolo": 8.98,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Rare"
+  },
+  "bw4-52": {
+   "name": "Grimer",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "52",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:00.220Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.15,
+    "trendHolo": 1.05,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-55": {
+   "name": "Ralts",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "55",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:02.978Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.17,
+    "trendHolo": 1.66,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-58": {
+   "name": "Munna",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "58",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:05.723Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.11,
+    "trendHolo": 0.93,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-64": {
+   "name": "Lucario",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "64",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:10.148Z",
+   "price": {
+    "trend": 4.91,
+    "avg30": 4.89,
+    "trendHolo": 5.01,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare"
+  },
+  "bw4-71": {
+   "name": "Nuzleaf",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "71",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:13.877Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.21,
+    "trendHolo": 0.71,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-75": {
+   "name": "Bronzor",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "75",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:15.563Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.15,
+    "trendHolo": 1,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-77": {
+   "name": "Ferroseed",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "77",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/77",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:19.681Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.14,
+    "trendHolo": 0.51,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-83": {
+   "name": "Pidove",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "83",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/83",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:23.073Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.16,
+    "trendHolo": 1.61,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-86": {
+   "name": "Cilan",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "86",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/86",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:25.771Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.17,
+    "trendHolo": 0.88,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-87": {
+   "name": "Exp. Share",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "87",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:27.759Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.23,
+    "trendHolo": 1.21,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-88": {
+   "name": "Heavy Ball",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "88",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:29.725Z",
+   "price": {
+    "trend": 0.58,
+    "avg30": 0.88,
+    "trendHolo": 1.93,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-90": {
+   "name": "Pokémon Center",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "90",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:31:31.606Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.19,
+    "trendHolo": 0.79,
+    "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Uncommon"
   }
