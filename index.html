@@ -1160,8 +1160,27 @@ const GROUPS = [['Diamond', '◆ Rauten'], ['Star', '★ Sterne'], ['Shiny', '�
 const rarIcon = r => { const x = RAR[r]; return x ? `<span class="rar r-${x[2]}" title="${x[3]}">${x[0].repeat(x[1])}</span>` : esc(r || ''); };
 const SLOT_MAP = { RF: 'R', UF: 'U', CF: 'C' };
 let P = null;
-const pc = key => +(col.pocket[key] || 0);
-const isWishP = key => !!col.wish.pocket[key];
+/* Nachdrucke (z. B. Deluxepacks) mit identischem Bild sind im Spiel dieselbe Karte und teilen sich die Anzahl.
+   Gespeichert wird nur unter dem Schlüssel der ältesten Version („kanonisch“). */
+const ck = key => (P && P.canon && P.canon.get(key)) || key;
+const pc = key => +(col.pocket[ck(key)] || 0);
+function setPc(key, v) { const k = ck(key); if (v > 0) col.pocket[k] = v; else delete col.pocket[k]; }
+const isWishP = key => !!col.wish.pocket[ck(key)];
+function setWishP(key, on) { const k = ck(key); if (on) col.wish.pocket[k] = col.wish.pocket[k] || new Date().toISOString(); else delete col.wish.pocket[k]; }
+const twinsOf = c => (P.twins.get(ck(c.key)) || [c]).filter(x => x.key !== c.key);
+/* führt Einträge verknüpfter Karten zusammen (höchste Anzahl gewinnt); idempotent */
+function canonizePocket() {
+  let changed = 0;
+  for (const store of [col.pocket, col.wish.pocket]) {
+    for (const k of Object.keys(store)) {
+      const c = ck(k); if (c === k) continue;
+      if (store === col.pocket) store[c] = Math.max(+store[c] || 0, +store[k] || 0); else store[c] = store[c] || store[k];
+      delete store[k]; changed++;
+    }
+  }
+  if (changed) saveCol();
+  return changed;
+}
 const RAR_ORDER = ['C', 'U', 'R', 'RR', 'AR', 'SR', 'SAR', 'IM', 'S', 'SSR', 'UR'];
 const rarIdx = r => { const i = RAR_ORDER.indexOf(r); return i < 0 ? 99 : i; };
 const tdxSet = code => code.replace(/^PROMO-/, 'P-');
@@ -1202,6 +1221,17 @@ async function pocketData() {
     const names = Object.keys(enDe).sort((a, b) => b.length - a.length).map(n => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
     data.enDe = enDe; data.deCache = new Map();
     try { data.enDeRx = new RegExp(`(?<![A-Za-zÀ-ÿ])(${names.join('|')})(?![A-Za-zÀ-ÿ])`, 'g'); } catch { data.enDeRx = null; }
+  }
+  // gleiche Karte in mehreren Sets (gleiches Bild) → älteste Version ist kanonisch
+  data.canon = new Map(); data.twins = new Map();
+  const relIdx = new Map(data.setList.map((s, i) => [s.code, [s.releaseDate || '9999', i]]));
+  const byImg = new Map();
+  for (const c of cards) if (c.image) { if (!byImg.has(c.image)) byImg.set(c.image, []); byImg.get(c.image).push(c); }
+  for (const g of byImg.values()) {
+    if (g.length < 2) continue;
+    g.sort((a, b) => { const x = relIdx.get(a.set) || ['9999', 999], y = relIdx.get(b.set) || ['9999', 999]; return x[0].localeCompare(y[0]) || x[1] - y[1] || a.number - b.number; });
+    for (const c of g) data.canon.set(c.key, g[0].key);
+    data.twins.set(g[0].key, g);
   }
   P = data;
   loadAllDe();
@@ -1309,12 +1339,14 @@ const pocketTile = c => tile({ key: c.key, srcs: [thumb(c)], name: pName(c), num
 function pocketQuick(key) {
   const n = pc(key), target = S.quickPocketN === 1 ? 1 : 2;
   if (n > target) return false;
-  if (n === target) delete col.pocket[key]; else col.pocket[key] = target;
+  setPc(key, n === target ? 0 : target);
   saveCol(); return true;
 }
 async function pocketReady(rid) {
   V.innerHTML = loading('Lade Pocket-Daten …');
   try { await pocketData(); } catch (e) { if (rid === renderId) V.innerHTML = errBox('Pocket-Daten konnten nicht geladen werden.', e); return false; }
+  const merged = canonizePocket();
+  if (merged) toast(`${merged} Einträge von Karten, die in mehreren Sets vorkommen, zusammengeführt`);
   return rid === renderId;
 }
 
@@ -1542,6 +1574,7 @@ function openPocketCard(key, after, list) {
           <dt>Seltenheit</dt><dd>${rarIcon(c.rarity)} ${esc(RAR[c.rarity] ? RAR[c.rarity][3] : c.rarity)}</dd>
           ${r.points ? `<dt>Mit Pack-Punkten</dt><dd>${nf(r.points)} Punkte</dd>` : ''}
           <dt>Tauschen</dt><dd>${r.tradeable === false ? 'nicht tauschbar' : r.tradePrice ? nf(r.tradePrice) + ' Shinedust' : 'ohne Shinedust'}</dd>
+          ${twinsOf(c).length ? `<dt>Auch in</dt><dd>${twinsOf(c).map(t => `<a href="#/pocket/set/${encodeURIComponent(t.set)}" data-close>${esc(setTitle(P.setMap[t.set] || { code: t.set }))}</a> #${t.number}`).join(', ')}<br><span class="muted" style="font-size:12px">dieselbe Karte – die Anzahl gilt für alle</span></dd>` : ''}
         </dl>
         <div class="sec-t">Ziehbar aus</div>
         <div class="packlist">${packs.length ? packs.map(p => { const av = packAvail(c.set, p);
@@ -1560,12 +1593,12 @@ function openPocketCard(key, after, list) {
   $('#modalBody').onclick = e => {
     if (e.target.closest('[data-close]')) { modal.close(); return; }
     if (e.target.closest('[data-wish]')) {
-      if (isWishP(key)) delete col.wish.pocket[key]; else col.wish.pocket[key] = new Date().toISOString();
+      setWishP(key, !isWishP(key));
       saveCol(); draw(); after && after(key); return;
     }
     const sb = e.target.closest('[data-set]'), b = e.target.closest('[data-d]'); if (!sb && !b) return;
     const v = sb ? +sb.dataset.set : Math.max(0, pc(key) + +b.dataset.d);
-    if (v) col.pocket[key] = v; else delete col.pocket[key];
+    setPc(key, v);
     saveCol(); draw(); after && after(key);
   };
 }
@@ -1695,7 +1728,7 @@ function analyzeDeck(text) {
     const row = { l, c, ambiguous };
     if (c) {
       row.sig = sigOf(c); row.prints = printsOf(c);
-      const g = bySig.get(row.sig) || { need: 0, have: row.prints.reduce((a, k) => a + pc(k.key), 0), prints: row.prints, rows: [] };
+      const g = bySig.get(row.sig) || { need: 0, have: [...new Set(row.prints.map(k => ck(k.key)))].reduce((a, k) => a + pc(k), 0), prints: row.prints, rows: [] };
       g.need += l.n; g.rows.push(row); bySig.set(row.sig, g);
       byName.set(norm(c.name), (byName.get(norm(c.name)) || 0) + l.n);
     }
@@ -1769,7 +1802,7 @@ async function viewPocketDeck(id) {
         <div class="drows">${a.rows.map(r => {
           if (!r.c) return `<div class="panel drow unk"><span></span><span class="dn"><b>${esc(r.l.name || r.l.raw)}</b><span>nicht gefunden: „${esc(r.l.raw)}“</span></span><span class="ds">?</span></div>`;
           const g = a.bySig.get(r.sig), cls = g.have >= g.need ? 'ok' : g.have > 0 ? 'part' : 'miss';
-          const other = g.prints.filter(k => k.key !== r.c.key && pc(k.key));
+          const other = g.prints.filter(k => ck(k.key) !== ck(r.c.key) && pc(k.key));
           const info = cls === 'ok' ? (other.length && !pc(r.c.key) ? `vorhanden als ${other.map(k => `${k.set} #${k.number}`).join(', ')}` : 'vorhanden')
             : `holen: ${sourceText(g.prints)}`;
           return `<button type="button" class="panel drow ${cls}" data-key="${esc(r.c.key)}"><img src="${esc(thumb(r.c))}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
@@ -1791,7 +1824,7 @@ async function viewPocketDeck(id) {
       for (const g of a.bySig.values()) {
         if (g.have >= g.need) continue;
         const b = bestSource(g.prints), k = (b && b.k) || pickCanon(g.prints);
-        if (!isWishP(k.key)) { col.wish.pocket[k.key] = new Date().toISOString(); n++; }
+        if (!isWishP(k.key)) { setWishP(k.key, true); n++; }
       }
       if (n) saveCol();
       toast(n ? `${n} Karte${n === 1 ? '' : 'n'} auf die Wunschliste gesetzt ★` : 'Nichts zu tun – alles vorhanden oder schon auf der Wunschliste');
