@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:02:17.673Z",
+ "updated": "2026-10-29T20:03:33.640Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -15972,6 +15972,1212 @@
     "normal": 1
    },
    "added": "2026-10-29T20:02:17.672Z",
+   "rarity": "Common"
+  },
+  "dp1-3": {
+   "name": "Electivire",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "3",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/3",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:46.306Z",
+   "price": {
+    "trend": 3.25,
+    "avg30": 3.88,
+    "trendHolo": 4.35,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare Holo"
+  },
+  "dp1-5": {
+   "name": "Infernape",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "5",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/5",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:47.514Z",
+   "price": {
+    "trend": 6.34,
+    "avg30": 4.98,
+    "trendHolo": 4.26,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Rare Holo"
+  },
+  "dp1-6": {
+   "name": "Lucario",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "6",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/6",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:47.791Z",
+   "price": {
+    "trend": 14.63,
+    "avg30": 14.27,
+    "trendHolo": 7.75,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare Holo"
+  },
+  "dp1-11": {
+   "name": "Palkia",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "11",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/11",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:52.134Z",
+   "price": {
+    "trend": 6.54,
+    "avg30": 4.84,
+    "trendHolo": 10.15,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Rare Holo"
+  },
+  "dp1-22": {
+   "name": "Clefable",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "22",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/22",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:53.581Z",
+   "price": {
+    "trend": 1.13,
+    "avg30": 1.13,
+    "trendHolo": 2.52,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp1-26": {
+   "name": "Floatzel",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "26",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/26",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:54.031Z",
+   "price": {
+    "trend": 1.06,
+    "avg30": 0.66,
+    "trendHolo": 2.52,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp1-31": {
+   "name": "Machamp",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "31",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/31",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:55.823Z",
+   "price": {
+    "trend": 1.19,
+    "avg30": 1.72,
+    "trendHolo": 3.43,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp1-32": {
+   "name": "Medicham",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "32",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/32",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:56.079Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.45,
+    "trendHolo": 1,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp1-30": {
+   "name": "Lopunny",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "30",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/30",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:56.409Z",
+   "price": {
+    "trend": 0.94,
+    "avg30": 1.27,
+    "trendHolo": 2.02,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp1-38": {
+   "name": "Steelix",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "38",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/38",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:59.672Z",
+   "price": {
+    "trend": 1.28,
+    "avg30": 0.8,
+    "trendHolo": 1.55,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp1-44": {
+   "name": "Cascoon",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "44",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/44",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:00.137Z",
+   "price": {
+    "trend": 0.35,
+    "avg30": 0.37,
+    "trendHolo": 1.06,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-49": {
+   "name": "Grotle",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "49",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/49",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:01.479Z",
+   "price": {
+    "trend": 0.33,
+    "avg30": 0.43,
+    "trendHolo": 1.65,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-52": {
+   "name": "Luxio",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "52",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:01.757Z",
+   "price": {
+    "trend": 0.52,
+    "avg30": 0.43,
+    "trendHolo": 1.48,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-53": {
+   "name": "Machoke",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "53",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/53",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:02.079Z",
+   "price": {
+    "trend": 0.34,
+    "avg30": 0.46,
+    "trendHolo": 1.94,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-54": {
+   "name": "Magneton",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "54",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/54",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:02.356Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.13,
+    "trendHolo": 1.71,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-58": {
+   "name": "Prinplup",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "58",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:04.720Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.28,
+    "trendHolo": 2.13,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-61": {
+   "name": "Riolu",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "61",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:04.989Z",
+   "price": {
+    "trend": 0.48,
+    "avg30": 0.53,
+    "trendHolo": 1.92,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-62": {
+   "name": "Seaking",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "62",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:05.289Z",
+   "price": {
+    "trend": 0.06,
+    "avg30": 0.53,
+    "trendHolo": 2.35,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-63": {
+   "name": "Silcoon",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "63",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:06.781Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.33,
+    "trendHolo": 1.11,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-70": {
+   "name": "Bidoof",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "70",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:08.177Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.23,
+    "trendHolo": 2.89,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-64": {
+   "name": "Staravia",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "64",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:08.589Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.23,
+    "trendHolo": 1.27,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-65": {
+   "name": "Unown A",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "65",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:08.904Z",
+   "rarity": "Uncommon"
+  },
+  "dp1-66": {
+   "name": "Unown B",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "66",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:09.153Z",
+   "rarity": "Uncommon"
+  },
+  "dp1-69": {
+   "name": "Azurill",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "69",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/69",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:09.428Z",
+   "price": {
+    "trend": 2.69,
+    "avg30": 3.85,
+    "trendHolo": 7.63,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-72": {
+   "name": "Buizel",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "72",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:09.759Z",
+   "price": {
+    "trend": 0.04,
+    "avg30": 0.11,
+    "trendHolo": 1.58,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-79": {
+   "name": "Combee",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "79",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/79",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:12.714Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.11,
+    "trendHolo": 0.96,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-80": {
+   "name": "Duskull",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "80",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:12.991Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.21,
+    "trendHolo": 1.89,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-81": {
+   "name": "Electabuzz",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "81",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/81",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:13.269Z",
+   "price": {
+    "trend": 0.8,
+    "avg30": 0.39,
+    "trendHolo": 2.35,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-82": {
+   "name": "Gastly",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "82",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:15.212Z",
+   "price": {
+    "trend": 0.38,
+    "avg30": 0.35,
+    "trendHolo": 4.48,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-85": {
+   "name": "Hoothoot",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "85",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:15.512Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.1,
+    "trendHolo": 1.71,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-88": {
+   "name": "Marill",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "88",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:15.803Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.48,
+    "trendHolo": 2.04,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-90": {
+   "name": "Mime Jr.",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "90",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:16.591Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.28,
+    "trendHolo": 1.84,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-84": {
+   "name": "Goldeen",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "84",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:16.959Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.23,
+    "trendHolo": 1.14,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-91": {
+   "name": "Misdreavus",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "91",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:18.453Z",
+   "price": {
+    "trend": 0.22,
+    "avg30": 0.23,
+    "trendHolo": 2.62,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-95": {
+   "name": "Rhyhorn",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "95",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/95",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:18.744Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.33,
+    "trendHolo": 1.24,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-97": {
+   "name": "Seedot",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "97",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:19.075Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.37,
+    "trendHolo": 0.89,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-98": {
+   "name": "Shinx",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "98",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/98",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:19.352Z",
+   "price": {
+    "trend": 0.56,
+    "avg30": 0.37,
+    "trendHolo": 1.89,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-99": {
+   "name": "Skorupi",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "99",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/99",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:19.622Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.14,
+    "trendHolo": 1.08,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-103": {
+   "name": "Turtwig",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "103",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/103",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:21.527Z",
+   "price": {
+    "trend": 8.95,
+    "avg30": 0.39,
+    "trendHolo": 4.12,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-100": {
+   "name": "Sneasel",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "100",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/100",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:21.790Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.12,
+    "trendHolo": 1.97,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-101": {
+   "name": "Starly",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "101",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/101",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:22.075Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.13,
+    "trendHolo": 1.57,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-102": {
+   "name": "Stunky",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "102",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/102",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:22.292Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.15,
+    "trendHolo": 0.93,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-105": {
+   "name": "Double Full Heal",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "105",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/105",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:22.607Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.12,
+    "trendHolo": 0.59,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-108": {
+   "name": "Night Pokémon Center",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "108",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/108",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:22.906Z",
+   "price": {
+    "trend": 0.36,
+    "avg30": 0.2,
+    "trendHolo": 0.55,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-112": {
+   "name": "Professor Rowan",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "112",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/112",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:25.135Z",
+   "price": {
+    "trend": 0.84,
+    "avg30": 0.41,
+    "trendHolo": 0.77,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-109": {
+   "name": "PlusPower",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "109",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/109",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:25.525Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.11,
+    "trendHolo": 0.58,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-110": {
+   "name": "Poké Ball",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "110",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/110",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:25.862Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.1,
+    "trendHolo": 0.61,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-111": {
+   "name": "Pokédex HANDY910is",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "111",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/111",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:26.110Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.15,
+    "trendHolo": 0.7,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-114": {
+   "name": "Speed Stadium",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "114",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/114",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:26.447Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.3,
+    "trendHolo": 0.89,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-115": {
+   "name": "Super Scoop Up",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "115",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/115",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:27.100Z",
+   "price": {
+    "trend": 0.28,
+    "avg30": 0.3,
+    "trendHolo": 3.15,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-117": {
+   "name": "Energy Search",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "117",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/117",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:28.082Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 0.06,
+    "trendHolo": 1.95,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-113": {
+   "name": "Rival",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "113",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/113",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:28.606Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.18,
+    "trendHolo": 1.17,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp1-118": {
+   "name": "Potion",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "118",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/118",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:30.122Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.05,
+    "trendHolo": 0.64,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-119": {
+   "name": "Switch",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "119",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/119",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:30.603Z",
+   "price": {
+    "trend": 0.48,
+    "avg30": 0.4,
+    "trendHolo": 2.48,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-123": {
+   "name": "Grass Energy",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "123",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/123",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:31.173Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.07,
+    "trendHolo": 2.79,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-124": {
+   "name": "Fire Energy",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "124",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/124",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:31.593Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.09,
+    "trendHolo": 2.24,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-130": {
+   "name": "Metal Energy",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "130",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/130",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:33.272Z",
+   "price": {
+    "trend": 0.42,
+    "avg30": 0.24,
+    "trendHolo": 4.84,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp1-129": {
+   "name": "Darkness Energy",
+   "set": "dp1",
+   "setName": "Diamond & Pearl",
+   "serie": "dp",
+   "num": "129",
+   "official": 130,
+   "img": "https://assets.tcgdex.net/en/dp/dp1/129",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:03:33.639Z",
+   "price": {
+    "trend": 0.54,
+    "avg30": 0.32,
+    "trendHolo": 8.56,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
    "rarity": "Common"
   }
  },
