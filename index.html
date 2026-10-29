@@ -513,7 +513,7 @@ async function pool(items, n, fn) {
 }
 
 /* ================= Settings & collection ================= */
-const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, quickPocketN: 2, tcgF: 'all', pocketF: 'all', tcgView: 'grid', binderSize: 9, tcgSort: 'num', pocketSort: 'num', colSort: 'set', wishOpenOnly: true, pWishOpenOnly: true, advMode: 'new', adv2: false, groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
+const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, quickPocketN: 2, tcgF: 'all', pocketF: 'all', tcgView: 'grid', binderSize: 9, tcgSort: 'num', pocketSort: 'num', colSort: 'set', wishOpenOnly: true, pWishOpenOnly: true, advMode: 'new', adv2: false, hideReprints: false, groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
 let settingsWarned = false;
 const saveSettings = () => {
   if (!LS.set(SETTINGS_KEY, S) && !settingsWarned) {
@@ -1396,7 +1396,10 @@ async function viewPocketSet(code, q) {
   if (!set) { V.innerHTML = errBox('Unbekanntes Set: ' + code); return; }
   try { await pocketDeSet(code); } catch { }
   if (rid !== renderId) return;
-  const cards = P.bySet[code];
+  const allCards = P.bySet[code];
+  const isReprint = c => ck(c.key) !== c.key;   // ältere Version existiert in einem anderen Set
+  const nReprint = allCards.filter(isReprint).length;
+  let cards = nReprint && S.hideReprints ? allCards.filter(c => !isReprint(c)) : allCards;
   const PF = [['all', 'Alle'], ['own', 'Habe ich'], ['miss', 'Fehlen'], ['half', '1 von 2'], ['trade', 'Zum Tauschen'], ['wish', '★ Wunsch']];
   const PPASS = {
     all: () => true, own: c => pc(c.key) > 0, miss: c => pc(c.key) === 0, half: c => pc(c.key) === 1,
@@ -1414,7 +1417,7 @@ async function viewPocketSet(code, q) {
   V.innerHTML = `<div id="setnav">${setNavHtml(nb(order[oi - 1]), nb(order[oi + 1]), 'pocket')}</div><section class="set-head">
       ${pocketLogo(code)}
       <div class="info"><h1>${esc(setTitle(set))}</h1>
-        <div class="muted">${esc(code)}${set.releaseDate ? ' · ' + fmtDate(set.releaseDate) : ''} · ${cards.length} Karten</div>
+        <div class="muted">${esc(code)}${set.releaseDate ? ' · ' + fmtDate(set.releaseDate) : ''} · ${allCards.length} Karten${nReprint ? `, davon ${allCards.length - nReprint} exklusiv und ${nReprint} Nachdruck${nReprint === 1 ? '' : 'e'}` : ''}</div>
         <div class="headstats" id="hs"></div></div>
     </section>
     <section class="packs" id="packs"></section>
@@ -1423,6 +1426,7 @@ async function viewPocketSet(code, q) {
       <input type="search" id="q" placeholder="Name oder Nummer">
       ${sortSel(PSORT, PSF[S.pocketSort] ? S.pocketSort : 'num')}
       ${quickSwitch('quickPocket', 'Schnellerfassung')}
+      ${nReprint ? `<label class="switch" title="Blendet Karten aus, die es schon in einem älteren Set gibt (gleiche Karte, gleiche Anzahl). Übrig bleiben die Karten, die es nur hier gibt."><input type="checkbox" data-hiderep ${S.hideReprints ? 'checked' : ''}> nur exklusive Karten <small class="muted">(${nReprint} Nachdruck${nReprint === 1 ? '' : 'e'} ausblenden)</small></label>` : ''}
       <div class="seg" id="segN" title="Auf welche Anzahl Antippen eine Karte setzt"><button type="button" data-qn="1" class="${S.quickPocketN === 1 ? 'on' : ''}">Antippen = 1</button><button type="button" data-qn="2" class="${S.quickPocketN === 1 ? '' : 'on'}">Antippen = 2</button></div>
     </div>
     <div class="grid" id="grid"></div>
@@ -1471,6 +1475,7 @@ async function viewPocketSet(code, q) {
     if (handleQuickSwitch(e)) return;
     if (e.target.id === 'sort') { S.pocketSort = e.target.value; saveSettings(); grid(); }
     if (e.target.matches('[data-adv2]')) { S.adv2 = e.target.checked; saveSettings(); packs(); }
+    if (e.target.matches('[data-hiderep]')) { S.hideReprints = e.target.checked; saveSettings(); cards = S.hideReprints ? allCards.filter(c => !isReprint(c)) : allCards; head(); grid(); }
   };
   V.onclick = e => {
     const g = e.target.closest('[data-grp]');
