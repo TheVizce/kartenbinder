@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:28:31.851Z",
+ "updated": "2026-10-29T19:29:22.523Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -126,6 +126,153 @@
     "trend": 0.44,
     "avg30": 0.47,
     "trendHolo": 4.97,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-1": {
+   "name": "Pinsir",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "1",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/1",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:29:08.393Z",
+   "price": {
+    "trend": 0.55,
+    "avg30": 0.65,
+    "trendHolo": 0.94,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Rare"
+  },
+  "bw4-6": {
+   "name": "Pansage",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "6",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/6",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:29:10.425Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.18,
+    "trendHolo": 0.81,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-8": {
+   "name": "Foongus",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "8",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/8",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:29:12.576Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.15,
+    "trendHolo": 0.69,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-10": {
+   "name": "Growlithe",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "10",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/10",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:29:15.375Z",
+   "price": {
+    "trend": 0.29,
+    "avg30": 0.38,
+    "trendHolo": 1.02,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-11": {
+   "name": "Growlithe",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "11",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/11",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:29:17.108Z",
+   "price": {
+    "trend": 0.29,
+    "avg30": 0.38,
+    "trendHolo": 1.02,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-13": {
+   "name": "Arcanine",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "13",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/13",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:29:19.409Z",
+   "price": {
+    "trend": 8.55,
+    "avg30": 9.25,
+    "trendHolo": 10.13,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-15": {
+   "name": "Pansear",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "15",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/15",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:29:22.523Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.14,
+    "trendHolo": 0.76,
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Common"
