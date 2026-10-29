@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:29:22.523Z",
+ "updated": "2026-10-29T19:29:37.522Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -235,27 +235,6 @@
    },
    "rarity": "Common"
   },
-  "bw4-13": {
-   "name": "Arcanine",
-   "set": "bw4",
-   "setName": "Next Destinies",
-   "serie": "bw",
-   "num": "13",
-   "official": 99,
-   "img": "https://assets.tcgdex.net/en/bw/bw4/13",
-   "cardLang": "en",
-   "v": {
-    "normal": 1
-   },
-   "added": "2026-10-29T19:29:19.409Z",
-   "price": {
-    "trend": 8.55,
-    "avg30": 9.25,
-    "trendHolo": 10.13,
-    "at": "2026-10-29T17:48:09.101Z"
-   },
-   "rarity": "Uncommon"
-  },
   "bw4-15": {
    "name": "Pansear",
    "set": "bw4",
@@ -276,6 +255,28 @@
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Common"
+  },
+  "bw4-13": {
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:29:37.521Z",
+   "name": "Arcanine",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "13",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/13",
+   "rarity": "Uncommon",
+   "cardLang": "en",
+   "price": {
+    "trend": 8.55,
+    "avg30": 9.25,
+    "trendHolo": 10.13,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "lng": "de"
   }
  },
  "pocket": {
