@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:54:29.975Z",
+ "updated": "2026-10-29T19:55:47.780Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -11068,6 +11068,1050 @@
     "at": "2026-10-29T17:48:09.269Z"
    },
    "rarity": "Common"
+  },
+  "dp6-15": {
+   "name": "Regigigas",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "15",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/15",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:52.925Z",
+   "price": {
+    "trend": 15.91,
+    "avg30": 7.16,
+    "trendHolo": 8,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare Holo"
+  },
+  "dp6-30": {
+   "name": "Heatran",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "30",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/30",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:57.072Z",
+   "price": {
+    "trend": 3.22,
+    "avg30": 2.65,
+    "trendHolo": 3.19,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp6-40": {
+   "name": "Shedinja",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "40",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:59.779Z",
+   "price": {
+    "trend": 2.49,
+    "avg30": 2.48,
+    "trendHolo": 3.13,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp6-41": {
+   "name": "Torkoal",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "41",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/41",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:00.094Z",
+   "price": {
+    "trend": 1.41,
+    "avg30": 1.2,
+    "trendHolo": 2.36,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp6-47": {
+   "name": "Camerupt",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "47",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/47",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:02.443Z",
+   "price": {
+    "trend": 0.41,
+    "avg30": 0.32,
+    "trendHolo": 1.78,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-50": {
+   "name": "Castform Snow-cloud Form",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "50",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:02.719Z",
+   "rarity": "Uncommon"
+  },
+  "dp6-53": {
+   "name": "Drifblim",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "53",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/53",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:03.079Z",
+   "price": {
+    "trend": 0.5,
+    "avg30": 0.37,
+    "trendHolo": 1.17,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-54": {
+   "name": "Exeggutor",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "54",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/54",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:03.875Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.38,
+    "trendHolo": 3.14,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-57": {
+   "name": "Houndoom",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "57",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/57",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:05.547Z",
+   "price": {
+    "trend": 0.76,
+    "avg30": 0.99,
+    "trendHolo": 15.33,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-56": {
+   "name": "Grumpig",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "56",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:06.297Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.28,
+    "trendHolo": 0.96,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-59": {
+   "name": "Lanturn",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "59",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:06.837Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.47,
+    "trendHolo": 1.37,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-61": {
+   "name": "Lucario",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "61",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:07.685Z",
+   "price": {
+    "trend": 1.38,
+    "avg30": 1.95,
+    "trendHolo": 7.46,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-63": {
+   "name": "Marowak",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "63",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:08.144Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.33,
+    "trendHolo": 2.84,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-66": {
+   "name": "Mightyena",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "66",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:10.843Z",
+   "price": {
+    "trend": 0.46,
+    "avg30": 0.46,
+    "trendHolo": 3.91,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-67": {
+   "name": "Ninjask",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "67",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/67",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:11.893Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.3,
+    "trendHolo": 1.36,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-68": {
+   "name": "Persian",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "68",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:13.925Z",
+   "price": {
+    "trend": 0.22,
+    "avg30": 0.36,
+    "trendHolo": 3.12,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-84": {
+   "name": "Beldum",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "84",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:21.613Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.27,
+    "trendHolo": 2.85,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-87": {
+   "name": "Chinchou",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "87",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:22.220Z",
+   "price": {
+    "trend": 0.34,
+    "avg30": 0.3,
+    "trendHolo": 1.23,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-86": {
+   "name": "Buneary",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "86",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/86",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:22.588Z",
+   "price": {
+    "trend": 0.29,
+    "avg30": 0.25,
+    "trendHolo": 2.45,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-89": {
+   "name": "Corphish",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "89",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/89",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:23.000Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.18,
+    "trendHolo": 2.17,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-90": {
+   "name": "Cubone",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "90",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:23.337Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.31,
+    "trendHolo": 21.47,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-97": {
+   "name": "Gloom",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "97",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:26.682Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.41,
+    "trendHolo": 3.29,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-94": {
+   "name": "Gligar",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "94",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:27.170Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.12,
+    "trendHolo": 2.08,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-91": {
+   "name": "Dratini",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "91",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:27.507Z",
+   "price": {
+    "trend": 1.14,
+    "avg30": 1.06,
+    "trendHolo": 7.4,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-92": {
+   "name": "Drifloon",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "92",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:27.846Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.24,
+    "trendHolo": 2.52,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-93": {
+   "name": "Exeggcute",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "93",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/93",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:28.220Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.21,
+    "trendHolo": 1.87,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-106": {
+   "name": "Meowth",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "106",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/106",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:30.185Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.28,
+    "trendHolo": 10.77,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-103": {
+   "name": "Houndour",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "103",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/103",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:30.516Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.24,
+    "trendHolo": 3.34,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-104": {
+   "name": "Ledyba",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "104",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/104",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:30.837Z",
+   "price": {
+    "trend": 0.08,
+    "avg30": 0.11,
+    "trendHolo": 1.75,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-105": {
+   "name": "Lileep",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "105",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/105",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:31.131Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.24,
+    "trendHolo": 3.18,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-108": {
+   "name": "Nincada",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "108",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/108",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:31.527Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.19,
+    "trendHolo": 1.17,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-115": {
+   "name": "Poliwhirl",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "115",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/115",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:34.220Z",
+   "price": {
+    "trend": 0.59,
+    "avg30": 0.66,
+    "trendHolo": 4.84,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-116": {
+   "name": "Poochyena",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "116",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/116",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:34.573Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.26,
+    "trendHolo": 2.41,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-113": {
+   "name": "Pineco",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "113",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/113",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:34.926Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.11,
+    "trendHolo": 1.62,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-112": {
+   "name": "Oddish",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "112",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/112",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:35.217Z",
+   "price": {
+    "trend": 1.09,
+    "avg30": 0.77,
+    "trendHolo": 5.06,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-110": {
+   "name": "Numel",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "110",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/110",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:35.577Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.14,
+    "trendHolo": 3.5,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-121": {
+   "name": "Spoink",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "121",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/121",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:38.059Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.14,
+    "trendHolo": 2.74,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-118": {
+   "name": "Shinx",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "118",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/118",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:38.374Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.28,
+    "trendHolo": 5.73,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-119": {
+   "name": "Skitty",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "119",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/119",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:38.669Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.4,
+    "trendHolo": 11.41,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-120": {
+   "name": "Sneasel",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "120",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/120",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:38.959Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.26,
+    "trendHolo": 2.45,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-123": {
+   "name": "Swinub",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "123",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/123",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:39.259Z",
+   "price": {
+    "trend": 0.07,
+    "avg30": 0.11,
+    "trendHolo": 2.33,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-122": {
+   "name": "Staryu",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "122",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/122",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:39.597Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.18,
+    "trendHolo": 2.06,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-126": {
+   "name": "Tyrogue",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "126",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/126",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:40.009Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.29,
+    "trendHolo": 1.76,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-127": {
+   "name": "Weepinbell",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "127",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/127",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:42.777Z",
+   "price": {
+    "trend": 0.29,
+    "avg30": 0.26,
+    "trendHolo": 1.67,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-128": {
+   "name": "Yanma",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "128",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/128",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:43.130Z",
+   "price": {
+    "trend": 0.05,
+    "avg30": 0.09,
+    "trendHolo": 1.27,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "dp6-129": {
+   "name": "Bubble Coat",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "129",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/129",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:44.054Z",
+   "price": {
+    "trend": 0.82,
+    "avg30": 1.24,
+    "trendHolo": 3.18,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-131": {
+   "name": "Cynthia's Feelings",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "131",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/131",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:44.690Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.28,
+    "trendHolo": 2.98,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-134": {
+   "name": "Snowpoint Temple",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "134",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/134",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:45.012Z",
+   "price": {
+    "trend": 0.38,
+    "avg30": 0.37,
+    "trendHolo": 2.27,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-133": {
+   "name": "Poké Radar",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "133",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/133",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:45.349Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.14,
+    "trendHolo": 0.5,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp6-136": {
+   "name": "Technical Machine TS-1",
+   "set": "dp6",
+   "setName": "Legends Awakened",
+   "serie": "dp",
+   "num": "136",
+   "official": 146,
+   "img": "https://assets.tcgdex.net/en/dp/dp6/136",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:55:47.779Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.14,
+    "trendHolo": 0.91,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
