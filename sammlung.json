@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:05:01.587Z",
+ "updated": "2026-10-29T20:05:37.467Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -17298,6 +17298,174 @@
     "normal": 1
    },
    "added": "2026-10-29T20:05:01.586Z",
+   "rarity": "Uncommon"
+  },
+  "ex14-28": {
+   "name": "Venusaur",
+   "set": "ex14",
+   "setName": "Crystal Guardians",
+   "serie": "ex",
+   "num": "28",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex14/28",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:20.433Z",
+   "price": {
+    "trend": 9.44,
+    "avg30": 11.16,
+    "trendHolo": 46.89,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex14-46": {
+   "name": "Bulbasaur",
+   "set": "ex14",
+   "setName": "Crystal Guardians",
+   "serie": "ex",
+   "num": "46",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex14/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:28.145Z",
+   "price": {
+    "trend": 1.31,
+    "avg30": 2.17,
+    "trendHolo": 59.26,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex14-56": {
+   "name": "Meditite",
+   "set": "ex14",
+   "setName": "Crystal Guardians",
+   "serie": "ex",
+   "num": "56",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex14/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:30.603Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.23,
+    "trendHolo": 4.85,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "ex14-60": {
+   "name": "Seedot",
+   "set": "ex14",
+   "setName": "Crystal Guardians",
+   "serie": "ex",
+   "num": "60",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex14/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:31.062Z",
+   "price": {
+    "trend": 0.39,
+    "avg30": 0.37,
+    "trendHolo": 16.96,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ex14-61": {
+   "name": "Spearow",
+   "set": "ex14",
+   "setName": "Crystal Guardians",
+   "serie": "ex",
+   "num": "61",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex14/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:31.518Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.17,
+    "trendHolo": 4.16,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "ex14-70": {
+   "name": "Wingull",
+   "set": "ex14",
+   "setName": "Crystal Guardians",
+   "serie": "ex",
+   "num": "70",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex14/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:33.678Z",
+   "price": {
+    "trend": 0.45,
+    "avg30": 0.27,
+    "trendHolo": 8.02,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "ex14-71": {
+   "name": "Bill's Maintenance",
+   "set": "ex14",
+   "setName": "Crystal Guardians",
+   "serie": "ex",
+   "num": "71",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex14/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:34.458Z",
+   "price": {
+    "trend": 0.29,
+    "avg30": 0.26,
+    "trendHolo": 4.8,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex14-82": {
+   "name": "Poké Ball",
+   "set": "ex14",
+   "setName": "Crystal Guardians",
+   "serie": "ex",
+   "num": "82",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex14/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:37.466Z",
+   "price": {
+    "trend": 0.77,
+    "avg30": 0.36,
+    "trendHolo": 6.09,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
    "rarity": "Uncommon"
   }
  },
