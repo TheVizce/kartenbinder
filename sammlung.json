@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:06:23.458Z",
+ "updated": "2026-10-29T20:06:53.600Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -18013,6 +18013,615 @@
     "at": "2026-10-29T08:33:43.532Z"
    },
    "rarity": "Rare"
+  },
+  "ex12-20": {
+   "name": "Lunatone",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "20",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/20",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:34.453Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 3.17,
+    "trendHolo": 13.03,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex12-28": {
+   "name": "Wobbuffet",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "28",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/28",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:36.178Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 1.96,
+    "trendHolo": 11.3,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex12-29": {
+   "name": "Anorith",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "29",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/29",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:36.484Z",
+   "price": {
+    "trend": 0.83,
+    "avg30": 0.92,
+    "trendHolo": 12.03,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-30": {
+   "name": "Cascoon",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "30",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/30",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:37.319Z",
+   "price": {
+    "trend": 2.39,
+    "avg30": 1.16,
+    "trendHolo": 24.85,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-34": {
+   "name": "Graveler",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "34",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/34",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:38.209Z",
+   "price": {
+    "trend": 1.41,
+    "avg30": 0.81,
+    "trendHolo": 30.44,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-35": {
+   "name": "Haunter",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "35",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:38.524Z",
+   "price": {
+    "trend": 1.99,
+    "avg30": 2.49,
+    "trendHolo": 252.24,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-37": {
+   "name": "Kecleon",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "37",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/37",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:39.957Z",
+   "price": {
+    "trend": 3.26,
+    "avg30": 3.67,
+    "trendHolo": 19.04,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-39": {
+   "name": "Machoke",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "39",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/39",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:40.347Z",
+   "price": {
+    "trend": 1.12,
+    "avg30": 1.02,
+    "trendHolo": 82.2,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-45": {
+   "name": "Tentacruel",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "45",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/45",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:41.046Z",
+   "price": {
+    "trend": 0.81,
+    "avg30": 0.61,
+    "trendHolo": 19.64,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-47": {
+   "name": "Weepinbell",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "47",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/47",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:42.335Z",
+   "price": {
+    "trend": 0.67,
+    "avg30": 0.71,
+    "trendHolo": 16.32,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-51": {
+   "name": "Clamperl",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "51",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/51",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:42.635Z",
+   "price": {
+    "trend": 0.33,
+    "avg30": 0.32,
+    "trendHolo": 6.95,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-49": {
+   "name": "Bellsprout",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "49",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/49",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:42.950Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.3,
+    "trendHolo": 9.67,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-52": {
+   "name": "Gastly",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "52",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:43.303Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.47,
+    "trendHolo": 58.67,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-53": {
+   "name": "Geodude",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "53",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/53",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:43.655Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.2,
+    "trendHolo": 59.21,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-58": {
+   "name": "Magby",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "58",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:45.335Z",
+   "price": {
+    "trend": 1.54,
+    "avg30": 1.34,
+    "trendHolo": 30.73,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-56": {
+   "name": "Lileep",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "56",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:45.642Z",
+   "price": {
+    "trend": 1.43,
+    "avg30": 0.62,
+    "trendHolo": 6.65,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-60": {
+   "name": "Omanyte",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "60",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:45.965Z",
+   "price": {
+    "trend": 3.76,
+    "avg30": 3.48,
+    "trendHolo": 119.68,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-64": {
+   "name": "Skitty",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "64",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:47.286Z",
+   "price": {
+    "trend": 0.7,
+    "avg30": 0.42,
+    "trendHolo": 16.03,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-65": {
+   "name": "Spheal",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "65",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:47.607Z",
+   "price": {
+    "trend": 0.31,
+    "avg30": 0.32,
+    "trendHolo": 11.08,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-66": {
+   "name": "Tentacool",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "66",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:47.885Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.36,
+    "trendHolo": 10.36,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-68": {
+   "name": "Voltorb",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "68",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:48.244Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.24,
+    "trendHolo": 18.35,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-71": {
+   "name": "Wynaut",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "71",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:48.537Z",
+   "price": {
+    "trend": 1.26,
+    "avg30": 1.7,
+    "trendHolo": 37.46,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-73": {
+   "name": "Fieldworker",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "73",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/73",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:50.286Z",
+   "price": {
+    "trend": 0.69,
+    "avg30": 0.68,
+    "trendHolo": 51.51,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-76": {
+   "name": "Power Tree",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "76",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/76",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:50.585Z",
+   "price": {
+    "trend": 0.48,
+    "avg30": 0.45,
+    "trendHolo": 8.04,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-77": {
+   "name": "Strange Cave",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "77",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/77",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:50.946Z",
+   "price": {
+    "trend": 0.49,
+    "avg30": 0.51,
+    "trendHolo": 6.06,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-78": {
+   "name": "Claw Fossil",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "78",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/78",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:51.276Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.17,
+    "trendHolo": 2.61,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-75": {
+   "name": "Giant Stump",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "75",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:51.597Z",
+   "price": {
+    "trend": 0.9,
+    "avg30": 1.02,
+    "trendHolo": 5.54,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex12-80": {
+   "name": "Root Fossil",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "80",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:52.100Z",
+   "price": {
+    "trend": 0.48,
+    "avg30": 0.2,
+    "trendHolo": 3.26,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "ex12-82": {
+   "name": "React Energy",
+   "set": "ex12",
+   "setName": "Legend Maker",
+   "serie": "ex",
+   "num": "82",
+   "official": 92,
+   "img": "https://assets.tcgdex.net/en/ex/ex12/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:53.600Z",
+   "price": {
+    "trend": 0.73,
+    "avg30": 0.42,
+    "trendHolo": 4.53,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
