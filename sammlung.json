@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:01:30.526Z",
+ "updated": "2026-10-29T20:01:52.553Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -15875,6 +15875,27 @@
     "avg30": 1.04,
     "trendHolo": 1.29,
     "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp2-36": {
+   "name": "Toxicroak",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "36",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/36",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:52.553Z",
+   "price": {
+    "trend": 0.52,
+    "avg30": 0.79,
+    "trendHolo": 1.2,
+    "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Rare"
   }
