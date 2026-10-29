@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:22:45.519Z",
+ "updated": "2026-10-29T20:23:17.213Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23353,6 +23353,69 @@
     "avg30": 13.78,
     "trendHolo": 10.21,
     "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "None"
+  },
+  "2011bw-1": {
+   "name": "Snivy",
+   "set": "2011bw",
+   "setName": "McDonald's Collection 2011",
+   "serie": "mc",
+   "num": "1",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/mc/2011bw/1",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:23:12.054Z",
+   "price": {
+    "trend": 2.39,
+    "avg30": 1.75,
+    "trendHolo": 1.13,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "None"
+  },
+  "2011bw-11": {
+   "name": "Pidove",
+   "set": "2011bw",
+   "setName": "McDonald's Collection 2011",
+   "serie": "mc",
+   "num": "11",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/mc/2011bw/11",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:23:16.756Z",
+   "price": {
+    "trend": 2.48,
+    "avg30": 2.47,
+    "trendHolo": 1.25,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "None"
+  },
+  "2011bw-12": {
+   "name": "Audino",
+   "set": "2011bw",
+   "setName": "McDonald's Collection 2011",
+   "serie": "mc",
+   "num": "12",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/mc/2011bw/12",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:23:17.213Z",
+   "price": {
+    "trend": 1.13,
+    "avg30": 1.78,
+    "trendHolo": 0.52,
+    "at": "2026-10-29T08:33:43.532Z"
    },
    "rarity": "None"
   }
