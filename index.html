@@ -71,6 +71,9 @@ input:focus,select:focus,textarea:focus{border-color:var(--accent)}
 .switch input:checked::after{left:18px}
 .bar{height:6px;background:var(--panel2);border-radius:99px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.bar.b2 i{background:var(--ok)}
+.q2{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:-3px}
+.stat .bar{margin-top:8px}
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r)}
 .empty{padding:40px 20px;text-align:center;color:var(--muted)}
 .loading{padding:60px 0;text-align:center;color:var(--muted)}
@@ -299,7 +302,7 @@ const natCmp = (a, b) => String(a).localeCompare(String(b), 'de', { numeric: tru
 const norm = s => String(s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
 const loading = (t = 'Lade …') => `<div class="loading">${esc(t)}</div>`;
 const errBox = (t, e) => `<div class="err"><b>${esc(t)}</b><br><span class="muted">${esc(e?.message || e || '')}</span></div>`;
-const bar = (a, b) => `<div class="bar"><i style="width:${b ? Math.round(a / b * 1000) / 10 : 0}%"></i></div>`;
+const bar = (a, b, cls = '') => `<div class="bar ${cls}"><i style="width:${b ? Math.round(a / b * 1000) / 10 : 0}%"></i></div>`;
 
 function toast(msg, bad) {
   const t = $('#toast'); t.textContent = msg; t.className = 'show' + (bad ? ' bad' : '');
@@ -1295,25 +1298,26 @@ async function viewPocketSets() {
   const draw = () => {
     if (rid !== renderId) return;
     const inc = new Set(S.groups);
-    let all = 0, have = 0;
-    for (const c of P.cards) if (inc.has(grpOf(c.rarity))) { all++; if (pc(c.key)) have++; }
+    let all = 0, have = 0, have2 = 0;
+    for (const c of P.cards) if (inc.has(grpOf(c.rarity))) { all++; if (pc(c.key)) have++; if (pc(c.key) >= 2) have2++; }
     const copies = Object.values(col.pocket).reduce((a, b) => a + (+b || 0), 0);
     const sets = P.setList.slice().sort((a, b) => (b.releaseDate || '').localeCompare(a.releaseDate || '') || (a.code.startsWith('PROMO') ? 1 : -1));
     V.innerHTML = `<div class="stats">
-        <div class="panel stat"><b>${nf(have)} / ${nf(all)}</b><span>Karten (gewählte Seltenheiten)</span></div>
+        <div class="panel stat"><b>${nf(have)} / ${nf(all)}</b><span>Karten (gewählte Seltenheiten) · ${all ? pct(have / all) : '–'}</span>${bar(have, all)}</div>
+        <div class="panel stat"><b>${nf(have2)} / ${nf(all)}</b><span>2 von 2 – deckfertig · ${all ? pct(have2 / all) : '–'}</span>${bar(have2, all, 'b2')}</div>
         <div class="panel stat"><b>${nf(copies)}</b><span>Karten inkl. Doppelte</span></div>
-        <div class="panel stat"><b>${all ? pct(have / all) : '–'}</b><span>Fortschritt</span></div>
       </div>
       <div class="toolbar">${groupChips()}<span class="muted" style="font-size:13px">zählen für Fortschritt &amp; Pack-Chancen</span></div>
       <div class="sets">${sets.map(s => {
         const cards = P.bySet[s.code];
-        const g = {}; let t = 0, h = 0;
-        for (const c of cards) { const gg = grpOf(c.rarity); g[gg] = g[gg] || [0, 0]; g[gg][1]++; if (pc(c.key)) g[gg][0]++; if (inc.has(gg)) { t++; if (pc(c.key)) h++; } }
+        const g = {}; let t = 0, h = 0, h2 = 0;
+        for (const c of cards) { const gg = grpOf(c.rarity); g[gg] = g[gg] || [0, 0]; g[gg][1]++; if (pc(c.key)) g[gg][0]++; if (inc.has(gg)) { t++; if (pc(c.key)) h++; if (pc(c.key) >= 2) h2++; } }
         const packs = P.pull[s.code] ? (s.packs || []).map(p => ({ p, st: packStats(s.code, p, inc) })).filter(x => x.st.total) : [];
         return `<a class="panel set ${h ? 'has' : ''}" href="#/pocket/set/${encodeURIComponent(s.code)}">
           ${pocketLogo(s.code)}
           <h3>${esc(setTitle(s))}</h3>
           <div class="row"><span>${esc(s.code)}${s.releaseDate ? ' · ' + fmtDate(s.releaseDate) : ''}</span><span>${h} / ${t}</span></div>${bar(h, t)}
+          <div class="q2"><span>2 von 2</span><span>${h2} / ${t}</span></div>${bar(h2, t, 'b2')}
           <div class="groups">${GROUPS.filter(([k]) => g[k]).map(([k, l]) => `<span>${l.split(' ')[0]} ${g[k][0]}/${g[k][1]}</span>`).join('')}</div>
           ${packs.length ? `<div class="groups">${packs.map(x => packOpen(s.code, x.p)
             ? `<span title="Chance auf mindestens eine neue Karte pro Pack">${esc(packName(s.code, x.p))}: <b style="color:var(--text)">${pct(x.st.pAny)}</b></span>`
@@ -1367,9 +1371,11 @@ async function viewPocketSet(code, q) {
     ${hasRates ? `<p class="note">Chance = Wahrscheinlichkeit, in einem Pack mindestens eine Karte zu ziehen, die dir noch fehlt (nur gewählte Seltenheiten). Grundlage sind die offiziellen Raten pro Kartenplatz inkl. seltener Packs; innerhalb einer Seltenheit wird jede Karte des Packs als gleich wahrscheinlich angenommen. Pack-Punkte = Kosten, um alle fehlenden Karten mit Pack-Punkten zu holen.</p>` : /^PROMO/.test(code) ? `<p class="note">Promo-Karten gibt es nicht in Boostern, sondern über Events, Missionen oder den Shop.</p>` : `<p class="note">Für dieses Set sind noch keine Zieh-Raten veröffentlicht. Sobald die Datenbank sie nachliefert, erscheinen hier und im Pack-Berater automatisch die Chancen.</p>`}`;
   const head = () => {
     const inc = new Set(S.groups);
-    let t = 0, h = 0, cost = 0;
-    for (const c of cards) if (inc.has(grpOf(c.rarity))) { t++; if (pc(c.key)) h++; else cost += (P.rar[c.rarity] && P.rar[c.rarity].points) || 0; }
-    $('#hs', V).innerHTML = `<b>${h} / ${t}</b>${bar(h, t)}${hasRates ? `<span class="muted">Fehlende per Pack-Punkte: ${nf(cost)}</span>` : ''}`;
+    let t = 0, h = 0, h2 = 0, cost = 0;
+    for (const c of cards) if (inc.has(grpOf(c.rarity))) { t++; if (pc(c.key)) h++; else cost += (P.rar[c.rarity] && P.rar[c.rarity].points) || 0; if (pc(c.key) >= 2) h2++; }
+    $('#hs', V).innerHTML = `<b>${h} / ${t}</b>${bar(h, t)}<span class="muted">mindestens 1×</span>
+      <span style="flex-basis:100%;height:0"></span><b>${h2} / ${t}</b>${bar(h2, t, 'b2')}<span class="muted">2 von 2 – deckfertig</span>
+      ${hasRates ? `<span style="flex-basis:100%;height:0"></span><span class="muted">Fehlende per Pack-Punkte: ${nf(cost)}</span>` : ''}`;
   };
   const packs = () => {
     if (!hasRates || !(set.packs || []).length) { $('#packs', V).innerHTML = ''; return; }
