@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:03:33.640Z",
+ "updated": "2026-10-29T20:04:32.545Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -17179,6 +17179,69 @@
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Common"
+  },
+  "ex16-35": {
+   "name": "Metang",
+   "set": "ex16",
+   "setName": "Power Keepers",
+   "serie": "ex",
+   "num": "35",
+   "official": 108,
+   "img": "https://assets.tcgdex.net/en/ex/ex16/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:04:21.243Z",
+   "price": {
+    "trend": 0.84,
+    "avg30": 1.42,
+    "trendHolo": 11.09,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex16-68": {
+   "name": "Trapinch",
+   "set": "ex16",
+   "setName": "Power Keepers",
+   "serie": "ex",
+   "num": "68",
+   "official": 108,
+   "img": "https://assets.tcgdex.net/en/ex/ex16/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:04:27.587Z",
+   "price": {
+    "trend": 0.39,
+    "avg30": 0.49,
+    "trendHolo": 7.52,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "ex16-107": {
+   "name": "Psychic Energy",
+   "set": "ex16",
+   "setName": "Power Keepers",
+   "serie": "ex",
+   "num": "107",
+   "official": 108,
+   "img": "https://assets.tcgdex.net/en/ex/ex16/107",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:04:32.545Z",
+   "price": {
+    "trend": 2.25,
+    "avg30": 2.75,
+    "trendHolo": 3.38,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Rare"
   }
  },
  "pocket": {
