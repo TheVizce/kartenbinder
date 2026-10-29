@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:20:09.988Z",
+ "updated": "2026-10-29T20:20:31.423Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22808,6 +22808,132 @@
     "normal": 1
    },
    "added": "2026-10-29T20:20:09.988Z",
+   "rarity": "Common"
+  },
+  "base2-37": {
+   "name": "Gloom",
+   "set": "base2",
+   "setName": "Jungle",
+   "serie": "base",
+   "num": "37",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/base/base2/37",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:26.398Z",
+   "price": {
+    "trend": 1.12,
+    "avg30": 1.05,
+    "trendHolo": 0.35,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "base2-52": {
+   "name": "Exeggcute",
+   "set": "base2",
+   "setName": "Jungle",
+   "serie": "base",
+   "num": "52",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/base/base2/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:27.877Z",
+   "price": {
+    "trend": 0.51,
+    "avg30": 0.54,
+    "trendHolo": 1.15,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "base2-55": {
+   "name": "Mankey",
+   "set": "base2",
+   "setName": "Jungle",
+   "serie": "base",
+   "num": "55",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/base/base2/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:29.271Z",
+   "price": {
+    "trend": 0.66,
+    "avg30": 0.61,
+    "trendHolo": 0.1,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "base2-56": {
+   "name": "Meowth",
+   "set": "base2",
+   "setName": "Jungle",
+   "serie": "base",
+   "num": "56",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/base/base2/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:29.564Z",
+   "price": {
+    "trend": 0.69,
+    "avg30": 0.75,
+    "trendHolo": 0.02,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "base2-59": {
+   "name": "Paras",
+   "set": "base2",
+   "setName": "Jungle",
+   "serie": "base",
+   "num": "59",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/base/base2/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:29.908Z",
+   "price": {
+    "trend": 0.68,
+    "avg30": 0.74,
+    "trendHolo": 0.29,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "base2-64": {
+   "name": "Poké Ball",
+   "set": "base2",
+   "setName": "Jungle",
+   "serie": "base",
+   "num": "64",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/base/base2/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:31.423Z",
+   "price": {
+    "trend": 0.54,
+    "avg30": 0.43,
+    "trendHolo": 0.3,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
    "rarity": "Common"
   }
  },
