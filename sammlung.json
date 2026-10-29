@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:34:28.487Z",
+ "updated": "2026-10-29T19:34:53.514Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -1285,6 +1285,51 @@
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Uncommon"
+  },
+  "bwp-BW02": {
+   "name": "Tepig",
+   "set": "bwp",
+   "setName": "BW Black Star Promos",
+   "serie": "bw",
+   "num": "BW02",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/bw/bwp/BW02",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:45.361Z",
+   "rarity": "Common"
+  },
+  "bwp-BW03": {
+   "name": "Oshawott",
+   "set": "bwp",
+   "setName": "BW Black Star Promos",
+   "serie": "bw",
+   "num": "BW03",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/bw/bwp/BW03",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:50.004Z",
+   "rarity": "Common"
+  },
+  "bwp-BW37": {
+   "name": "Kyurem-EX",
+   "set": "bwp",
+   "setName": "BW Black Star Promos",
+   "serie": "bw",
+   "num": "BW37",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/bw/bwp/BW37",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:53.514Z",
+   "rarity": "Rare"
   }
  },
  "pocket": {
