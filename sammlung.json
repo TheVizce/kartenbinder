@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:17:34.533Z",
+ "updated": "2026-10-29T20:17:57.874Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22416,6 +22416,69 @@
     "at": "2026-10-29T17:48:09.133Z"
    },
    "rarity": "Common"
+  },
+  "neo2-30": {
+   "name": "Smeargle",
+   "set": "neo2",
+   "setName": "Neo Discovery",
+   "serie": "neo",
+   "num": "30",
+   "official": 75,
+   "img": "https://assets.tcgdex.net/en/neo/neo2/30",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:17:53.441Z",
+   "price": {
+    "trend": 37.07,
+    "avg30": 28.77,
+    "trendHolo": 4.11,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Rare"
+  },
+  "neo2-40": {
+   "name": "Igglybuff",
+   "set": "neo2",
+   "setName": "Neo Discovery",
+   "serie": "neo",
+   "num": "40",
+   "official": 75,
+   "img": "https://assets.tcgdex.net/en/neo/neo2/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:17:56.276Z",
+   "price": {
+    "trend": 3.46,
+    "avg30": 2.9,
+    "trendHolo": 0.02,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "neo2-50": {
+   "name": "Unown [N]",
+   "set": "neo2",
+   "setName": "Neo Discovery",
+   "serie": "neo",
+   "num": "50",
+   "official": 75,
+   "img": "https://assets.tcgdex.net/en/neo/neo2/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:17:57.874Z",
+   "price": {
+    "trend": 0.9,
+    "avg30": 0.87,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
