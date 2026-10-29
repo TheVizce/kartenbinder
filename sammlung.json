@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:11:13.301Z",
+ "updated": "2026-10-29T20:11:48.725Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -20743,6 +20743,90 @@
     "at": "2026-10-29T17:48:09.133Z"
    },
    "rarity": "Common"
+  },
+  "ex4-43": {
+   "name": "Pikachu",
+   "set": "ex4",
+   "setName": "Team Magma vs Team Aqua",
+   "serie": "ex",
+   "num": "43",
+   "official": 95,
+   "img": "https://assets.tcgdex.net/en/ex/ex4/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:42.281Z",
+   "price": {
+    "trend": 1.7,
+    "avg30": 1.43,
+    "trendHolo": 3.3,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "ex4-50": {
+   "name": "Team Aqua's Corphish",
+   "set": "ex4",
+   "setName": "Team Magma vs Team Aqua",
+   "serie": "ex",
+   "num": "50",
+   "official": 95,
+   "img": "https://assets.tcgdex.net/en/ex/ex4/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:43.886Z",
+   "price": {
+    "trend": 1.08,
+    "avg30": 0.77,
+    "trendHolo": 8.11,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "ex4-59": {
+   "name": "Team Magma's Aron",
+   "set": "ex4",
+   "setName": "Team Magma vs Team Aqua",
+   "serie": "ex",
+   "num": "59",
+   "official": 95,
+   "img": "https://assets.tcgdex.net/en/ex/ex4/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:45.424Z",
+   "price": {
+    "trend": 1.43,
+    "avg30": 0.91,
+    "trendHolo": 30.21,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex4-86": {
+   "name": "Aqua Energy",
+   "set": "ex4",
+   "setName": "Team Magma vs Team Aqua",
+   "serie": "ex",
+   "num": "86",
+   "official": 95,
+   "img": "https://assets.tcgdex.net/en/ex/ex4/86",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:48.724Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.27,
+    "trendHolo": 2.56,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
