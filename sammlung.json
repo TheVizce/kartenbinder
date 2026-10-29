@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:48:01.834Z",
+ "updated": "2026-10-29T19:48:24.702Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -6343,6 +6343,174 @@
     "at": "2026-10-29T17:48:09.133Z"
    },
    "rarity": "Uncommon"
+  },
+  "pl4-85": {
+   "name": "Department Store Girl",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "85",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:15.066Z",
+   "price": {
+    "trend": 0.22,
+    "avg30": 0.21,
+    "trendHolo": 1.9,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-86": {
+   "name": "Energy Restore",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "86",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/86",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:15.372Z",
+   "price": {
+    "trend": 0.06,
+    "avg30": 0.14,
+    "trendHolo": 1.9,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-87": {
+   "name": "Expert Belt",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "87",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:15.740Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.22,
+    "trendHolo": 0.77,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-88": {
+   "name": "Lucky Egg",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "88",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:17.255Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.14,
+    "trendHolo": 0.94,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-90": {
+   "name": "Professor Oak's Visit",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "90",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:17.840Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.14,
+    "trendHolo": 1.96,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl4-92": {
+   "name": "Dome Fossil",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "92",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:21.259Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.14,
+    "trendHolo": 1.06,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-93": {
+   "name": "Helix Fossil",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "93",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/93",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:21.597Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.18,
+    "trendHolo": 1.31,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl4-AR6": {
+   "name": "Arceus",
+   "set": "pl4",
+   "setName": "Arceus",
+   "serie": "pl",
+   "num": "AR6",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/pl/pl4/AR6",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:24.701Z",
+   "price": {
+    "trend": 16.78,
+    "avg30": 18.93,
+    "trendHolo": 8.51,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare"
   }
  },
  "pocket": {
