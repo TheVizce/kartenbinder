@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:24:25.765Z",
+ "updated": "2026-10-29T20:24:28.337Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23543,6 +23543,42 @@
     "trendHolo": 0,
     "at": "2026-10-29T08:33:43.529Z"
    },
+   "rarity": "None"
+  },
+  "tk-ex-p-7": {
+   "name": "Spoink",
+   "set": "tk-ex-p",
+   "setName": "EX trainer Kit 2 (Plusle)",
+   "serie": "tk",
+   "num": "7",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/tk/tk-ex-p/7",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:27.152Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.2,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "None"
+  },
+  "tk-ex-p-9": {
+   "name": "Potion",
+   "set": "tk-ex-p",
+   "setName": "EX trainer Kit 2 (Plusle)",
+   "serie": "tk",
+   "num": "9",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/tk/tk-ex-p/9",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:28.337Z",
    "rarity": "None"
   }
  },
