@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:21:11.820Z",
+ "updated": "2026-10-29T20:22:11.318Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23292,6 +23292,27 @@
     "at": "2026-10-29T08:33:43.532Z"
    },
    "rarity": "Common"
+  },
+  "2019sm-11": {
+   "v": {
+    "holo": 1
+   },
+   "added": "2026-10-29T20:22:11.318Z",
+   "name": "Alolan Dugtrio",
+   "set": "2019sm",
+   "setName": "McDonald's Collection 2019",
+   "num": "11",
+   "official": 12,
+   "img": "",
+   "rarity": "None",
+   "cardLang": "en",
+   "price": {
+    "trend": 1.53,
+    "avg30": 2.54,
+    "trendHolo": 1.31,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "lng": "de"
   }
  },
  "pocket": {
