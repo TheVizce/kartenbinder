@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:35:47.230Z",
+ "updated": "2026-10-29T19:36:28.226Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -1624,6 +1624,237 @@
     "at": "2026-10-29T17:48:09.205Z"
    },
    "rarity": "Common"
+  },
+  "bw1-52": {
+   "name": "Venipede",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "52",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:35:51.498Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.21,
+    "trendHolo": 0.61,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "bw1-63": {
+   "name": "Sandile",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "63",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:35:57.910Z",
+   "price": {
+    "trend": 10.28,
+    "avg30": 2.37,
+    "trendHolo": 0.72,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "bw1-66": {
+   "name": "Purrloin",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "66",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:00.828Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.14,
+    "trendHolo": 1.09,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "bw1-72": {
+   "name": "Vullaby",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "72",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:05.215Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.37,
+    "trendHolo": 0.92,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw1-78": {
+   "name": "Patrat",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "78",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/78",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:11.561Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.16,
+    "trendHolo": 1.11,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "bw1-77": {
+   "name": "Patrat",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "77",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/77",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:13.563Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.16,
+    "trendHolo": 1.11,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "bw1-81": {
+   "name": "Lillipup",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "81",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/81",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:15.737Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.19,
+    "trendHolo": 1.39,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "bw1-82": {
+   "name": "Herdier",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "82",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:17.867Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.24,
+    "trendHolo": 1.1,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw1-84": {
+   "name": "Pidove",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "84",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:20.785Z",
+   "price": {
+    "trend": 0.05,
+    "avg30": 0.11,
+    "trendHolo": 0.98,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "bw1-94": {
+   "name": "Energy Switch",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "94",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:25.502Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.24,
+    "trendHolo": 0.4,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw1-102": {
+   "name": "Revive",
+   "set": "bw1",
+   "setName": "Black & White",
+   "serie": "bw",
+   "num": "102",
+   "official": 114,
+   "img": "https://assets.tcgdex.net/en/bw/bw1/102",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:36:28.226Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.12,
+    "trendHolo": 0.38,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
