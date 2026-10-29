@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:01:52.553Z",
+ "updated": "2026-10-29T20:02:17.673Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -15898,6 +15898,81 @@
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Rare"
+  },
+  "dpp-DP10": {
+   "name": "Infernape",
+   "set": "dpp",
+   "setName": "DP Black Star Promos",
+   "serie": "dp",
+   "num": "DP10",
+   "official": 56,
+   "img": "https://assets.tcgdex.net/en/dp/dpp/DP10",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:12.197Z",
+   "rarity": "Common"
+  },
+  "dpp-DP11": {
+   "name": "Empoleon",
+   "set": "dpp",
+   "setName": "DP Black Star Promos",
+   "serie": "dp",
+   "num": "DP11",
+   "official": 56,
+   "img": "https://assets.tcgdex.net/en/dp/dpp/DP11",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:12.482Z",
+   "rarity": "Common"
+  },
+  "dpp-DP12": {
+   "name": "Lucario",
+   "set": "dpp",
+   "setName": "DP Black Star Promos",
+   "serie": "dp",
+   "num": "DP12",
+   "official": 56,
+   "img": "https://assets.tcgdex.net/en/dp/dpp/DP12",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:12.774Z",
+   "rarity": "Common"
+  },
+  "dpp-DP34": {
+   "name": "Drifblim",
+   "set": "dpp",
+   "setName": "DP Black Star Promos",
+   "serie": "dp",
+   "num": "DP34",
+   "official": 56,
+   "img": "https://assets.tcgdex.net/en/dp/dpp/DP34",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:16.037Z",
+   "rarity": "Common"
+  },
+  "dpp-DP38": {
+   "name": "Giratina",
+   "set": "dpp",
+   "setName": "DP Black Star Promos",
+   "serie": "dp",
+   "num": "DP38",
+   "official": 56,
+   "img": "https://assets.tcgdex.net/en/dp/dpp/DP38",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:02:17.672Z",
+   "rarity": "Common"
   }
  },
  "pocket": {
