@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:31:31.607Z",
+ "updated": "2026-10-29T19:32:20.965Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -802,6 +802,69 @@
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Uncommon"
+  },
+  "bw3-42": {
+   "name": "Stunfisk",
+   "set": "bw3",
+   "setName": "Noble Victories",
+   "serie": "bw",
+   "num": "42",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/bw/bw3/42",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:32:11.337Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.17,
+    "trendHolo": 1.4,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "bw3-48": {
+   "name": "Trubbish",
+   "set": "bw3",
+   "setName": "Noble Victories",
+   "serie": "bw",
+   "num": "48",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/bw/bw3/48",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:32:15.653Z",
+   "price": {
+    "trend": 0.36,
+    "avg30": 0.39,
+    "trendHolo": 3.88,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "bw3-75": {
+   "name": "Pawniard",
+   "set": "bw3",
+   "setName": "Noble Victories",
+   "serie": "bw",
+   "num": "75",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/bw/bw3/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:32:20.965Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.2,
+    "trendHolo": 1.88,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
   }
  },
  "pocket": {
