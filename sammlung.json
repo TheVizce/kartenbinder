@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:22:11.318Z",
+ "updated": "2026-10-29T20:22:45.519Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23313,6 +23313,48 @@
     "at": "2026-10-29T17:48:09.269Z"
    },
    "lng": "de"
+  },
+  "2017sm-2": {
+   "name": "Grubbin",
+   "set": "2017sm",
+   "setName": "McDonald's Collection 2017",
+   "serie": "mc",
+   "num": "2",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/mc/2017sm/2",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:22:45.120Z",
+   "price": {
+    "trend": 0.55,
+    "avg30": 1.22,
+    "trendHolo": 2,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "None"
+  },
+  "2017sm-5": {
+   "name": "Pikachu",
+   "set": "2017sm",
+   "setName": "McDonald's Collection 2017",
+   "serie": "mc",
+   "num": "5",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/mc/2017sm/5",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:22:45.518Z",
+   "price": {
+    "trend": 12.01,
+    "avg30": 13.78,
+    "trendHolo": 10.21,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "None"
   }
  },
  "pocket": {
