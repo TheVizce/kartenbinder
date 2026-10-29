@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:48:52.820Z",
+ "updated": "2026-10-29T19:49:43.146Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -6553,6 +6553,573 @@
     "at": "2026-10-29T08:33:43.582Z"
    },
    "rarity": "Rare"
+  },
+  "pl3-61": {
+   "name": "Hippopotas",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "61",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:02.436Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.36,
+    "trendHolo": 2.29,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl3-62": {
+   "name": "Ivysaur",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "62",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:03.387Z",
+   "price": {
+    "trend": 0.88,
+    "avg30": 0.97,
+    "trendHolo": 6.86,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl3-72": {
+   "name": "Murkrow",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "72",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:05.181Z",
+   "price": {
+    "trend": 0.5,
+    "avg30": 0.39,
+    "trendHolo": 1.82,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl3-75": {
+   "name": "Pinsir",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "75",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:07.955Z",
+   "price": {
+    "trend": 0.51,
+    "avg30": 0.41,
+    "trendHolo": 1.99,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl3-82": {
+   "name": "Rotom",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "82",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:11.383Z",
+   "price": {
+    "trend": 0.42,
+    "avg30": 0.39,
+    "trendHolo": 1.49,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl3-85": {
+   "name": "Staravia",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "85",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:12.515Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 0.32,
+    "trendHolo": 1.77,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl3-90": {
+   "name": "Beldum",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "90",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:13.535Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.13,
+    "trendHolo": 2.55,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-84": {
+   "name": "Spiritomb C",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "84",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:13.903Z",
+   "price": {
+    "trend": 1.13,
+    "avg30": 0.87,
+    "trendHolo": 3.52,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl3-92": {
+   "name": "Buizel",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "92",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:16.370Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.16,
+    "trendHolo": 4.74,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-93": {
+   "name": "Bulbasaur",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "93",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/93",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:17.262Z",
+   "price": {
+    "trend": 0.8,
+    "avg30": 0.87,
+    "trendHolo": 61.97,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-94": {
+   "name": "Buneary",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "94",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:17.878Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.22,
+    "trendHolo": 3.19,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-96": {
+   "name": "Cherubi",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "96",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/96",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:18.282Z",
+   "price": {
+    "trend": 0.36,
+    "avg30": 0.36,
+    "trendHolo": 3.44,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-97": {
+   "name": "Chimchar",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "97",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:19.378Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.24,
+    "trendHolo": 5.01,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-100": {
+   "name": "Corphish",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "100",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/100",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:21.073Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.13,
+    "trendHolo": 1.94,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-101": {
+   "name": "Croagunk",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "101",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/101",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:21.388Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.12,
+    "trendHolo": 2.12,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-104": {
+   "name": "Feebas",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "104",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/104",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:22.723Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.28,
+    "trendHolo": 3.22,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-111": {
+   "name": "Magnemite",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "111",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/111",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:26.061Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.13,
+    "trendHolo": 3.86,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-110": {
+   "name": "Magikarp",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "110",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/110",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:26.616Z",
+   "price": {
+    "trend": 1.01,
+    "avg30": 0.77,
+    "trendHolo": 26.78,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-113": {
+   "name": "Meditite",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "113",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/113",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:27.350Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.29,
+    "trendHolo": 1.36,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-115": {
+   "name": "Mime Jr.",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "115",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/115",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:27.951Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.21,
+    "trendHolo": 3.69,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-117": {
+   "name": "Nincada",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "117",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/117",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:28.327Z",
+   "price": {
+    "trend": 0.48,
+    "avg30": 0.46,
+    "trendHolo": 6.74,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-118": {
+   "name": "Pachirisu",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "118",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/118",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:30.314Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.23,
+    "trendHolo": 6.45,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-119": {
+   "name": "Paras",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "119",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/119",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:31.349Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.11,
+    "trendHolo": 2.02,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-121": {
+   "name": "Piplup",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "121",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/121",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:31.724Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.87,
+    "trendHolo": 9.4,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-123": {
+   "name": "Roselia",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "123",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/123",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:32.564Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.16,
+    "trendHolo": 2.35,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-129": {
+   "name": "Starly",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "129",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/129",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:34.745Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.14,
+    "trendHolo": 1.56,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "pl3-137": {
+   "name": "Cyrus's Initiative",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "137",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/137",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:49:43.146Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.23,
+    "trendHolo": 1.3,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
