@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:12:52.423Z",
+ "updated": "2026-10-29T20:13:30.749Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -21392,6 +21392,300 @@
     "avg30": 0.4,
     "trendHolo": 4.43,
     "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-30": {
+   "name": "Electrike",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "30",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/30",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:14.533Z",
+   "price": {
+    "trend": 0.96,
+    "avg30": 0.91,
+    "trendHolo": 6.16,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex1-54": {
+   "name": "Koffing",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "54",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/54",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:17.826Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.29,
+    "trendHolo": 2.2,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-58": {
+   "name": "Makuhita",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "58",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:19.964Z",
+   "price": {
+    "trend": 0.52,
+    "avg30": 0.46,
+    "trendHolo": 3.37,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-55": {
+   "name": "Goldeen",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "55",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:20.414Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.35,
+    "trendHolo": 5.96,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-63": {
+   "name": "Poochyena",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "63",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:21.366Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.39,
+    "trendHolo": 6.09,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-67": {
+   "name": "Ralts",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "67",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/67",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:22.604Z",
+   "price": {
+    "trend": 0.78,
+    "avg30": 0.76,
+    "trendHolo": 4.53,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-90": {
+   "name": "Energy Search",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "90",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:26.414Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 0.12,
+    "trendHolo": 3.07,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-94": {
+   "name": "Metal Energy",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "94",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:27.636Z",
+   "price": {
+    "trend": 0.74,
+    "avg30": 0.46,
+    "trendHolo": 2.36,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex1-91": {
+   "name": "Potion",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "91",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:27.929Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.09,
+    "trendHolo": 2.08,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-92": {
+   "name": "Switch",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "92",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:28.236Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.19,
+    "trendHolo": 4.38,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-106": {
+   "name": "Water Energy",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "106",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/106",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:29.856Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.11,
+    "trendHolo": 9.11,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-104": {
+   "name": "Grass Energy",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "104",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/104",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:30.133Z",
+   "price": {
+    "trend": 0.08,
+    "avg30": 0.11,
+    "trendHolo": 8.64,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-105": {
+   "name": "Fighting Energy",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "105",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/105",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:30.434Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.1,
+    "trendHolo": 4.61,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "ex1-108": {
+   "name": "Fire Energy",
+   "set": "ex1",
+   "setName": "Ruby & Sapphire",
+   "serie": "ex",
+   "num": "108",
+   "official": 109,
+   "img": "https://assets.tcgdex.net/en/ex/ex1/108",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:13:30.749Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.12,
+    "trendHolo": 8.12,
+    "at": "2026-10-29T17:48:09.133Z"
    },
    "rarity": "Common"
   }
