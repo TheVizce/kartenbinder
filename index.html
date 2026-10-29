@@ -513,7 +513,7 @@ async function pool(items, n, fn) {
 }
 
 /* ================= Settings & collection ================= */
-const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, quickPocketN: 2, tcgF: 'all', pocketF: 'all', tcgView: 'grid', binderSize: 9, tcgSort: 'num', pocketSort: 'num', colSort: 'set', wishOpenOnly: true, pWishOpenOnly: true, advMode: 'new', groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
+const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, quickPocketN: 2, tcgF: 'all', pocketF: 'all', tcgView: 'grid', binderSize: 9, tcgSort: 'num', pocketSort: 'num', colSort: 'set', wishOpenOnly: true, pWishOpenOnly: true, advMode: 'new', adv2: false, groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
 let settingsWarned = false;
 const saveSettings = () => {
   if (!LS.set(SETTINGS_KEY, S) && !settingsWarned) {
@@ -1237,15 +1237,17 @@ function packVariants(code) {
   }
   return P.vars.get(code);
 }
-/* opt.rel: nur diese Karten zählen (z. B. Wunschliste); opt.all: alle Seltenheiten statt nur gewählte */
+/* opt.rel: nur diese Karten zählen (z. B. Wunschliste); opt.all: alle Seltenheiten statt nur gewählte;
+   opt.target: gesuchte Anzahl je Karte (1 = neue Karten, 2 = bis „2 von 2“) */
 function packStats(code, pack, inc, opt = {}) {
   const pools = packPools(code, pack), vs = packVariants(code);
   const frac = {}; let total = 0, missing = 0, cost = 0;
   for (const [r, pool0] of Object.entries(pools)) {
     if (!opt.all && !inc.has(grpOf(r))) { frac[r] = 0; continue; }
     const arr = opt.rel ? pool0.filter(opt.rel) : pool0;
-    const m = arr.filter(c => !pc(c.key)).length;
-    frac[r] = m / pool0.length; total += arr.length; missing += m; cost += m * ((P.rar[r] && P.rar[r].points) || 0);
+    const target = opt.target || 1, need = arr.filter(c => pc(c.key) < target), m = need.length;
+    const copies = need.reduce((a, c) => a + target - pc(c.key), 0);
+    frac[r] = m / pool0.length; total += arr.length; missing += m; cost += copies * ((P.rar[r] && P.rar[r].points) || 0);
   }
   let pAny = 0, exp = 0;
   for (const v of vs) {
@@ -1274,6 +1276,12 @@ function packAvail(code, p) {
   const soon = left < 2 * DAY ? ` (noch ${left < 3600e3 ? Math.max(1, Math.round(left / 60e3)) + ' Min.' : Math.round(left / 3600e3) + ' Std.'})` : '';
   return { gone: false, text: `nur noch bis ${fmtEnd(e.until)}${soon}` };
 }
+/* Option „2 von 2 mitzählen“ (Pack-Berater, Set-Ansicht, Übersicht) */
+const newOpt = () => ({ target: S.adv2 ? 2 : 1 });
+const L = () => S.adv2
+  ? { chance: 'Chance auf benötigte Karte', chancePack: 'Chance auf benötigte Karte pro Pack', exp: 'Ø benötigte Karten/Pack', expShort: 'benötigte/Pack', miss: 'bis 2 von 2 fehlen', sort: 'Sortiert danach, wie viele Karten pro Pack du im Schnitt ziehst, die dir fehlen oder von denen du erst 1 hast.' }
+  : { chance: 'Chance auf neue Karte', chancePack: 'Chance auf neue Karte pro Pack', exp: 'Ø neue Karten/Pack', expShort: 'neue/Pack', miss: 'fehlen', sort: 'Sortiert nach der Chance, mindestens eine Karte zu ziehen, die dir noch fehlt.' };
+const adv2Switch = () => `<label class="switch" title="Karten, von denen du erst 1 hast, gelten auch als gesucht – bis du 2 für ein Deck hast."><input type="checkbox" data-adv2 ${S.adv2 ? 'checked' : ''}> 2 von 2 mitzählen</label>`;
 const availTag = a => a ? `<span class="avail ${a.gone ? 'gone' : 'soon'}">${a.gone ? '✕' : '⏳'} ${esc(a.text)}</span>` : '';
 
 function cardChance(c, pack) {
@@ -1330,7 +1338,7 @@ async function viewPocketSets() {
         const cards = P.bySet[s.code];
         const g = {}; let t = 0, h = 0, h2 = 0;
         for (const c of cards) { const gg = grpOf(c.rarity); g[gg] = g[gg] || [0, 0]; g[gg][1]++; if (pc(c.key)) g[gg][0]++; if (inc.has(gg)) { t++; if (pc(c.key)) h++; if (pc(c.key) >= 2) h2++; } }
-        const packs = P.pull[s.code] ? (s.packs || []).map(p => ({ p, st: packStats(s.code, p, inc) })).filter(x => x.st.total) : [];
+        const packs = P.pull[s.code] ? (s.packs || []).map(p => ({ p, st: packStats(s.code, p, inc, newOpt()) })).filter(x => x.st.total) : [];
         return `<a class="panel set ${h ? 'has' : ''}" href="#/pocket/set/${encodeURIComponent(s.code)}">
           ${pocketLogo(s.code)}
           <h3>${esc(setTitle(s))}</h3>
@@ -1338,7 +1346,7 @@ async function viewPocketSets() {
           <div class="q2"><span>2 von 2</span><span>${h2} / ${t}</span></div>${bar(h2, t, 'b2')}
           <div class="groups">${GROUPS.filter(([k]) => g[k]).map(([k, l]) => `<span>${l.split(' ')[0]} ${g[k][0]}/${g[k][1]}</span>`).join('')}</div>
           ${packs.length ? `<div class="groups">${packs.map(x => packOpen(s.code, x.p)
-            ? `<span title="Chance auf mindestens eine neue Karte pro Pack">${esc(packName(s.code, x.p))}: <b style="color:var(--text)">${pct(x.st.pAny)}</b></span>`
+            ? `<span title="${L().chancePack}">${esc(packName(s.code, x.p))}: <b style="color:var(--text)">${pct(x.st.pAny)}</b></span>`
             : `<span>${esc(packName(s.code, x.p))}: nicht mehr erhältlich</span>`).join('')}</div>` : ''}
           ${packs.some(x => packOpen(s.code, x.p) && packEnd(s.code, x.p)) ? availTag(packAvail(s.code, packs.find(x => packOpen(s.code, x.p) && packEnd(s.code, x.p)).p)) : ''}
         </a>`;
@@ -1401,14 +1409,15 @@ async function viewPocketSet(code, q) {
     const box = (p, label) => {
       const on = st.pack === p;
       if (!p) return `<button type="button" class="pack ${on ? 'on' : ''}" data-pack=""><b>Alle Karten</b><small>${set.packs.length > 1 ? 'Packs anklicken, um zu filtern' : 'ganzes Set'}</small></button>`;
-      const s = packStats(code, p, inc), av = packAvail(code, p);
+      const s = packStats(code, p, inc, newOpt()), av = packAvail(code, p);
       if (av && av.gone) return `<button type="button" class="pack gone ${on ? 'on' : ''}" data-pack="${esc(p)}"><b>${esc(label)}</b>
-        ${availTag(av)}<small>fehlen ${s.missing}/${s.total} · kann nicht mehr geöffnet werden</small></button>`;
+        ${availTag(av)}<small>${L().miss} ${s.missing}/${s.total} · kann nicht mehr geöffnet werden</small></button>`;
       return `<button type="button" class="pack ${on ? 'on' : ''}" data-pack="${esc(p)}"><b>${esc(label)}</b>${availTag(av)}
-        <span class="big">${pct(s.pAny)}</span><small>Chance auf neue Karte pro Pack</small>
-        <small>Ø ${s.exp.toLocaleString('de-DE', { maximumFractionDigits: 2 })} neue/Pack · fehlen ${s.missing}/${s.total}${s.pAny > 0 && s.pAny < 0.5 ? ` · etwa jedes ${Math.round(1 / s.pAny)}. Pack` : ''}</small></button>`;
+        <span class="big">${pct(s.pAny)}</span><small>${L().chancePack}</small>
+        <small>Ø ${s.exp.toLocaleString('de-DE', { maximumFractionDigits: 2 })} ${L().expShort} · ${L().miss} ${s.missing}/${s.total}${s.pAny > 0 && s.pAny < 0.5 ? ` · etwa jedes ${Math.round(1 / s.pAny)}. Pack` : ''}</small></button>`;
     };
-    $('#packs', V).innerHTML = (set.packs.length > 1 ? box('') : '') + set.packs.map(p => box(p, packName(code, p))).join('');
+    $('#packs', V).innerHTML = (set.packs.length > 1 ? box('') : '') + set.packs.map(p => box(p, packName(code, p))).join('')
+      + `<div style="grid-column:1/-1">${adv2Switch()}</div>`;
   };
   const grid = () => {
     const inc = new Set(S.groups), q = st.s.toLowerCase();
@@ -1426,7 +1435,11 @@ async function viewPocketSet(code, q) {
     $('#segF', V).innerHTML = filterSeg(PF, st.f, Object.fromEntries(PF.map(([k]) => [k, base.filter(PPASS[k]).length])));
   };
   $('#q', V).oninput = e => { st.s = e.target.value; grid(); };
-  V.onchange = e => { if (handleQuickSwitch(e)) return; if (e.target.id === 'sort') { S.pocketSort = e.target.value; saveSettings(); grid(); } };
+  V.onchange = e => {
+    if (handleQuickSwitch(e)) return;
+    if (e.target.id === 'sort') { S.pocketSort = e.target.value; saveSettings(); grid(); }
+    if (e.target.matches('[data-adv2]')) { S.adv2 = e.target.checked; saveSettings(); packs(); }
+  };
   V.onclick = e => {
     const g = e.target.closest('[data-grp]');
     if (g) { if (toggleGroup(g.dataset.grp)) { for (const b of $('#grp', V).children) b.classList.toggle('on', S.groups.includes(b.dataset.grp)); head(); packs(); grid(); } return; }
@@ -1451,7 +1464,7 @@ async function viewPocketPacks(q) {
   const draw = () => {
     if (rid !== renderId) return;
     const wishMode = S.advMode === 'wish', nWish = Object.keys(col.wish.pocket).filter(k => P.byKey[k] && !pc(k)).length;
-    const opt = wishMode ? { rel: c => isWishP(c.key), all: true } : {};
+    const opt = wishMode ? { rel: c => isWishP(c.key), all: true } : newOpt(), l = L();
     const inc = new Set(S.groups), rows = [], gone = [];
     for (const s of P.setList) {
       if (!P.pull[s.code]) continue;
@@ -1460,25 +1473,27 @@ async function viewPocketPacks(q) {
         (packOpen(s.code, p) ? rows : gone).push({ s, p, ...st, av: packAvail(s.code, p) });
       }
     }
-    rows.sort((a, b) => b.pAny - a.pAny || b.exp - a.exp);
+    // mit „2 von 2“ liegt die Chance fast überall bei ~100 % – dann zählt, wie viele benötigte Karten im Schnitt kommen
+    rows.sort(S.adv2 && !wishMode ? (a, b) => b.exp - a.exp || b.pAny - a.pAny : (a, b) => b.pAny - a.pAny || b.exp - a.exp);
     V.innerHTML = `<h1 style="font-size:24px;letter-spacing:-.02em">Welches Pack soll ich öffnen?</h1>
-      <p class="muted" style="margin:6px 0 0">${wishMode ? 'Sortiert nach der Chance, mindestens eine Karte von deiner Wunschliste zu ziehen.' : 'Sortiert nach der Chance, mindestens eine Karte zu ziehen, die dir noch fehlt.'}</p>
-      <div class="toolbar"><div class="seg" id="segM"><button type="button" data-m="new" class="${wishMode ? '' : 'on'}">Neue Karten</button><button type="button" data-m="wish" class="${wishMode ? 'on' : ''}">★ Wunschliste<small>${nWish}</small></button></div>${wishMode ? '' : groupChips()}</div>
+      <p class="muted" style="margin:6px 0 0">${wishMode ? 'Sortiert nach der Chance, mindestens eine Karte von deiner Wunschliste zu ziehen.' : l.sort}</p>
+      <div class="toolbar"><div class="seg" id="segM"><button type="button" data-m="new" class="${wishMode ? '' : 'on'}">Neue Karten</button><button type="button" data-m="wish" class="${wishMode ? 'on' : ''}">★ Wunschliste<small>${nWish}</small></button></div>${wishMode ? '' : groupChips() + adv2Switch()}</div>
       <div class="adv">${rows.map((r, i) => `<a class="panel" href="#/pocket/set/${encodeURIComponent(r.s.code)}?pack=${encodeURIComponent(r.p)}">
           <span class="rank">${i + 1}</span>
-          <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · ${wishMode ? `${r.missing} Wunschkarte${r.missing === 1 ? '' : 'n'} offen` : `fehlen ${r.missing}/${r.total}`}</span>${r.av ? `<span style="display:block;margin-top:4px">${availTag(r.av)}</span>` : ''}</span>
-          <span><span class="v">${pct(r.pAny)}</span><br><span class="k">${wishMode ? 'Chance auf Wunschkarte' : 'Chance auf neue Karte'}</span></span>
-          <span class="hide-s"><span class="v">${r.exp.toLocaleString('de-DE', { maximumFractionDigits: 2 })}</span><br><span class="k">Ø neue Karten/Pack</span></span>
+          <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · ${wishMode ? `${r.missing} Wunschkarte${r.missing === 1 ? '' : 'n'} offen` : `${l.miss} ${r.missing}/${r.total}`}</span>${r.av ? `<span style="display:block;margin-top:4px">${availTag(r.av)}</span>` : ''}</span>
+          <span><span class="v">${pct(r.pAny)}</span><br><span class="k">${wishMode ? 'Chance auf Wunschkarte' : l.chance}</span></span>
+          <span class="hide-s"><span class="v">${r.exp.toLocaleString('de-DE', { maximumFractionDigits: 2 })}</span><br><span class="k">${wishMode ? 'Ø Wunschkarten/Pack' : l.exp}</span></span>
           <span class="hide-s"><span class="v">${nf(r.cost)}</span><br><span class="k">Pack-Punkte für Rest</span></span>
         </a>`).join('') || (wishMode ? `<div class="empty">${nWish ? 'Deine offenen Wunschkarten gibt es in keinem erhältlichen Pack.' : 'Keine offenen Wünsche. Markiere Karten in der Kartenansicht mit ☆.'}</div>` : '<div class="empty">Alles komplett – Glückwunsch! 🎉</div>')}
         ${gone.length ? `<div class="sec-t" style="margin-top:22px">Nicht mehr erhältlich – zählt nicht mit</div><div class="gone-list">${gone.map(r => `<a class="panel" href="#/pocket/set/${encodeURIComponent(r.s.code)}?pack=${encodeURIComponent(r.p)}">
-            <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · fehlen ${r.missing}/${r.total}</span></span>${availTag(r.av)}</a>`).join('')}</div>` : ''}</div>
+            <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · ${wishMode ? `${r.missing} Wunschkarte${r.missing === 1 ? '' : 'n'} offen` : `${l.miss} ${r.missing}/${r.total}`}</span></span>${availTag(r.av)}</a>`).join('')}</div>` : ''}</div>
       <p class="note">Berechnet aus den offiziellen Raten je Kartenplatz (inkl. seltener Packs und 6-Karten-Packs) und deinem aktuellen Stand. Innerhalb einer Seltenheit gilt jede Karte eines Packs als gleich wahrscheinlich. Karten, die in mehreren Packs eines Sets vorkommen, zählen für jedes dieser Packs.</p>`;
   };
   V.onclick = e => {
     const m = e.target.closest('[data-m]'); if (m) { S.advMode = m.dataset.m; saveSettings(); draw(); return; }
     const g = e.target.closest('[data-grp]'); if (g && toggleGroup(g.dataset.grp)) draw();
   };
+  V.onchange = e => { if (e.target.matches('[data-adv2]')) { S.adv2 = e.target.checked; saveSettings(); draw(); } };
   draw();
   loadAllDe().then(() => { if (rid === renderId) draw(); });
 }
