@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:36:58.233Z",
+ "updated": "2026-10-29T19:37:31.174Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -1855,6 +1855,69 @@
     "at": "2026-10-29T08:33:43.532Z"
    },
    "rarity": "Uncommon"
+  },
+  "col1-54": {
+   "name": "Clefairy",
+   "set": "col1",
+   "setName": "Call of Legends",
+   "serie": "col",
+   "num": "54",
+   "official": 95,
+   "img": "https://assets.tcgdex.net/en/col/col1/54",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:37:22.923Z",
+   "price": {
+    "trend": 0.47,
+    "avg30": 0.85,
+    "trendHolo": 9.12,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "col1-72": {
+   "name": "Tangela",
+   "set": "col1",
+   "setName": "Call of Legends",
+   "serie": "col",
+   "num": "72",
+   "official": 95,
+   "img": "https://assets.tcgdex.net/en/col/col1/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:37:27.986Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.41,
+    "trendHolo": 8.09,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "col1-75": {
+   "name": "Vulpix",
+   "set": "col1",
+   "setName": "Call of Legends",
+   "serie": "col",
+   "num": "75",
+   "official": 95,
+   "img": "https://assets.tcgdex.net/en/col/col1/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:37:31.174Z",
+   "price": {
+    "trend": 0.72,
+    "avg30": 0.93,
+    "trendHolo": 18.54,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
   }
  },
  "pocket": {
