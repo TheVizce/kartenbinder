@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:43:58.808Z",
+ "updated": "2026-10-29T19:44:20.364Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -4186,6 +4186,27 @@
     "at": "2026-10-29T17:48:09.159Z"
    },
    "rarity": "Rare PRIME"
+  },
+  "hgssp-HGSS09": {
+   "name": "Typhlosion",
+   "set": "hgssp",
+   "setName": "HGSS Black Star Promos",
+   "serie": "hgss",
+   "num": "HGSS09",
+   "official": 25,
+   "img": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS09",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:44:20.364Z",
+   "price": {
+    "trend": 20.51,
+    "avg30": 19.52,
+    "trendHolo": 5.37,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Promo"
   }
  },
  "pocket": {
