@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:50:41.206Z",
+ "updated": "2026-10-29T19:51:15.295Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -7729,6 +7729,762 @@
     "at": "2026-10-29T08:33:43.526Z"
    },
    "rarity": "Common"
+  },
+  "pl2-56": {
+   "name": "Ambipom G",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "56",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:42.031Z",
+   "price": {
+    "trend": 0.28,
+    "avg30": 0.23,
+    "trendHolo": 1.56,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-57": {
+   "name": "Aron",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "57",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/57",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:42.428Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.23,
+    "trendHolo": 1.3,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-58": {
+   "name": "Carvanha",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "58",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:43.050Z",
+   "price": {
+    "trend": 0.22,
+    "avg30": 0.13,
+    "trendHolo": 1.78,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-59": {
+   "name": "Eevee",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "59",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:43.320Z",
+   "price": {
+    "trend": 0.62,
+    "avg30": 0.65,
+    "trendHolo": 11.08,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-60": {
+   "name": "Flareon E4",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "60",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:43.643Z",
+   "price": {
+    "trend": 1.38,
+    "avg30": 1.08,
+    "trendHolo": 11.13,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-63": {
+   "name": "Growlithe",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "63",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:45.413Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.36,
+    "trendHolo": 9.06,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-62": {
+   "name": "Gliscor E4",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "62",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:45.720Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.26,
+    "trendHolo": 2.03,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-61": {
+   "name": "Forretress G",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "61",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:46.012Z",
+   "price": {
+    "trend": 1.08,
+    "avg30": 0.57,
+    "trendHolo": 1.51,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-64": {
+   "name": "Hippopotas",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "64",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:47.678Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.11,
+    "trendHolo": 1.66,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-65": {
+   "name": "Houndoom E4",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "65",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:48.525Z",
+   "price": {
+    "trend": 0.7,
+    "avg30": 0.48,
+    "trendHolo": 11.65,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-66": {
+   "name": "Kakuna",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "66",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:48.967Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.12,
+    "trendHolo": 0.94,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-67": {
+   "name": "Kecleon",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "67",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/67",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:49.936Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.18,
+    "trendHolo": 1.03,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-68": {
+   "name": "Koffing",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "68",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:50.317Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.14,
+    "trendHolo": 1.28,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-71": {
+   "name": "Nidoran ♀",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "71",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:51.316Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.22,
+    "trendHolo": 1.97,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-73": {
+   "name": "Nidorina",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "73",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/73",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:55.658Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.24,
+    "trendHolo": 1.48,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-76": {
+   "name": "Quagsire GL",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "76",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/76",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:56.003Z",
+   "price": {
+    "trend": 0.47,
+    "avg30": 0.31,
+    "trendHolo": 1.52,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-79": {
+   "name": "Shellos East Sea",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "79",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/79",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:56.514Z",
+   "price": {
+    "trend": 0.56,
+    "avg30": 0.31,
+    "trendHolo": 3.64,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-80": {
+   "name": "Shellos West Sea",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "80",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:56.896Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.12,
+    "trendHolo": 1.68,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-78": {
+   "name": "Seedot",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "78",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/78",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:57.465Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.1,
+    "trendHolo": 0.49,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-75": {
+   "name": "Nuzleaf",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "75",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:50:57.795Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.19,
+    "trendHolo": 0.45,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-82": {
+   "name": "Spheal",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "82",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:00.345Z",
+   "price": {
+    "trend": 0.39,
+    "avg30": 0.59,
+    "trendHolo": 8.49,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-83": {
+   "name": "Staryu",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "83",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/83",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:01.464Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.12,
+    "trendHolo": 1.48,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-84": {
+   "name": "Trapinch",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "84",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:02.310Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.11,
+    "trendHolo": 2.4,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-85": {
+   "name": "Turtwig GL",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "85",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:04.215Z",
+   "price": {
+    "trend": 0.34,
+    "avg30": 0.37,
+    "trendHolo": 7.07,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-86": {
+   "name": "Weedle",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "86",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/86",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:05.055Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.12,
+    "trendHolo": 1.93,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-87": {
+   "name": "Weezing",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "87",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:05.424Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.15,
+    "trendHolo": 1.69,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "pl2-90": {
+   "name": "Bertha's Warmth",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "90",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:05.971Z",
+   "price": {
+    "trend": 0.55,
+    "avg30": 0.4,
+    "trendHolo": 1.54,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-89": {
+   "name": "Bebe's Search",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "89",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/89",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:06.315Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.12,
+    "trendHolo": 1.33,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-88": {
+   "name": "Aaron's Collection",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "88",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:06.676Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.24,
+    "trendHolo": 2.09,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-91": {
+   "name": "Flint's Willpower",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "91",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:08.408Z",
+   "price": {
+    "trend": 0.31,
+    "avg30": 0.26,
+    "trendHolo": 1,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-92": {
+   "name": "Lucian's Assignment",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "92",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:09.166Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.22,
+    "trendHolo": 2.06,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-95": {
+   "name": "Team Galactic's Invention G-107 Technical Machine G",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "95",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/95",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:09.638Z",
+   "price": {
+    "trend": 0.38,
+    "avg30": 0.24,
+    "trendHolo": 0.88,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-94": {
+   "name": "Sunyshore City Gym",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "94",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:09.945Z",
+   "price": {
+    "trend": 0.35,
+    "avg30": 0.27,
+    "trendHolo": 0.81,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-97": {
+   "name": "Underground Expedition",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "97",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:10.380Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.2,
+    "trendHolo": 1.13,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-98": {
+   "name": "Volkner's Philosophy",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "98",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/98",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:10.845Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.16,
+    "trendHolo": 0.74,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl2-112": {
+   "name": "Pikachu",
+   "set": "pl2",
+   "setName": "Rising Rivals",
+   "serie": "pl",
+   "num": "112",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/pl/pl2/112",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:15.295Z",
+   "price": {
+    "trend": 89.78,
+    "avg30": 74.04,
+    "trendHolo": 35.03,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Rare"
   }
  },
  "pocket": {
