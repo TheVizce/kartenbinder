@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:17:57.874Z",
+ "updated": "2026-10-29T20:18:32.044Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22479,6 +22479,111 @@
     "at": "2026-10-29T17:48:09.205Z"
    },
    "rarity": "Uncommon"
+  },
+  "neo1-27": {
+   "name": "Ariados",
+   "set": "neo1",
+   "setName": "Neo Genesis",
+   "serie": "neo",
+   "num": "27",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/neo/neo1/27",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:18:17.074Z",
+   "price": {
+    "trend": 1.33,
+    "avg30": 1.49,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "neo1-35": {
+   "name": "Furret",
+   "set": "neo1",
+   "setName": "Neo Genesis",
+   "serie": "neo",
+   "num": "35",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/neo/neo1/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:18:18.889Z",
+   "price": {
+    "trend": 1.8,
+    "avg30": 2.27,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "neo1-58": {
+   "name": "Girafarig",
+   "set": "neo1",
+   "setName": "Neo Genesis",
+   "serie": "neo",
+   "num": "58",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/neo/neo1/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:18:26.817Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.48,
+    "trendHolo": 1.45,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "neo1-62": {
+   "name": "Horsea",
+   "set": "neo1",
+   "setName": "Neo Genesis",
+   "serie": "neo",
+   "num": "62",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/neo/neo1/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:18:27.364Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 0.64,
+    "trendHolo": 0,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "neo1-108": {
+   "name": "Grass Energy",
+   "set": "neo1",
+   "setName": "Neo Genesis",
+   "serie": "neo",
+   "num": "108",
+   "official": 111,
+   "img": "https://assets.tcgdex.net/en/neo/neo1/108",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:18:32.044Z",
+   "price": {
+    "trend": 0.65,
+    "avg30": 0.45,
+    "trendHolo": 0.4,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
   }
  },
  "pocket": {
