@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:53:10.032Z",
+ "updated": "2026-10-29T19:54:29.975Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -10207,6 +10207,867 @@
     "at": "2026-10-29T17:48:09.159Z"
    },
    "rarity": "Rare"
+  },
+  "dp7-6": {
+   "name": "Magnezone",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "6",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/6",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:40.962Z",
+   "price": {
+    "trend": 1.87,
+    "avg30": 2.29,
+    "trendHolo": 2,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Rare Holo"
+  },
+  "dp7-9": {
+   "name": "Regigigas",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "9",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/9",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:41.733Z",
+   "price": {
+    "trend": 2.03,
+    "avg30": 2.05,
+    "trendHolo": 1.12,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Rare Holo"
+  },
+  "dp7-12": {
+   "name": "Abomasnow",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "12",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/12",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:45.821Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.47,
+    "trendHolo": 0.83,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp7-18": {
+   "name": "Gengar",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "18",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/18",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:47.150Z",
+   "price": {
+    "trend": 15.73,
+    "avg30": 17.38,
+    "trendHolo": 62.73,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp7-20": {
+   "name": "Machamp",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "20",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/20",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:48.843Z",
+   "price": {
+    "trend": 1.64,
+    "avg30": 1.65,
+    "trendHolo": 42.77,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp7-26": {
+   "name": "Skuntank",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "26",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/26",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:49.781Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.5,
+    "trendHolo": 1.7,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp7-31": {
+   "name": "Vespiquen",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "31",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/31",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:51.431Z",
+   "price": {
+    "trend": 1.06,
+    "avg30": 0.86,
+    "trendHolo": 1.67,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp7-35": {
+   "name": "Dusclops",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "35",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:52.572Z",
+   "price": {
+    "trend": 0.45,
+    "avg30": 0.28,
+    "trendHolo": 0.91,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-40": {
+   "name": "Haunter",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "40",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:54.117Z",
+   "price": {
+    "trend": 0.62,
+    "avg30": 0.77,
+    "trendHolo": 5.14,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-38": {
+   "name": "Farfetch'd",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "38",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/38",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:54.477Z",
+   "price": {
+    "trend": 0.28,
+    "avg30": 0.27,
+    "trendHolo": 1.66,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-39": {
+   "name": "Grovyle",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "39",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/39",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:55.302Z",
+   "price": {
+    "trend": 0.67,
+    "avg30": 0.46,
+    "trendHolo": 1.24,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-45": {
+   "name": "Pichu",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "45",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/45",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:56.359Z",
+   "price": {
+    "trend": 1.23,
+    "avg30": 2.06,
+    "trendHolo": 5.36,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-46": {
+   "name": "Piloswine",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "46",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:57.768Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.3,
+    "trendHolo": 0.95,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-47": {
+   "name": "Pupitar",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "47",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/47",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:58.129Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.16,
+    "trendHolo": 1.19,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-51": {
+   "name": "Skarmory",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "51",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/51",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:59.877Z",
+   "price": {
+    "trend": 0.59,
+    "avg30": 0.32,
+    "trendHolo": 1.1,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-52": {
+   "name": "Staravia",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "52",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:00.341Z",
+   "price": {
+    "trend": 0.07,
+    "avg30": 0.12,
+    "trendHolo": 0.66,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-53": {
+   "name": "Bagon",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "53",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/53",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:00.618Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.25,
+    "trendHolo": 1.79,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-54": {
+   "name": "Bidoof",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "54",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/54",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:00.903Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.3,
+    "trendHolo": 6.56,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-55": {
+   "name": "Bronzor",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "55",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:05.959Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.13,
+    "trendHolo": 1.61,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-58": {
+   "name": "Drifloon",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "58",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:06.949Z",
+   "price": {
+    "trend": 25.5,
+    "avg30": 26.79,
+    "trendHolo": 35.73,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-57": {
+   "name": "Combee",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "57",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/57",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:08.232Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.18,
+    "trendHolo": 1.49,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-60": {
+   "name": "Duskull",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "60",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:08.757Z",
+   "price": {
+    "trend": 46.9,
+    "avg30": 34.01,
+    "trendHolo": 40.64,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-61": {
+   "name": "Finneon",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "61",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:09.672Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.13,
+    "trendHolo": 1.39,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-63": {
+   "name": "Larvitar",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "63",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:10.047Z",
+   "price": {
+    "trend": 0.08,
+    "avg30": 0.26,
+    "trendHolo": 7.5,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-64": {
+   "name": "Machop",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "64",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:13.099Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.11,
+    "trendHolo": 1.83,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-68": {
+   "name": "Misdreavus",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "68",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:13.594Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.2,
+    "trendHolo": 2.74,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-66": {
+   "name": "Magnemite",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "66",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:14.194Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.25,
+    "trendHolo": 1.99,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-72": {
+   "name": "Roselia",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "72",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:15.349Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.17,
+    "trendHolo": 1.05,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-71": {
+   "name": "Ponyta",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "71",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:15.687Z",
+   "price": {
+    "trend": 0.46,
+    "avg30": 0.32,
+    "trendHolo": 5.79,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-70": {
+   "name": "Pikachu",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "70",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:16.046Z",
+   "price": {
+    "trend": 4.83,
+    "avg30": 4.62,
+    "trendHolo": 21.65,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-76": {
+   "name": "Stunky",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "76",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/76",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:18.492Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.25,
+    "trendHolo": 1.88,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-77": {
+   "name": "Swinub",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "77",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/77",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:19.181Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.18,
+    "trendHolo": 1.56,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-75": {
+   "name": "Starly",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "75",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:19.893Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.12,
+    "trendHolo": 0.7,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-80": {
+   "name": "Voltorb",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "80",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:20.344Z",
+   "price": {
+    "trend": 18.88,
+    "avg30": 22.15,
+    "trendHolo": 12.5,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-84": {
+   "name": "Energy Switch",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "84",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:24.394Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.13,
+    "trendHolo": 3.01,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-86": {
+   "name": "Luxury Ball",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "86",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/86",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:24.926Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.19,
+    "trendHolo": 4.71,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-85": {
+   "name": "Great Ball",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "85",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:25.257Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.12,
+    "trendHolo": 1.68,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-88": {
+   "name": "Poké Blower +",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "88",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:25.812Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.28,
+    "trendHolo": 2.64,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-89": {
+   "name": "Poké Drawer +",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "89",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/89",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:26.336Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.29,
+    "trendHolo": 1.2,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp7-92": {
+   "name": "Potion",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "92",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:28.706Z",
+   "price": {
+    "trend": 0.07,
+    "avg30": 0.05,
+    "trendHolo": 0.58,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "dp7-93": {
+   "name": "Switch",
+   "set": "dp7",
+   "setName": "Stormfront",
+   "serie": "dp",
+   "num": "93",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/dp/dp7/93",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:54:29.974Z",
+   "price": {
+    "trend": 0.08,
+    "avg30": 0.1,
+    "trendHolo": 1.33,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
   }
  },
  "pocket": {
