@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:38:46.099Z",
+ "updated": "2026-10-29T19:40:31.251Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -2191,6 +2191,657 @@
     "at": "2026-10-29T17:48:09.159Z"
    },
    "rarity": "Uncommon"
+  },
+  "hgss4-44": {
+   "name": "Marowak",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "44",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/44",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:55.017Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.46,
+    "trendHolo": 4.92,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-45": {
+   "name": "Nidorina",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "45",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/45",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:58.095Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.4,
+    "trendHolo": 4.96,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-46": {
+   "name": "Nidorino",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "46",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:04.609Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.27,
+    "trendHolo": 3.43,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-49": {
+   "name": "Porygon2",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "49",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/49",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:07.608Z",
+   "price": {
+    "trend": 0.43,
+    "avg30": 0.37,
+    "trendHolo": 4.07,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-52": {
+   "name": "Wailmer",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "52",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:11.352Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 0.38,
+    "trendHolo": 5.05,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-53": {
+   "name": "Weepinbell",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "53",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/53",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:14.629Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 0.39,
+    "trendHolo": 3.6,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-54": {
+   "name": "Yanmega",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "54",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/54",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:17.944Z",
+   "price": {
+    "trend": 0.05,
+    "avg30": 0.14,
+    "trendHolo": 2.2,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-55": {
+   "name": "Aipom",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "55",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:21.063Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.2,
+    "trendHolo": 1.71,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-56": {
+   "name": "Aron",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "56",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:23.337Z",
+   "price": {
+    "trend": 0.29,
+    "avg30": 0.25,
+    "trendHolo": 1.81,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-58": {
+   "name": "Bronzor",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "58",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:26.066Z",
+   "price": {
+    "trend": 0.68,
+    "avg30": 0.4,
+    "trendHolo": 3.23,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-59": {
+   "name": "Carvanha",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "59",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:28.602Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.21,
+    "trendHolo": 0.78,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-60": {
+   "name": "Cubone",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "60",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:30.889Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 1.56,
+    "trendHolo": 2.47,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-61": {
+   "name": "Diglett",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "61",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:33.199Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.2,
+    "trendHolo": 1.78,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-62": {
+   "name": "Dratini",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "62",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:34.947Z",
+   "price": {
+    "trend": 0.51,
+    "avg30": 0.58,
+    "trendHolo": 8.69,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-63": {
+   "name": "Gastly",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "63",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:36.620Z",
+   "price": {
+    "trend": 0.43,
+    "avg30": 0.8,
+    "trendHolo": 12.98,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-64": {
+   "name": "Illumise",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "64",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:39.860Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.23,
+    "trendHolo": 0.93,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-66": {
+   "name": "Lickitung",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "66",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:42.927Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.36,
+    "trendHolo": 2.35,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-67": {
+   "name": "Machop",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "67",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/67",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:47.659Z",
+   "price": {
+    "trend": 0.43,
+    "avg30": 0.27,
+    "trendHolo": 1.45,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-71": {
+   "name": "Pidgey",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "71",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:51.125Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.27,
+    "trendHolo": 2.96,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-72": {
+   "name": "Ponyta",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "72",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:52.557Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.45,
+    "trendHolo": 3.33,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-73": {
+   "name": "Porygon",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "73",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/73",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:54.913Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.17,
+    "trendHolo": 1.57,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-75": {
+   "name": "Shuppet",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "75",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:39:57.396Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.19,
+    "trendHolo": 1.74,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-76": {
+   "name": "Skorupi",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "76",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/76",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:03.974Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.13,
+    "trendHolo": 0.69,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-79": {
+   "name": "Swinub",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "79",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/79",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:08.061Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.23,
+    "trendHolo": 0.81,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-80": {
+   "name": "Tentacool",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "80",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:09.996Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.26,
+    "trendHolo": 1.11,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-81": {
+   "name": "Venonat",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "81",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/81",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:11.915Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.18,
+    "trendHolo": 0.33,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-82": {
+   "name": "Volbeat",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "82",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:13.933Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.22,
+    "trendHolo": 1.13,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-83": {
+   "name": "Voltorb",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "83",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/83",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:18.848Z",
+   "price": {
+    "trend": 0.5,
+    "avg30": 0.34,
+    "trendHolo": 1.06,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss4-86": {
+   "name": "Indigo Plateau",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "86",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/86",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:22.109Z",
+   "price": {
+    "trend": 0.42,
+    "avg30": 0.6,
+    "trendHolo": 3.65,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-90": {
+   "name": "Rescue Energy",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "90",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:26.864Z",
+   "price": {
+    "trend": 0.52,
+    "avg30": 0.44,
+    "trendHolo": 2.22,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-100": {
+   "name": "Darkrai & Cresselia LEGEND",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "100",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/100",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:40:31.251Z",
+   "price": {
+    "trend": 135.65,
+    "avg30": 93.73,
+    "trendHolo": 20.25,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "LEGEND"
   }
  },
  "pocket": {
