@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:48:24.702Z",
+ "updated": "2026-10-29T19:48:52.820Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -6509,6 +6509,48 @@
     "avg30": 18.93,
     "trendHolo": 8.51,
     "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl3-14": {
+   "name": "Yanmega",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "14",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/14",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:52.460Z",
+   "price": {
+    "trend": 2.2,
+    "avg30": 2.88,
+    "trendHolo": 6.06,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl3-15": {
+   "name": "Arcanine G",
+   "set": "pl3",
+   "setName": "Supreme Victors",
+   "serie": "pl",
+   "num": "15",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/pl/pl3/15",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:48:52.820Z",
+   "price": {
+    "trend": 2.49,
+    "avg30": 3.16,
+    "trendHolo": 16.1,
+    "at": "2026-10-29T08:33:43.582Z"
    },
    "rarity": "Rare"
   }
