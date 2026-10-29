@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:19:28.520Z",
+ "updated": "2026-10-29T20:19:49.730Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22689,6 +22689,48 @@
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Common"
+  },
+  "base3-10": {
+   "name": "Lapras",
+   "set": "base3",
+   "setName": "Fossil",
+   "serie": "base",
+   "num": "10",
+   "official": 62,
+   "img": "https://assets.tcgdex.net/en/base/base3/10",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:19:46.047Z",
+   "price": {
+    "trend": 18.68,
+    "avg30": 14.67,
+    "trendHolo": 34.18,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Rare"
+  },
+  "base3-31": {
+   "name": "Arbok",
+   "set": "base3",
+   "setName": "Fossil",
+   "serie": "base",
+   "num": "31",
+   "official": 62,
+   "img": "https://assets.tcgdex.net/en/base/base3/31",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:19:49.730Z",
+   "price": {
+    "trend": 2.18,
+    "avg30": 1.92,
+    "trendHolo": 2.51,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
