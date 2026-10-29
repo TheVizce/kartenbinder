@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:44:20.364Z",
+ "updated": "2026-10-29T19:44:29.836Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -4205,6 +4205,27 @@
     "avg30": 19.52,
     "trendHolo": 5.37,
     "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Promo"
+  },
+  "hgssp-HGSS20": {
+   "name": "Entei",
+   "set": "hgssp",
+   "setName": "HGSS Black Star Promos",
+   "serie": "hgss",
+   "num": "HGSS20",
+   "official": 25,
+   "img": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS20",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:44:29.835Z",
+   "price": {
+    "trend": 71.39,
+    "avg30": 27.43,
+    "trendHolo": 9.65,
+    "at": "2026-10-29T17:48:09.208Z"
    },
    "rarity": "Promo"
   }
