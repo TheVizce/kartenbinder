@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:09:04.073Z",
+ "updated": "2026-10-29T20:09:49.412Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -20027,6 +20027,195 @@
     "avg30": 0.29,
     "trendHolo": 12.14,
     "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex8-37": {
+   "name": "Magcargo",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "37",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/37",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:37.239Z",
+   "price": {
+    "trend": 0.77,
+    "avg30": 0.93,
+    "trendHolo": 15.66,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex8-52": {
+   "name": "Bagon",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "52",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:39.130Z",
+   "price": {
+    "trend": 0.39,
+    "avg30": 0.42,
+    "trendHolo": 12.78,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "ex8-54": {
+   "name": "Barboach",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "54",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/54",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:39.504Z",
+   "price": {
+    "trend": 0.47,
+    "avg30": 0.5,
+    "trendHolo": 13.31,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "ex8-59": {
+   "name": "Electrike",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "59",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:41.176Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.87,
+    "trendHolo": 17.77,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "ex8-61": {
+   "name": "Goldeen",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "61",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:41.477Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.35,
+    "trendHolo": 10.37,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "ex8-67": {
+   "name": "Nincada",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "67",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/67",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:43.441Z",
+   "price": {
+    "trend": 0.33,
+    "avg30": 0.33,
+    "trendHolo": 16.91,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ex8-68": {
+   "name": "Numel",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "68",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:43.719Z",
+   "price": {
+    "trend": 0.54,
+    "avg30": 0.48,
+    "trendHolo": 17.82,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "ex8-83": {
+   "name": "Zubat",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "83",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/83",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:47.679Z",
+   "price": {
+    "trend": 0.6,
+    "avg30": 0.53,
+    "trendHolo": 15.27,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "ex8-93": {
+   "name": "Boost Energy",
+   "set": "ex8",
+   "setName": "Deoxys",
+   "serie": "ex",
+   "num": "93",
+   "official": 107,
+   "img": "https://assets.tcgdex.net/en/ex/ex8/93",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:49.412Z",
+   "price": {
+    "trend": 1.37,
+    "avg30": 1.33,
+    "trendHolo": 2.59,
+    "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Uncommon"
   }
