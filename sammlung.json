@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:19:49.730Z",
+ "updated": "2026-10-29T20:20:09.988Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22731,6 +22731,84 @@
     "at": "2026-10-29T08:33:43.492Z"
    },
    "rarity": "Uncommon"
+  },
+  "base3-46": {
+   "name": "Ekans",
+   "set": "base3",
+   "setName": "Fossil",
+   "serie": "base",
+   "num": "46",
+   "official": 62,
+   "img": "https://assets.tcgdex.net/en/base/base3/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:19:58.737Z",
+   "price": {
+    "trend": 1.74,
+    "avg30": 0.55,
+    "trendHolo": 0.52,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "base3-55": {
+   "name": "Slowpoke",
+   "set": "base3",
+   "setName": "Fossil",
+   "serie": "base",
+   "num": "55",
+   "official": 62,
+   "img": "https://assets.tcgdex.net/en/base/base3/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:00.552Z",
+   "price": {
+    "trend": 1.66,
+    "avg30": 1.75,
+    "trendHolo": 0.85,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "base3-62": {
+   "name": "Mysterious Fossil",
+   "set": "base3",
+   "setName": "Fossil",
+   "serie": "base",
+   "num": "62",
+   "official": 62,
+   "img": "https://assets.tcgdex.net/en/base/base3/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:01.505Z",
+   "price": {
+    "trend": 0.31,
+    "avg30": 0.34,
+    "trendHolo": 0.3,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "basep-5": {
+   "name": "Dragonite",
+   "set": "basep",
+   "setName": "Wizards Black Star Promos",
+   "serie": "base",
+   "num": "5",
+   "official": 53,
+   "img": "https://assets.tcgdex.net/en/base/basep/5",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:20:09.988Z",
+   "rarity": "Common"
   }
  },
  "pocket": {
