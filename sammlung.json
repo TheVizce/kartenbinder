@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:12:15.627Z",
+ "updated": "2026-10-29T20:12:52.423Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -20993,6 +20993,405 @@
     "avg30": 0.37,
     "trendHolo": 4.11,
     "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-5": {
+   "name": "Flareon",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "5",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/5",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:32.773Z",
+   "price": {
+    "trend": 122.69,
+    "avg30": 77.68,
+    "trendHolo": 85.2,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "ex2-15": {
+   "name": "Arcanine",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "15",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/15",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:35.045Z",
+   "price": {
+    "trend": 2.69,
+    "avg30": 3.65,
+    "trendHolo": 46.25,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex2-22": {
+   "name": "Shiftry",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "22",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/22",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:36.209Z",
+   "price": {
+    "trend": 0.8,
+    "avg30": 1.03,
+    "trendHolo": 10.09,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex2-28": {
+   "name": "Anorith",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "28",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/28",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:37.640Z",
+   "price": {
+    "trend": 1.46,
+    "avg30": 1.38,
+    "trendHolo": 4.47,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex2-38": {
+   "name": "Illumise",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "38",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/38",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:38.885Z",
+   "price": {
+    "trend": 2.54,
+    "avg30": 1.86,
+    "trendHolo": 11.12,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex2-62": {
+   "name": "Duskull",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "62",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:42.470Z",
+   "price": {
+    "trend": 1.22,
+    "avg30": 0.97,
+    "trendHolo": 6.7,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-63": {
+   "name": "Eevee",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "63",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:42.800Z",
+   "price": {
+    "trend": 3.37,
+    "avg30": 3.68,
+    "trendHolo": 32.24,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-64": {
+   "name": "Ekans",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "64",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:44.607Z",
+   "price": {
+    "trend": 0.5,
+    "avg30": 0.42,
+    "trendHolo": 2.07,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-65": {
+   "name": "Growlithe",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "65",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:44.840Z",
+   "price": {
+    "trend": 1.14,
+    "avg30": 1.1,
+    "trendHolo": 44.71,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-68": {
+   "name": "Marill",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "68",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:45.194Z",
+   "price": {
+    "trend": 0.35,
+    "avg30": 0.51,
+    "trendHolo": 13.93,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-71": {
+   "name": "Onix",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "71",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:45.589Z",
+   "price": {
+    "trend": 0.8,
+    "avg30": 0.63,
+    "trendHolo": 6.83,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-70": {
+   "name": "Omanyte",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "70",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:46.003Z",
+   "price": {
+    "trend": 0.91,
+    "avg30": 0.9,
+    "trendHolo": 3.77,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-76": {
+   "name": "Seedot",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "76",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/76",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:47.690Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.28,
+    "trendHolo": 7.46,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-80": {
+   "name": "Slakoth",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "80",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:47.953Z",
+   "price": {
+    "trend": 0.31,
+    "avg30": 0.4,
+    "trendHolo": 4.7,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-81": {
+   "name": "Spearow",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "81",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/81",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:48.230Z",
+   "price": {
+    "trend": 0.86,
+    "avg30": 0.69,
+    "trendHolo": 8.69,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-82": {
+   "name": "Trapinch",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "82",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:49.873Z",
+   "price": {
+    "trend": 0.68,
+    "avg30": 0.66,
+    "trendHolo": 15.76,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-85": {
+   "name": "Zigzagoon",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "85",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:50.189Z",
+   "price": {
+    "trend": 0.51,
+    "avg30": 0.43,
+    "trendHolo": 6.86,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-90": {
+   "name": "Claw Fossil",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "90",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:51.028Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.2,
+    "trendHolo": 2.9,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ex2-91": {
+   "name": "Mysterious Fossil",
+   "set": "ex2",
+   "setName": "Sandstorm",
+   "serie": "ex",
+   "num": "91",
+   "official": 100,
+   "img": "https://assets.tcgdex.net/en/ex/ex2/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:12:52.423Z",
+   "price": {
+    "trend": 0.43,
+    "avg30": 0.4,
+    "trendHolo": 4.43,
+    "at": "2026-10-29T17:48:09.101Z"
    },
    "rarity": "Common"
   }
