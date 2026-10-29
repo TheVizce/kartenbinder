@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:04:32.545Z",
+ "updated": "2026-10-29T20:05:01.587Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -17242,6 +17242,63 @@
     "at": "2026-10-29T08:33:43.492Z"
    },
    "rarity": "Rare"
+  },
+  "ex15-10": {
+   "name": "Snorlax δ",
+   "set": "ex15",
+   "setName": "Dragon Frontiers",
+   "serie": "ex",
+   "num": "10",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/ex/ex15/10",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:04:53.321Z",
+   "price": {
+    "trend": 57.12,
+    "avg30": 52.42,
+    "trendHolo": 210.82,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex15-85": {
+   "name": "Holon Energy GL",
+   "set": "ex15",
+   "setName": "Dragon Frontiers",
+   "serie": "ex",
+   "num": "85",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/ex/ex15/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:01.287Z",
+   "price": {
+    "trend": 1.11,
+    "avg30": 1.16,
+    "trendHolo": 2.75,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex15-88": {
+   "name": "δ Rainbow Energy",
+   "set": "ex15",
+   "setName": "Dragon Frontiers",
+   "serie": "ex",
+   "num": "88",
+   "official": 101,
+   "img": "https://assets.tcgdex.net/en/ex/ex15/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:01.586Z",
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
