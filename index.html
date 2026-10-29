@@ -1167,7 +1167,20 @@ const rarIdx = r => { const i = RAR_ORDER.indexOf(r); return i < 0 ? 99 : i; };
 const tdxSet = code => code.replace(/^PROMO-/, 'P-');
 const grpOf = r => (P.rar[r] && P.rar[r].group) || 'Diamond';
 const thumb = c => `${GH_IMG}thumbnails/${c.set}/${c.number}.webp`;
-const pName = c => (P.deNames[c.set] && P.deNames[c.set][c.number]) || c.name;
+/* Deutscher Name: offizieller Kartenname von TCGdex, sonst Übersetzung der Pokémon-Namen
+   (pokemon-namen.json im Repo, Quelle: PokeAPI) – TCGdex hat nicht für alle Sets deutsche Daten. */
+const pName = c => (P.deNames[c.set] && P.deNames[c.set][c.number]) || deGuess(c.name);
+const DE_FORM = [[/\bAlolan /g, 'Alola-'], [/\bGalarian /g, 'Galar-'], [/\bHisuian /g, 'Hisui-'], [/\bPaldean /g, 'Paldea-'], [/^Team Rocket[’']s /, 'Team Rockets '], [/^Mega /, 'Mega-'], [/ ex$/, '-ex']];
+function deGuess(name) {
+  if (!P.enDe) return name;
+  let t = P.deCache.get(name);
+  if (t == null) {
+    t = P.enDeRx ? name.replace(P.enDeRx, m => P.enDe[m] || m) : name;
+    for (const [rx, r] of DE_FORM) t = t.replace(rx, r);
+    P.deCache.set(name, t);
+  }
+  return t;
+}
 const setTitle = s => (s.name && (s.name.de || s.name.en)) || s.code;
 const packName = (code, p) => {
   const de = P.dePacks[code] && P.dePacks[code][norm(p)];
@@ -1178,13 +1191,18 @@ const packName = (code, p) => {
 
 async function pocketData() {
   if (P) return P;
-  const [cards, sets, pull, rar] = await Promise.all(['cards.min.json', 'sets.json', 'pullRates.json', 'rarities.json'].map(f => getJSON(PDB + f)));
+  const [cards, sets, pull, rar, enDe] = await Promise.all([...['cards.min.json', 'sets.json', 'pullRates.json', 'rarities.json'].map(f => getJSON(PDB + f)), getJSON('pokemon-namen.json').catch(() => null)]);
   const data = { cards, pull, rar, setList: Object.values(sets).flat(), setMap: {}, bySet: {}, byKey: {}, deNames: {}, dePacks: {}, deAvail: new Set(), pools: new Map(), vars: new Map() };
   for (const s of data.setList) data.setMap[s.code] = s;
   for (const c of cards) { c.key = `${c.set}-${c.number}`; data.byKey[c.key] = c; (data.bySet[c.set] = data.bySet[c.set] || []).push(c); }
   for (const k in data.bySet) data.bySet[k].sort((a, b) => a.number - b.number);
   data.setList = data.setList.filter(s => data.bySet[s.code]);
   try { const s = await getJSON(`${TDX}/de/series/tcgp`, { cache: DAY }); data.deAvail = new Set(s.sets.map(x => x.id)); } catch { }
+  if (enDe && typeof enDe === 'object') {
+    const names = Object.keys(enDe).sort((a, b) => b.length - a.length).map(n => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+    data.enDe = enDe; data.deCache = new Map();
+    try { data.enDeRx = new RegExp(`(?<![A-Za-zÀ-ÿ])(${names.join('|')})(?![A-Za-zÀ-ÿ])`, 'g'); } catch { data.enDeRx = null; }
+  }
   P = data;
   loadAllDe();
   return P;
@@ -1472,10 +1490,11 @@ async function viewPocketSearch(q0) {
   const qi = $('#q', V); qi.focus();
   const run = () => {
     if (rid !== renderId) return;
-    const q = qi.value.trim().toLowerCase();
+    const sq = t => t.toLowerCase().replace(/[’']/g, '').replace(/[-\s]+/g, ' ');
+    const q = sq(qi.value.trim());
     history.replaceState(null, '', '#/pocket/search' + (q ? '?q=' + encodeURIComponent(qi.value.trim()) : ''));
     if (q.length < 2) { $('#res', V).innerHTML = '<div class="empty">Mindestens zwei Buchstaben eingeben.</div>'; return; }
-    const res = P.cards.filter(c => c.name.toLowerCase().includes(q) || pName(c).toLowerCase().includes(q));
+    const res = P.cards.filter(c => sq(c.name).includes(q) || sq(pName(c)).includes(q));
     $('#res', V).innerHTML = res.length ? `<p class="muted">${res.length} Treffer</p><div class="grid">${res.slice(0, 300).map(c => tile({ key: c.key, srcs: [thumb(c)], name: pName(c), num: '#' + c.number, count: pc(c.key), sub: `${rarIcon(c.rarity)} ${esc(c.set)}`, wish: isWishP(c.key) })).join('')}</div>` : '<div class="empty">Keine Karten gefunden.</div>';
   };
   qi.oninput = run;

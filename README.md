@@ -61,6 +61,7 @@ const PACK_END = {
 
 - [TCGdex](https://tcgdex.dev) – Karten, Bilder, Preise (Cardmarket)
 - [pokemon-tcg-pocket-database](https://github.com/flibustier/pokemon-tcg-pocket-database) – Pocket-Packs, Zieh-Raten, Pack-Punkte
+- [PokeAPI](https://github.com/PokeAPI/pokeapi) – deutsche Pokémon-Namen (`pokemon-namen.json`) für Pocket-Karten, zu denen TCGdex noch keine deutschen Daten hat
 
 Neue Sets erscheinen automatisch, sobald die Datenquellen aktualisiert sind – am Tool muss nichts geändert werden.
 
