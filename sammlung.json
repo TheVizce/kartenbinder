@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:18:32.044Z",
+ "updated": "2026-10-29T20:19:01.849Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22582,6 +22582,48 @@
     "avg30": 0.45,
     "trendHolo": 0.4,
     "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "gym1-78": {
+   "name": "Erika's Oddish",
+   "set": "gym1",
+   "setName": "Gym Heroes",
+   "serie": "gym",
+   "num": "78",
+   "official": 132,
+   "img": "https://assets.tcgdex.net/en/gym/gym1/78",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:18:56.539Z",
+   "price": {
+    "trend": 78.33,
+    "avg30": 58.32,
+    "trendHolo": 37.42,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "gym1-127": {
+   "name": "Fighting Energy",
+   "set": "gym1",
+   "setName": "Gym Heroes",
+   "serie": "gym",
+   "num": "127",
+   "official": 132,
+   "img": "https://assets.tcgdex.net/en/gym/gym1/127",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:19:01.849Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.79,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.205Z"
    },
    "rarity": "Common"
   }
