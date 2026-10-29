@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:16:51.648Z",
+ "updated": "2026-10-29T20:17:34.533Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22309,6 +22309,111 @@
     "avg30": 0.82,
     "trendHolo": 0.02,
     "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "neo3-29": {
+   "name": "Golbat",
+   "set": "neo3",
+   "setName": "Neo Revelation",
+   "serie": "neo",
+   "num": "29",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/neo/neo3/29",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:17:27.625Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 3.86,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "neo3-32": {
+   "name": "Lanturn",
+   "set": "neo3",
+   "setName": "Neo Revelation",
+   "serie": "neo",
+   "num": "32",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/neo/neo3/32",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:17:28.023Z",
+   "price": {
+    "trend": 1.22,
+    "avg30": 2.27,
+    "trendHolo": 0,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "neo3-50": {
+   "name": "Remoraid",
+   "set": "neo3",
+   "setName": "Neo Revelation",
+   "serie": "neo",
+   "num": "50",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/neo/neo3/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:17:32.133Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 3.68,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "neo3-55": {
+   "name": "Snubbull",
+   "set": "neo3",
+   "setName": "Neo Revelation",
+   "serie": "neo",
+   "num": "55",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/neo/neo3/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:17:34.226Z",
+   "price": {
+    "trend": 0.73,
+    "avg30": 0.8,
+    "trendHolo": 0,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "neo3-56": {
+   "name": "Staryu",
+   "set": "neo3",
+   "setName": "Neo Revelation",
+   "serie": "neo",
+   "num": "56",
+   "official": 64,
+   "img": "https://assets.tcgdex.net/en/neo/neo3/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:17:34.533Z",
+   "price": {
+    "trend": 0.71,
+    "avg30": 0.94,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.133Z"
    },
    "rarity": "Common"
   }
