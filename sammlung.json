@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:15:08.648Z",
+ "updated": "2026-10-29T20:15:54.556Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -21958,6 +21958,104 @@
     "trend": 1.62,
     "avg30": 3.09,
     "trendHolo": 14.2,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ecard2-45": {
+   "name": "Bellsprout",
+   "set": "ecard2",
+   "setName": "Aquapolis",
+   "serie": "ecard",
+   "num": "45",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard2/45",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:36.031Z"
+  },
+  "ecard2-88": {
+   "name": "Kangaskhan",
+   "set": "ecard2",
+   "setName": "Aquapolis",
+   "serie": "ecard",
+   "num": "88",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard2/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:45.893Z",
+   "price": {
+    "trend": 4.65,
+    "avg30": 4.15,
+    "trendHolo": 23.92,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard2-97": {
+   "name": "Oddish",
+   "set": "ecard2",
+   "setName": "Aquapolis",
+   "serie": "ecard",
+   "num": "97",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard2/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:48.300Z",
+   "price": {
+    "trend": 5.21,
+    "avg30": 4.01,
+    "trendHolo": 14.28,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard2-119": {
+   "name": "Darkness Cube 01",
+   "set": "ecard2",
+   "setName": "Aquapolis",
+   "serie": "ecard",
+   "num": "119",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard2/119",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:51.174Z",
+   "price": {
+    "trend": 0.78,
+    "avg30": 0.94,
+    "trendHolo": 3.53,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ecard2-134": {
+   "name": "Super Energy Removal 2",
+   "set": "ecard2",
+   "setName": "Aquapolis",
+   "serie": "ecard",
+   "num": "134",
+   "official": 147,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard2/134",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:54.556Z",
+   "price": {
+    "trend": 0.87,
+    "avg30": 0.99,
+    "trendHolo": 4.44,
     "at": "2026-10-29T08:33:43.582Z"
    },
    "rarity": "Uncommon"
