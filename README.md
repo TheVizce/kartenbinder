@@ -26,13 +26,23 @@ Der Token wird nur im jeweiligen Browser gespeichert, nie im Repo.
 - Pro Karte: Anzahl je Variante (Normal, Reverse Holo, Holo, 1. Edition), Sprache, Zustand, Notiz
 - Cardmarket-Preise (Trend, Ø 30 Tage) und geschätzter Gesamtwert
 - Schnellerfassung: Karten im Set einfach antippen
+- Filter (Habe ich, Fehlen, Doppelte, ★ Wunsch) und Sortierung; Sammlung sortierbar nach Set, Datum, Name oder Wert
+- **Binder-Ansicht:** Set als Ordnerseiten mit 4, 9 oder 12 Taschen
+- **Wunschliste** mit Suchliste zum Kopieren (praktisch für Tauschbörsen)
 
 **TCG Pocket**
 - Alle Sets inkl. Promos, Fortschritt gesamt, pro Set und pro Seltenheit (◆ ★ ✦ ♛)
 - Pro Karte: aus welchem Pack sie kommt und mit welcher Wahrscheinlichkeit pro Pack, Pack-Punkte-Kosten, Tauschkosten
 - Pro Pack: Chance auf mindestens eine neue Karte, Ø neue Karten pro Pack, Pack-Punkte für den Rest
 - **Pack-Berater:** Rangliste, welches Pack du als Nächstes öffnen solltest
-- Schnellerfassung ist hier standardmäßig an: Antippen = habe ich / habe ich nicht. Doppelte über die Kartenansicht zählen.
+- Schnellerfassung: Antippen setzt eine Karte auf 1 oder 2 (einstellbar), nochmal antippen auf 0. Mehr über die Kartenansicht.
+- Filter: Alle, Habe ich, Fehlen, 1 von 2, Zum Tauschen, ★ Wunsch – jeweils mit Anzahl. Sortieren nach Nummer, Name, Seltenheit oder Anzahl.
+- **Decks:** Deckliste einfügen (Anzahl, Name, optional Set + Nummer, deutsch oder englisch). Das Tool zeigt, welche Karten du hast – auch in anderer Version –, was fehlt, aus welchem Pack es kommt und was es an Pack-Punkten kostet. Fehlende Karten lassen sich mit einem Klick auf die Wunschliste setzen.
+- **Wunschliste:** Karten mit ☆ markieren. Eigene Übersicht mit Bezugsquelle, Suchliste zum Kopieren, und der Pack-Berater kann nach Wunschkarten sortieren.
+
+**Überall**
+- In der Set-Ansicht zum vorherigen / nächsten Set springen, in der Kartenansicht zur vorherigen / nächsten Karte (Knöpfe, Pfeiltasten ← →, am Handy wischen).
+- Filter und Sortierung werden gemerkt.
 
 ## Packs, die es nicht mehr gibt
 
