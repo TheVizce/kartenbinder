@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:13:55.402Z",
+ "updated": "2026-10-29T20:14:13.477Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -21686,6 +21686,48 @@
     "avg30": 0.12,
     "trendHolo": 8.12,
     "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard3-40": {
+   "name": "Noctowl",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "40",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:14:08.580Z",
+   "price": {
+    "trend": 4.08,
+    "avg30": 3.68,
+    "trendHolo": 42.5,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ecard3-66": {
+   "name": "Houndour",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "66",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:14:13.476Z",
+   "price": {
+    "trend": 5.28,
+    "avg30": 5.27,
+    "trendHolo": 26.96,
+    "at": "2026-10-29T08:33:43.526Z"
    },
    "rarity": "Common"
   }
