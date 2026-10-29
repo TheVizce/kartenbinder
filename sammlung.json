@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:08:23.745Z",
+ "updated": "2026-10-29T20:09:04.073Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -19693,6 +19693,342 @@
     "at": "2026-10-29T17:48:09.159Z"
    },
    "rarity": "Rare"
+  },
+  "ex9-7": {
+   "name": "Manectric",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "7",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/7",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:40.868Z",
+   "price": {
+    "trend": 3.78,
+    "avg30": 2.17,
+    "trendHolo": 23.07,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex9-16": {
+   "name": "Manectric",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "16",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/16",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:42.938Z",
+   "price": {
+    "trend": 2.99,
+    "avg30": 2.46,
+    "trendHolo": 38.13,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex9-28": {
+   "name": "Grovyle",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "28",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/28",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:45.788Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 0.98,
+    "trendHolo": 36.16,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex9-40": {
+   "name": "Swalot",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "40",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:48.945Z",
+   "price": {
+    "trend": 0.37,
+    "avg30": 0.56,
+    "trendHolo": 10.82,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex9-45": {
+   "name": "Doduo",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "45",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/45",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:50.266Z",
+   "price": {
+    "trend": 0.41,
+    "avg30": 0.37,
+    "trendHolo": 12.04,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-47": {
+   "name": "Electrike",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "47",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/47",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:53.136Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.19,
+    "trendHolo": 11.06,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-50": {
+   "name": "Feebas",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "50",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:53.407Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 0.47,
+    "trendHolo": 32.46,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-55": {
+   "name": "Meditite",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "55",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:55.245Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.38,
+    "trendHolo": 10.92,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-57": {
+   "name": "Numel",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "57",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/57",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:55.597Z",
+   "price": {
+    "trend": 0.48,
+    "avg30": 0.51,
+    "trendHolo": 15.22,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-62": {
+   "name": "Rhyhorn",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "62",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:56.061Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.28,
+    "trendHolo": 20.24,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-64": {
+   "name": "Snorunt",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "64",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:58.462Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.25,
+    "trendHolo": 10.47,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-70": {
+   "name": "Treecko",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "70",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:08:59.265Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.37,
+    "trendHolo": 67.95,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-73": {
+   "name": "Whismur",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "73",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/73",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:01.328Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 0.37,
+    "trendHolo": 13.66,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "ex9-80": {
+   "name": "Oran Berry",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "80",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:02.108Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.23,
+    "trendHolo": 4.6,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex9-82": {
+   "name": "Professor Birch",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "82",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:03.818Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.22,
+    "trendHolo": 5.79,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex9-85": {
+   "name": "Wally's Training",
+   "set": "ex9",
+   "setName": "Emerald",
+   "serie": "ex",
+   "num": "85",
+   "official": 106,
+   "img": "https://assets.tcgdex.net/en/ex/ex9/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:09:04.073Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.29,
+    "trendHolo": 12.14,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
