@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T17:13:14.680Z",
+ "updated": "2026-10-29T17:13:30.903Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -505,15 +505,15 @@
   "PROMO-A-27": 1,
   "PROMO-A-28": 1,
   "PROMO-A-29": 2,
-  "PROMO-A-30": 1,
+  "PROMO-A-30": 2,
   "PROMO-A-31": 1,
-  "PROMO-A-32": 1,
-  "PROMO-A-33": 1,
+  "PROMO-A-32": 2,
+  "PROMO-A-33": 2,
   "PROMO-A-34": 1,
   "PROMO-A-36": 1,
-  "PROMO-A-38": 1,
-  "PROMO-A-40": 1,
-  "PROMO-A-41": 1,
+  "PROMO-A-38": 2,
+  "PROMO-A-40": 2,
+  "PROMO-A-41": 2,
   "PROMO-A-42": 1,
   "PROMO-A-117": 1,
   "A1-29": 2,
