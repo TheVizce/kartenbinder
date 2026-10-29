@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:29:37.522Z",
+ "updated": "2026-10-29T19:30:35.243Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -277,6 +277,153 @@
     "at": "2026-10-29T17:48:09.101Z"
    },
    "lng": "de"
+  },
+  "bw4-17": {
+   "name": "Darumaka",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "17",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/17",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:14.184Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.1,
+    "trendHolo": 0.81,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-18": {
+   "name": "Litwick",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "18",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/18",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:14.603Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.12,
+    "trendHolo": 1.73,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "bw4-19": {
+   "name": "Lampent",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "19",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/19",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:16.230Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.25,
+    "trendHolo": 0.84,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-21": {
+   "name": "Reshiram",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "21",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/21",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:18.840Z",
+   "price": {
+    "trend": 1.28,
+    "avg30": 0.89,
+    "trendHolo": 2.38,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Rare"
+  },
+  "bw4-25": {
+   "name": "Lapras",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "25",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/25",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:24.788Z",
+   "price": {
+    "trend": 1.21,
+    "avg30": 1.14,
+    "trendHolo": 4.44,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare"
+  },
+  "bw4-26": {
+   "name": "Lapras",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "26",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/26",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:26.807Z",
+   "price": {
+    "trend": 1.21,
+    "avg30": 1.14,
+    "trendHolo": 4.44,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw4-30": {
+   "name": "Basculin",
+   "set": "bw4",
+   "setName": "Next Destinies",
+   "serie": "bw",
+   "num": "30",
+   "official": 99,
+   "img": "https://assets.tcgdex.net/en/bw/bw4/30",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:30:35.243Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.15,
+    "trendHolo": 0.89,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
