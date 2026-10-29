@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:19:01.849Z",
+ "updated": "2026-10-29T20:19:28.520Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -22624,6 +22624,69 @@
     "avg30": 0.79,
     "trendHolo": 0,
     "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "base5-35": {
+   "name": "Dark Flareon",
+   "set": "base5",
+   "setName": "Team Rocket",
+   "serie": "base",
+   "num": "35",
+   "official": 82,
+   "img": "https://assets.tcgdex.net/en/base/base5/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:19:24.410Z",
+   "price": {
+    "trend": 14.78,
+    "avg30": 15.26,
+    "trendHolo": 6.18,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "base5-46": {
+   "name": "Dark Wartortle",
+   "set": "base5",
+   "setName": "Team Rocket",
+   "serie": "base",
+   "num": "46",
+   "official": 82,
+   "img": "https://assets.tcgdex.net/en/base/base5/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:19:27.709Z",
+   "price": {
+    "trend": 6.44,
+    "avg30": 4.58,
+    "trendHolo": 2.1,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "base5-53": {
+   "name": "Dratini",
+   "set": "base5",
+   "setName": "Team Rocket",
+   "serie": "base",
+   "num": "53",
+   "official": 82,
+   "img": "https://assets.tcgdex.net/en/base/base5/53",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:19:28.520Z",
+   "price": {
+    "trend": 1.14,
+    "avg30": 1.39,
+    "trendHolo": 0.7,
+    "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Common"
   }
