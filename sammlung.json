@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:23:17.213Z",
+ "updated": "2026-10-29T20:23:40.456Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23416,6 +23416,27 @@
     "avg30": 1.78,
     "trendHolo": 0.52,
     "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "None"
+  },
+  "tk-dp-l-1": {
+   "name": "Geodude",
+   "set": "tk-dp-l",
+   "setName": "DP trainer Kit (Lucario)",
+   "serie": "tk",
+   "num": "1",
+   "official": 11,
+   "img": "https://assets.tcgdex.net/en/tk/tk-dp-l/1",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:23:40.455Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.1,
+    "trendHolo": 0,
+    "at": "2026-10-29T08:33:43.572Z"
    },
    "rarity": "None"
   }
