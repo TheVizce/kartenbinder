@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:51:15.295Z",
+ "updated": "2026-10-29T19:53:10.032Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -8483,6 +8483,1728 @@
     "avg30": 74.04,
     "trendHolo": 35.03,
     "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-1": {
+   "name": "Ampharos",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "1",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/1",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:43.013Z",
+   "price": {
+    "trend": 8.97,
+    "avg30": 7.06,
+    "trendHolo": 4.52,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl1-7": {
+   "name": "Dialga G",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "7",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/7",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:44.326Z",
+   "price": {
+    "trend": 8.47,
+    "avg30": 9.84,
+    "trendHolo": 8.63,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl1-8": {
+   "name": "Gardevoir",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "8",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/8",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:44.649Z",
+   "price": {
+    "trend": 2.85,
+    "avg30": 3.29,
+    "trendHolo": 12.54,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl1-16": {
+   "name": "Slaking",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "16",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/16",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:47.155Z",
+   "price": {
+    "trend": 2.67,
+    "avg30": 2.51,
+    "trendHolo": 3.12,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "pl1-19": {
+   "name": "Banette",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "19",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/19",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:51.631Z",
+   "price": {
+    "trend": 6.34,
+    "avg30": 5.91,
+    "trendHolo": 7.67,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-23": {
+   "name": "Dialga",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "23",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/23",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:52.126Z",
+   "price": {
+    "trend": 8.28,
+    "avg30": 7.34,
+    "trendHolo": 3.53,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-24": {
+   "name": "Dugtrio",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "24",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/24",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:52.479Z",
+   "price": {
+    "trend": 0.5,
+    "avg30": 0.4,
+    "trendHolo": 1.89,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-27": {
+   "name": "Giratina",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "27",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/27",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:53.529Z",
+   "price": {
+    "trend": 16.69,
+    "avg30": 12.29,
+    "trendHolo": 10.44,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-29": {
+   "name": "Golduck",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "29",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/29",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:56.184Z",
+   "price": {
+    "trend": 0.82,
+    "avg30": 0.87,
+    "trendHolo": 2.39,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-34": {
+   "name": "Ludicolo",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "34",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/34",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:56.716Z",
+   "price": {
+    "trend": 0.85,
+    "avg30": 1.53,
+    "trendHolo": 2.21,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-35": {
+   "name": "Luvdisc",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "35",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:56.965Z",
+   "price": {
+    "trend": 0.72,
+    "avg30": 0.87,
+    "trendHolo": 1.78,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-36": {
+   "name": "Ninetales",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "36",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/36",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:57.265Z",
+   "price": {
+    "trend": 0.73,
+    "avg30": 1.17,
+    "trendHolo": 8.73,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-37": {
+   "name": "Palkia",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "37",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/37",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:51:59.800Z",
+   "price": {
+    "trend": 12.91,
+    "avg30": 18.54,
+    "trendHolo": 10.85,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-38": {
+   "name": "Shaymin",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "38",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/38",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:00.145Z",
+   "price": {
+    "trend": 3.88,
+    "avg30": 4.9,
+    "trendHolo": 10.62,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Rare"
+  },
+  "pl1-42": {
+   "name": "Cacturne",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "42",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/42",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:01.306Z",
+   "price": {
+    "trend": 0.36,
+    "avg30": 0.38,
+    "trendHolo": 2.26,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-41": {
+   "name": "Bronzong G",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "41",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/41",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:02.184Z",
+   "price": {
+    "trend": 0.43,
+    "avg30": 0.4,
+    "trendHolo": 1.95,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-45": {
+   "name": "Combusken",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "45",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/45",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:02.859Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.45,
+    "trendHolo": 2.56,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-43": {
+   "name": "Carnivine",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "43",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:03.280Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.36,
+    "trendHolo": 1.58,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-47": {
+   "name": "Crobat G",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "47",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/47",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:07.426Z",
+   "price": {
+    "trend": 1.16,
+    "avg30": 1.38,
+    "trendHolo": 2.41,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-46": {
+   "name": "Cranidos",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "46",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:07.795Z",
+   "price": {
+    "trend": 0.36,
+    "avg30": 0.35,
+    "trendHolo": 1.62,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-49": {
+   "name": "Grotle",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "49",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/49",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:08.567Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.38,
+    "trendHolo": 1.6,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-50": {
+   "name": "Houndoom G",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "50",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:08.904Z",
+   "price": {
+    "trend": 1.08,
+    "avg30": 1.03,
+    "trendHolo": 5.24,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-51": {
+   "name": "Kirlia",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "51",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/51",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:09.301Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.23,
+    "trendHolo": 4.31,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-52": {
+   "name": "Lombre",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "52",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/52",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:10.900Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.22,
+    "trendHolo": 1.7,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-55": {
+   "name": "Mismagius",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "55",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:14.289Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.26,
+    "trendHolo": 2.91,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-56": {
+   "name": "Monferno",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "56",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:15.227Z",
+   "price": {
+    "trend": 0.46,
+    "avg30": 0.37,
+    "trendHolo": 2.05,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-59": {
+   "name": "Prinplup",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "59",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:15.639Z",
+   "price": {
+    "trend": 0.39,
+    "avg30": 0.49,
+    "trendHolo": 2.19,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-61": {
+   "name": "Seviper",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "61",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:16.073Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.32,
+    "trendHolo": 1.4,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-63": {
+   "name": "Silcoon",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "63",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:16.464Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.17,
+    "trendHolo": 1.58,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-66": {
+   "name": "Zangoose",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "66",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:20.386Z",
+   "price": {
+    "trend": 0.54,
+    "avg30": 0.47,
+    "trendHolo": 3.28,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-65": {
+   "name": "Wartortle",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "65",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:21.234Z",
+   "price": {
+    "trend": 0.58,
+    "avg30": 0.9,
+    "trendHolo": 7.62,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-67": {
+   "name": "Cacnea",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "67",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/67",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:21.744Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.26,
+    "trendHolo": 1.19,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-68": {
+   "name": "Carnivine",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "68",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:22.074Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.36,
+    "trendHolo": 1.58,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-69": {
+   "name": "Chansey",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "69",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/69",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:22.449Z",
+   "price": {
+    "trend": 0.43,
+    "avg30": 0.33,
+    "trendHolo": 2.35,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-70": {
+   "name": "Chimchar",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "70",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:29.026Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.16,
+    "trendHolo": 2.74,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-71": {
+   "name": "Combee",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "71",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:29.349Z",
+   "price": {
+    "trend": 0.04,
+    "avg30": 0.14,
+    "trendHolo": 0.86,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-72": {
+   "name": "Diglett",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "72",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:29.701Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.12,
+    "trendHolo": 1.52,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-75": {
+   "name": "Grimer",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "75",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:32.499Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.16,
+    "trendHolo": 1.65,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-78": {
+   "name": "Kricketot",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "78",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/78",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:33.092Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.13,
+    "trendHolo": 1.62,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-81": {
+   "name": "Lotad",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "81",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/81",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:33.414Z",
+   "price": {
+    "trend": 43.91,
+    "avg30": 42.93,
+    "trendHolo": 37.13,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-77": {
+   "name": "Honchkrow G",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "77",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/77",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:34.307Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.3,
+    "trendHolo": 2.9,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-76": {
+   "name": "Happiny",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "76",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/76",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:34.682Z",
+   "price": {
+    "trend": 1.29,
+    "avg30": 1.71,
+    "trendHolo": 5.01,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-79": {
+   "name": "Lapras",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "79",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/79",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:35.117Z",
+   "price": {
+    "trend": 0.54,
+    "avg30": 0.44,
+    "trendHolo": 6.06,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-82": {
+   "name": "Mareep",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "82",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:37.487Z",
+   "price": {
+    "trend": 2.19,
+    "avg30": 1.37,
+    "trendHolo": 6.39,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-83": {
+   "name": "Misdreavus",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "83",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/83",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:37.892Z",
+   "price": {
+    "trend": 0.05,
+    "avg30": 0.13,
+    "trendHolo": 1.43,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-84": {
+   "name": "Nosepass",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "84",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:38.214Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.14,
+    "trendHolo": 0.91,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-85": {
+   "name": "Piplup",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "85",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:39.137Z",
+   "price": {
+    "trend": 0.77,
+    "avg30": 0.57,
+    "trendHolo": 7.64,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-86": {
+   "name": "Poochyena",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "86",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/86",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:39.437Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.38,
+    "trendHolo": 3.28,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-87": {
+   "name": "Psyduck",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "87",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:39.684Z",
+   "price": {
+    "trend": 6.39,
+    "avg30": 6.14,
+    "trendHolo": 39.8,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-88": {
+   "name": "Purugly G",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "88",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:41.417Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.19,
+    "trendHolo": 2,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-89": {
+   "name": "Ralts",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "89",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/89",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:41.702Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.13,
+    "trendHolo": 2.45,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-90": {
+   "name": "Remoraid",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "90",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/90",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:41.987Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.15,
+    "trendHolo": 1.7,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-91": {
+   "name": "Riolu",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "91",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:43.487Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.22,
+    "trendHolo": 2.24,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-92": {
+   "name": "Shuppet",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "92",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:43.787Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.12,
+    "trendHolo": 0.84,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-93": {
+   "name": "Skitty",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "93",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/93",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:44.132Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.2,
+    "trendHolo": 1.73,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-97": {
+   "name": "Swablu",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "97",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:46.600Z",
+   "price": {
+    "trend": 32.76,
+    "avg30": 32.68,
+    "trendHolo": 54.31,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-94": {
+   "name": "Skuntank G",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "94",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:46.870Z",
+   "price": {
+    "trend": 0.08,
+    "avg30": 0.33,
+    "trendHolo": 3.61,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-95": {
+   "name": "Slakoth",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "95",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/95",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:47.133Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.19,
+    "trendHolo": 1.58,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-99": {
+   "name": "Torchic",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "99",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/99",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:47.687Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 0.23,
+    "trendHolo": 3.34,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-96": {
+   "name": "Squirtle",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "96",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/96",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:48.280Z",
+   "price": {
+    "trend": 1.66,
+    "avg30": 1.57,
+    "trendHolo": 15.8,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-100": {
+   "name": "Torkoal",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "100",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/100",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:50.905Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.2,
+    "trendHolo": 1.9,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-101": {
+   "name": "Turtwig",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "101",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/101",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:51.303Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.23,
+    "trendHolo": 2.58,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-102": {
+   "name": "Vulpix",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "102",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/102",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:51.767Z",
+   "price": {
+    "trend": 76.65,
+    "avg30": 53.66,
+    "trendHolo": 69.74,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-103": {
+   "name": "Wurmple",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "103",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/103",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:52.525Z",
+   "price": {
+    "trend": 0.33,
+    "avg30": 0.22,
+    "trendHolo": 3.19,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-105": {
+   "name": "Cyrus's Conspiracy",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "105",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/105",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:54.679Z",
+   "price": {
+    "trend": 1.09,
+    "avg30": 0.81,
+    "trendHolo": 3.81,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-106": {
+   "name": "Galactic HQ",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "106",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/106",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:56.290Z",
+   "price": {
+    "trend": 0.29,
+    "avg30": 0.23,
+    "trendHolo": 0.81,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-107": {
+   "name": "Level Max",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "107",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/107",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:56.590Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.24,
+    "trendHolo": 0.85,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-108": {
+   "name": "Life Herb",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "108",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/108",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:56.898Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.11,
+    "trendHolo": 0.77,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-109": {
+   "name": "Looker's Investigation",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "109",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/109",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:59.485Z",
+   "price": {
+    "trend": 0.28,
+    "avg30": 0.26,
+    "trendHolo": 0.66,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-110": {
+   "name": "Memory Berry",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "110",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/110",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:52:59.844Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.19,
+    "trendHolo": 0.81,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-112": {
+   "name": "PlusPower",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "112",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/112",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:00.430Z",
+   "price": {
+    "trend": 0.37,
+    "avg30": 0.26,
+    "trendHolo": 0.95,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-113": {
+   "name": "Poké Ball",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "113",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/113",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:00.723Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.15,
+    "trendHolo": 0.62,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-114": {
+   "name": "Pokédex HANDY910is",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "114",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/114",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:00.993Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.14,
+    "trendHolo": 0.72,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-115": {
+   "name": "Pokémon Rescue",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "115",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/115",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:02.560Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.18,
+    "trendHolo": 1.01,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-116": {
+   "name": "Team Galactic's Invention G-101 Energy Gain",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "116",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/116",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:02.853Z",
+   "price": {
+    "trend": 0.51,
+    "avg30": 0.45,
+    "trendHolo": 2.38,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-117": {
+   "name": "Team Galactic's Invention G-103 Power Spray",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "117",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/117",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:03.131Z",
+   "price": {
+    "trend": 0.47,
+    "avg30": 0.51,
+    "trendHolo": 3,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-118": {
+   "name": "Team Galactic's Invention G-105 Poké Turn",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "118",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/118",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:05.118Z",
+   "price": {
+    "trend": 1.94,
+    "avg30": 2.04,
+    "trendHolo": 3,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "pl1-119": {
+   "name": "Armor Fossil",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "119",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/119",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:05.507Z",
+   "price": {
+    "trend": 0.08,
+    "avg30": 0.09,
+    "trendHolo": 1.82,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-120": {
+   "name": "Skull Fossil",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "120",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/120",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:06.557Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.11,
+    "trendHolo": 1.47,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "pl1-123": {
+   "name": "Drapion LV.X",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "123",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/123",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:07.061Z",
+   "price": {
+    "trend": 59.07,
+    "avg30": 72.13,
+    "trendHolo": 16.89,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Rare Holo LV.X"
+  },
+  "pl1-125": {
+   "name": "Palkia G LV.X",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "125",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/125",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:08.396Z",
+   "price": {
+    "trend": 39.12,
+    "avg30": 51.18,
+    "trendHolo": 14.75,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Rare Holo LV.X"
+  },
+  "pl1-SH6": {
+   "name": "Vulpix",
+   "set": "pl1",
+   "setName": "Platinum",
+   "serie": "pl",
+   "num": "SH6",
+   "official": 127,
+   "img": "https://assets.tcgdex.net/en/pl/pl1/SH6",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:53:10.031Z",
+   "price": {
+    "trend": 76.65,
+    "avg30": 53.66,
+    "trendHolo": 69.74,
+    "at": "2026-10-29T17:48:09.159Z"
    },
    "rarity": "Rare"
   }
