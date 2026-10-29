@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:33:41.319Z",
+ "updated": "2026-10-29T19:34:28.487Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -1054,6 +1054,237 @@
     "at": "2026-10-29T17:48:09.269Z"
    },
    "rarity": "Common"
+  },
+  "bw2-33": {
+   "name": "Joltik",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "33",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/33",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:50.139Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.2,
+    "trendHolo": 2.43,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-34": {
+   "name": "Galvantula",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "34",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/34",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:52.126Z",
+   "price": {
+    "trend": 0.26,
+    "avg30": 0.2,
+    "trendHolo": 0.57,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw2-42": {
+   "name": "Sigilyph",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "42",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/42",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:00.773Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.24,
+    "trendHolo": 0.75,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw2-43": {
+   "name": "Gothita",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "43",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:05.543Z",
+   "price": {
+    "trend": 0.13,
+    "avg30": 0.11,
+    "trendHolo": 0.57,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-51": {
+   "name": "Boldore",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "51",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/51",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:10.982Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.38,
+    "trendHolo": 0.58,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw2-55": {
+   "name": "Drilbur",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "55",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:13.186Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.19,
+    "trendHolo": 0.57,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-74": {
+   "name": "Klink",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "74",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/74",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:18.646Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.12,
+    "trendHolo": 1.07,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-75": {
+   "name": "Klang",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "75",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:20.417Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.22,
+    "trendHolo": 0.55,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw2-80": {
+   "name": "Pidove",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "80",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:22.840Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.14,
+    "trendHolo": 1.26,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-84": {
+   "name": "Minccino",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "84",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:26.110Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.2,
+    "trendHolo": 1.22,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-94": {
+   "name": "Max Potion",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "94",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:34:28.486Z",
+   "price": {
+    "trend": 0.23,
+    "avg30": 0.21,
+    "trendHolo": 1.15,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
