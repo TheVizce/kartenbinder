@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:23:40.456Z",
+ "updated": "2026-10-29T20:23:54.407Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23437,6 +23437,27 @@
     "avg30": 0.1,
     "trendHolo": 0,
     "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "None"
+  },
+  "tk-dp-m-8": {
+   "name": "Totodile",
+   "set": "tk-dp-m",
+   "setName": "DP trainer Kit (Manaphy)",
+   "serie": "tk",
+   "num": "8",
+   "official": 12,
+   "img": "https://assets.tcgdex.net/en/tk/tk-dp-m/8",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:23:54.407Z",
+   "price": {
+    "trend": 1.45,
+    "avg30": 1.02,
+    "trendHolo": 0,
+    "at": "2026-10-29T17:48:09.205Z"
    },
    "rarity": "None"
   }
