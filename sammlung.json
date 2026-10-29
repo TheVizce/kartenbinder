@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:32:20.965Z",
+ "updated": "2026-10-29T19:33:41.319Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -863,6 +863,195 @@
     "avg30": 0.2,
     "trendHolo": 1.88,
     "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-1": {
+   "name": "Pansage",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "1",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/1",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:18.864Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.16,
+    "trendHolo": 0.81,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-2": {
+   "name": "Simisage",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "2",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/2",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:19.261Z",
+   "price": {
+    "trend": 0.83,
+    "avg30": 0.5,
+    "trendHolo": 0.96,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Rare"
+  },
+  "bw2-3": {
+   "name": "Sewaddle",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "3",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/3",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:21.054Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.15,
+    "trendHolo": 1.16,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-6": {
+   "name": "Swadloon",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "6",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/6",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:25.517Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.27,
+    "trendHolo": 1.04,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "bw2-9": {
+   "name": "Cottonee",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "9",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/9",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:28.547Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.22,
+    "trendHolo": 0.88,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-15": {
+   "name": "Deerling",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "15",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/15",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:31.284Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.2,
+    "trendHolo": 1.64,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-18": {
+   "name": "Pansear",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "18",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/18",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:33.871Z",
+   "price": {
+    "trend": 0.05,
+    "avg30": 0.09,
+    "trendHolo": 1.29,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-24": {
+   "name": "Basculin",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "24",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/24",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:37.179Z",
+   "price": {
+    "trend": 0.14,
+    "avg30": 0.13,
+    "trendHolo": 0.76,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Common"
+  },
+  "bw2-28": {
+   "name": "Cubchoo",
+   "set": "bw2",
+   "setName": "Emerging Powers",
+   "serie": "bw",
+   "num": "28",
+   "official": 98,
+   "img": "https://assets.tcgdex.net/en/bw/bw2/28",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:33:41.318Z",
+   "price": {
+    "trend": 0.15,
+    "avg30": 0.21,
+    "trendHolo": 0.4,
+    "at": "2026-10-29T17:48:09.269Z"
    },
    "rarity": "Common"
   }
