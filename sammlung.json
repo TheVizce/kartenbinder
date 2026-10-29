@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:23:34.586Z",
+ "updated": "2026-10-29T19:27:35.429Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -21,6 +21,28 @@
     "avg30": 0.16,
     "trendHolo": 0.96,
     "at": "2026-10-25T17:48:09.097Z"
+   },
+   "lng": "de"
+  },
+  "bw6-55": {
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:27:35.429Z",
+   "name": "Gothita",
+   "set": "bw6",
+   "setName": "Dragons Exalted",
+   "serie": "bw",
+   "num": "55",
+   "official": 124,
+   "img": "https://assets.tcgdex.net/en/bw/bw6/55",
+   "rarity": "Common",
+   "cardLang": "en",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.14,
+    "trendHolo": 0.88,
+    "at": "2026-10-29T08:33:43.526Z"
    },
    "lng": "de"
   }
