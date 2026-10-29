@@ -173,6 +173,49 @@ dialog::backdrop{background:rgba(5,7,12,.65);backdrop-filter:blur(3px)}
 .stepper .ctl{display:flex;align-items:center;gap:6px}
 .stepper button{width:34px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--panel2);font-size:18px;font-weight:700;line-height:1}
 .stepper output{min-width:30px;text-align:center;font-weight:800;font-size:17px}
+.m-nav{grid-column:1/-1;display:flex;align-items:center;gap:10px;margin:-6px 44px -8px 0;font-size:13px;color:var(--muted)}
+.m-nav button{width:36px;height:34px;border-radius:9px;border:1px solid var(--line);background:var(--panel2);font-size:20px;line-height:1}
+.m-nav button:disabled{opacity:.3;cursor:default}
+.m-nav .hint{margin-left:auto;font-size:12px}
+.setnav{display:flex;justify-content:space-between;gap:12px;margin:-6px 0 16px;font-size:13px}
+.setnav a{color:var(--muted);text-decoration:none;padding:6px 12px;border:1px solid var(--line);border-radius:99px;max-width:48%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.setnav a:hover{color:var(--text);border-color:var(--muted)}
+.seg button small{opacity:.7;font-weight:500;margin-left:3px}
+@media (max-width:720px){.m-nav .hint{display:none}}
+.wishmark{position:absolute;top:5px;left:5px;width:22px;height:22px;border-radius:50%;background:var(--warn);color:#2a2000;font-size:13px;display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.4)}
+.wishbtn{margin:10px 0 0}
+.wishbtn.on{border-color:var(--warn);background:color-mix(in srgb,var(--warn) 18%,var(--panel))}
+.sortsel{padding:7px 10px}
+.gridopts{display:contents}.gridopts.off,.binderopts.off{display:none}
+.binder{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:18px}
+.bpage{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+.bpage-h{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-bottom:10px;font-weight:600}
+.bgrid{display:grid;gap:10px}
+.bgrid .tile .nm{display:none}
+.bslot{aspect-ratio:245/337;border:1px dashed var(--line);border-radius:7px;margin-bottom:22px}
+.deck-edit{display:grid;grid-template-columns:minmax(0,380px) 1fr;gap:18px;align-items:start}
+.deck-in{padding:16px;display:flex;flex-direction:column;gap:10px}
+.deck-in textarea{width:100%;min-height:340px;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;resize:vertical}
+.deck-in input{width:100%}
+.dsum{padding:14px 16px;margin-bottom:12px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}
+.dsum b{font-size:20px}
+.dwarn{font-size:13px;color:var(--warn)}
+.drows{display:flex;flex-direction:column;gap:6px}
+.drow{display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center;padding:8px 12px;text-align:left;width:100%}
+.drow img{width:40px;border-radius:4px;display:block}
+.drow .dn b{display:block;font-size:14px}
+.drow .dn span{font-size:12px;color:var(--muted)}
+.drow .ds{font-weight:800;font-size:15px;text-align:right;white-space:nowrap}
+.drow.ok .ds{color:var(--ok)}
+.drow.miss .ds{color:var(--danger)}
+.drow.part .ds{color:var(--warn)}
+.drow.unk{opacity:.7}
+.decks{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.deckcard{padding:14px;text-decoration:none;display:flex;flex-direction:column;gap:8px}
+.deckcard:hover{border-color:var(--muted)}
+.deckcard h3{font-size:16px}
+.deckcard .row{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+@media (max-width:720px){.deck-edit{grid-template-columns:1fr}.deck-in textarea{min-height:220px}}
 .stepper .seg button{width:auto;min-width:32px;height:28px;border:0;background:none;font-size:14px}
 .stepper .seg button.on{background:var(--accent);color:var(--accent-ink)}
 .field{display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--muted)}
@@ -250,7 +293,7 @@ const DATA_FILE = 'sammlung.json';
 
 const nf = n => (n ?? 0).toLocaleString('de-DE');
 const eur = n => n == null ? '–' : n.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' });
-const pct = p => { const v = p * 100; if (v > 99.5 && v < 100) return '> 99 %'; const d = v >= 10 ? 0 : v >= 1 ? 1 : v >= 0.1 ? 2 : 3; return v.toLocaleString('de-DE', { maximumFractionDigits: d }) + ' %'; };
+const pct = p => { const v = p * 100; if (v > 99.5 && v < 100) return '> 99 %'; const d = v >= 10 ? 0 : v >= 1 ? 1 : v >= 0.1 ? 2 : 3; return v.toLocaleString('de-DE', { maximumFractionDigits: d }) + ' %'; };
 const fmtDate = s => s ? new Date(s).toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' }) : '';
 const natCmp = (a, b) => String(a).localeCompare(String(b), 'de', { numeric: true });
 const norm = s => String(s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
@@ -274,10 +317,10 @@ function imgTag(srcs, alt) {
   if (!list.length) return '';
   return `<img loading="lazy" decoding="async" src="${esc(list[0])}" data-fb="${esc(list.slice(1).join('|'))}" alt="${esc(alt)}" onerror="imgFail(this)">`;
 }
-function tile({ key, srcs, name, num, count, sub }) {
+function tile({ key, srcs, name, num, count, sub, wish }) {
   const im = imgTag(srcs, name);
   return `<button class="tile ${count > 0 ? 'own' : 'miss'}" data-key="${esc(key)}" type="button">`
-    + `<div class="img${im ? '' : ' broken'}">${im}<span class="ph">${esc(name)}</span>${count > 0 ? `<span class="badge">${count}</span>` : ''}</div>`
+    + `<div class="img${im ? '' : ' broken'}">${im}<span class="ph">${esc(name)}</span>${count > 0 ? `<span class="badge">${count}</span>` : ''}${wish ? '<span class="wishmark" title="Auf der Wunschliste">★</span>' : ''}</div>`
     + `<div class="meta"><span class="num">${esc(num)}</span><span class="nm">${esc(name)}</span></div>`
     + (sub ? `<div class="sub">${sub}</div>` : '') + `</button>`;
 }
@@ -467,7 +510,7 @@ async function pool(items, n, fn) {
 }
 
 /* ================= Settings & collection ================= */
-const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, quickPocketN: 2, groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
+const S = Object.assign({ tcgLang: 'de', quickTcg: false, quickPocket: true, quickPocketN: 2, tcgF: 'all', pocketF: 'all', tcgView: 'grid', binderSize: 9, tcgSort: 'num', pocketSort: 'num', colSort: 'set', wishOpenOnly: true, pWishOpenOnly: true, advMode: 'new', groups: ['Diamond', 'Star', 'Shiny', 'Crown'], onlyOwnedSets: false }, LS.get(SETTINGS_KEY, {}));
 let settingsWarned = false;
 const saveSettings = () => {
   if (!LS.set(SETTINGS_KEY, S) && !settingsWarned) {
@@ -476,13 +519,15 @@ const saveSettings = () => {
   }
 };
 
-function emptyCol() { return { schema: 1, updated: null, tcg: {}, pocket: {} }; }
+function emptyCol() { return { schema: 1, updated: null, tcg: {}, pocket: {}, wish: { tcg: {}, pocket: {} }, decks: [] }; }
 function normalizeCol(d) {
-  const c = emptyCol();
-  if (d && typeof d === 'object') {
+  const c = emptyCol(), obj = x => x && typeof x === 'object' && !Array.isArray(x);
+  if (obj(d)) {
     c.updated = d.updated || null;
-    c.tcg = d.tcg && typeof d.tcg === 'object' ? d.tcg : {};
-    c.pocket = d.pocket && typeof d.pocket === 'object' ? d.pocket : {};
+    c.tcg = obj(d.tcg) ? d.tcg : {};
+    c.pocket = obj(d.pocket) ? d.pocket : {};
+    if (obj(d.wish)) { c.wish.tcg = obj(d.wish.tcg) ? d.wish.tcg : {}; c.wish.pocket = obj(d.wish.pocket) ? d.wish.pocket : {}; }
+    c.decks = Array.isArray(d.decks) ? d.decks.filter(obj) : [];
   }
   return c;
 }
@@ -649,11 +694,62 @@ for (const d of document.querySelectorAll('dialog')) {
   d.addEventListener('click', e => { if (e.target === d || e.target.classList.contains('m-close')) d.close(); });
 }
 
+/* Blättern in der Kartenansicht – Reihenfolge = aktuell sichtbare Kacheln (inkl. Filter) */
+let modalNav = null, modalTok = 0;
+const visibleKeys = () => [...V.querySelectorAll('.tile')].map(t => t.dataset.key);
+function navHtml(list, key) {
+  const i = list ? list.indexOf(key) : -1;
+  if (i < 0 || list.length < 2) return '';
+  return `<div class="m-nav"><button type="button" data-nav="-1" ${i === 0 ? 'disabled' : ''} aria-label="Vorherige Karte" title="Vorherige Karte (←)">‹</button>`
+    + `<span>${i + 1} / ${list.length}</span><button type="button" data-nav="1" ${i === list.length - 1 ? 'disabled' : ''} aria-label="Nächste Karte" title="Nächste Karte (→)">›</button>`
+    + `<span class="hint">← → oder wischen</span></div>`;
+}
+function setModalNav(list, key, open) {
+  const i = list ? list.indexOf(key) : -1;
+  modalNav = i < 0 ? null : d => { const j = i + d; if (j >= 0 && j < list.length) open(list[j]); };
+}
+modal.addEventListener('click', e => { const b = e.target.closest('[data-nav]'); if (b && !b.disabled && modalNav) modalNav(+b.dataset.nav); });
+modal.addEventListener('close', () => { modalNav = null; });
+let touch0 = null;
+modal.addEventListener('touchstart', e => { const t = e.touches[0]; touch0 = e.touches.length === 1 && !e.target.closest('input,textarea,select') ? [t.clientX, t.clientY] : null; }, { passive: true });
+modal.addEventListener('touchend', e => {
+  if (!touch0 || !modalNav) return;
+  const t = e.changedTouches[0], dx = t.clientX - touch0[0], dy = t.clientY - touch0[1]; touch0 = null;
+  if (Math.abs(dx) > 60 && Math.abs(dx) > 2 * Math.abs(dy)) modalNav(dx < 0 ? 1 : -1);
+}, { passive: true });
+/* Pfeiltasten: in der Kartenansicht Karte wechseln, in der Set-Ansicht Set wechseln */
+document.addEventListener('keydown', e => {
+  if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight')) return;
+  const ae = document.activeElement;
+  if (ae && /^(INPUT|TEXTAREA|SELECT)$/.test(ae.tagName)) return;
+  const d = e.key === 'ArrowLeft' ? -1 : 1;
+  if (modal.open) { if (modalNav) { e.preventDefault(); modalNav(d); } return; }
+  if ($('#settingsDlg').open) return;
+  const a = V.querySelector(`#setnav [data-sn="${d}"]`);
+  if (a) { e.preventDefault(); location.hash = a.getAttribute('href'); }
+});
+const setNavHtml = (prev, next, sec) => `<nav class="setnav" aria-label="Set wechseln">`
+  + (prev ? `<a href="#/${sec}/set/${encodeURIComponent(prev.id)}" data-sn="-1" title="Vorheriges Set (←)">‹ ${esc(prev.name)}</a>` : '<span></span>')
+  + (next ? `<a href="#/${sec}/set/${encodeURIComponent(next.id)}" data-sn="1" title="Nächstes Set (→)">${esc(next.name)} ›</a>` : '<span></span>')
+  + `</nav>`;
+/* Filter-Leiste mit Anzahl je Filter */
+function filterSeg(defs, cur, counts) {
+  return defs.map(([k, l]) => `<button type="button" data-f="${k}" class="${k === cur ? 'on' : ''}">${l}${counts ? `<small>${counts[k]}</small>` : ''}</button>`).join('');
+}
+const sortSel = (opts, cur) => `<select id="sort" class="sortsel" aria-label="Sortieren" title="Sortieren">${opts.map(([k, l]) => `<option value="${k}" ${k === cur ? 'selected' : ''}>↕ ${l}</option>`).join('')}</select>`;
+const wishBtn = on => `<button type="button" class="btn wishbtn ${on ? 'on' : ''}" data-wish>${on ? '★ Auf der Wunschliste' : '☆ Auf die Wunschliste'}</button>`;
+async function copyText(t) {
+  try { await navigator.clipboard.writeText(t); toast('In die Zwischenablage kopiert ✓'); return; } catch { }
+  const ta = document.createElement('textarea'); ta.value = t; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); toast('In die Zwischenablage kopiert ✓'); } catch { toast('Kopieren nicht möglich', true); }
+  ta.remove();
+}
+
 /* ================= Router ================= */
 let renderId = 0;
 const SUB = {
-  tcg: [['', 'Meine Sammlung'], ['sets', 'Sets'], ['search', 'Suche']],
-  pocket: [['', 'Sets & Fortschritt'], ['packs', 'Pack-Berater'], ['search', 'Suche']],
+  tcg: [['', 'Meine Sammlung'], ['sets', 'Sets'], ['wish', 'Wunschliste'], ['search', 'Suche']],
+  pocket: [['', 'Sets & Fortschritt'], ['packs', 'Pack-Berater'], ['decks', 'Decks'], ['wish', 'Wunschliste'], ['search', 'Suche']],
 };
 function route() {
   const h = location.hash.replace(/^#\/?/, '') || 'tcg';
@@ -664,7 +760,7 @@ function route() {
   const sub = parts[1] || '';
   document.body.dataset.sec = sec;
   for (const a of document.querySelectorAll('.tabs a')) a.classList.toggle('on', a.dataset.sec === sec);
-  const subOn = sub === 'set' ? (sec === 'tcg' ? 'sets' : '') : sub;
+  const subOn = sub === 'set' ? (sec === 'tcg' ? 'sets' : '') : sub === 'deck' ? 'decks' : sub;
   $('#subnav').innerHTML = SUB[sec].map(([k, l]) => `<a href="#/${sec}${k ? '/' + k : ''}" class="${k === subOn ? 'on' : ''}">${l}</a>`).join('');
   V.onclick = null; V.oninput = null; V.onchange = null;
   window.scrollTo(0, 0);
@@ -672,10 +768,14 @@ function route() {
     if (sub === 'sets') viewTcgSets();
     else if (sub === 'set') viewTcgSet(parts[2]);
     else if (sub === 'search') viewTcgSearch(q.get('q') || '');
+    else if (sub === 'wish') viewTcgWish();
     else viewTcgCollection();
   } else {
     if (sub === 'set') viewPocketSet(parts[2], q);
-    else if (sub === 'packs') viewPocketPacks();
+    else if (sub === 'packs') viewPocketPacks(q);
+    else if (sub === 'decks') viewPocketDecks();
+    else if (sub === 'deck') viewPocketDeck(parts[2]);
+    else if (sub === 'wish') viewPocketWish();
     else if (sub === 'search') viewPocketSearch(q.get('q') || '');
     else viewPocketSets();
   }
@@ -693,6 +793,7 @@ const LANGS = { de: 'Deutsch', en: 'Englisch', ja: 'Japanisch', fr: 'Französisc
 const CONDS = { '': '–', M: 'Mint', NM: 'Near Mint', EX: 'Excellent', GD: 'Good', LP: 'Light Played', PL: 'Played', PO: 'Poor' };
 const tcgTotal = e => e ? Object.values(e.v || {}).reduce((a, b) => a + (+b || 0), 0) : 0;
 const tcgCount = id => tcgTotal(col.tcg[id]);
+const isWishT = id => !!col.wish.tcg[id];
 const enBase = (serie, set, localId) => serie ? `https://assets.tcgdex.net/en/${serie}/${set}/${localId}` : '';
 function tcgSrcs(base, en, q = 'low') { return [base && `${base}/${q}.webp`, en && en !== base && `${en}/${q}.webp`]; }
 function setCounts() { const m = {}; for (const e of Object.values(col.tcg)) if (tcgTotal(e) > 0) m[e.set] = (m[e.set] || 0) + 1; return m; }
@@ -708,7 +809,7 @@ function entryValue(e) {
 }
 function tcgEntryTile(id) {
   const e = col.tcg[id];
-  return tile({ key: id, srcs: tcgSrcs(e.img, enBase(e.serie, e.set, e.num)), name: e.name, num: e.num, count: tcgTotal(e) });
+  return tile({ key: id, srcs: tcgSrcs(e.img, enBase(e.serie, e.set, e.num)), name: e.name, num: e.num, count: tcgTotal(e), wish: isWishT(id) });
 }
 function tcgQuickToggle(id, meta) {
   const e = col.tcg[id], t = tcgTotal(e);
@@ -755,14 +856,17 @@ function viewTcgCollection() {
       return;
     }
     const q = st.s.toLowerCase();
-    const groups = {};
+    const groups = {}, flat = [];
     for (const id of ids) {
       const e = col.tcg[id];
       if (q && !(`${e.name} ${e.setName} ${e.set} ${e.num}`.toLowerCase().includes(q))) continue;
+      flat.push(id);
       (groups[e.set] = groups[e.set] || { name: e.setName, ids: [], last: '' }).ids.push(id);
       if ((e.added || '') > groups[e.set].last) groups[e.set].last = e.added || '';
     }
     const order = Object.entries(groups).sort((a, b) => b[1].last.localeCompare(a[1].last));
+    const CS = { added: (a, b) => (col.tcg[b].added || '').localeCompare(col.tcg[a].added || ''), name: (a, b) => col.tcg[a].name.localeCompare(col.tcg[b].name, 'de'), value: (a, b) => (entryValue(col.tcg[b]) ?? -1) - (entryValue(col.tcg[a]) ?? -1) };
+    const sortMode = CS[S.colSort] ? S.colSort : 'set';
     V.innerHTML = `
       <div class="stats">
         <div class="panel stat"><b>${nf(ids.length)}</b><span>verschiedene Karten</span></div>
@@ -772,11 +876,14 @@ function viewTcgCollection() {
       </div>
       <div class="toolbar">
         <input type="search" id="q" placeholder="In meiner Sammlung suchen" value="${esc(st.s)}">
+        ${sortSel([['set', 'nach Set'], ['added', 'Zuletzt hinzugefügt'], ['name', 'Name'], ['value', 'Wert']], sortMode)}
         <button class="btn" id="btnPrices">↻ Preise aktualisieren</button>
         <span class="muted" style="font-size:13px">${oldest ? 'Cardmarket-Trend, Stand ab ' + fmtDate(oldest) : 'Preise: Cardmarket-Trend via TCGdex'}</span>
       </div>
-      ${order.map(([set, g]) => `<div class="group-title"><h2>${esc(g.name || set)}</h2><a href="#/tcg/set/${encodeURIComponent(set)}">${g.ids.length} Karten · Set öffnen →</a></div>
+      ${sortMode !== 'set' ? (flat.length ? `<div class="grid">${flat.sort(CS[sortMode]).map(id => tcgEntryTile(id).replace('</button>', `<div class="sub">${esc(col.tcg[id].setName || col.tcg[id].set)}${sortMode === 'value' && entryValue(col.tcg[id]) != null ? ' · ' + eur(entryValue(col.tcg[id])) : ''}</div></button>`)).join('')}</div>` : '<div class="empty">Keine Treffer.</div>')
+        : order.map(([set, g]) => `<div class="group-title"><h2>${esc(g.name || set)}</h2><a href="#/tcg/set/${encodeURIComponent(set)}">${g.ids.length} Karten · Set öffnen →</a></div>
         <div class="grid">${g.ids.sort((a, b) => natCmp(col.tcg[a].num, col.tcg[b].num)).map(tcgEntryTile).join('')}</div>`).join('') || '<div class="empty">Keine Treffer.</div>'}`;
+    $('#sort', V).onchange = e => { S.colSort = e.target.value; saveSettings(); draw(); };
     const qi = $('#q', V);
     qi.oninput = () => { st.s = qi.value; const pos = qi.selectionStart; draw(); const n = $('#q', V); n.focus(); n.setSelectionRange(pos, pos); };
     $('#btnPrices', V).onclick = refreshPrices;
@@ -801,8 +908,7 @@ function viewTcgCollection() {
   }
   V.onclick = e => {
     const t = e.target.closest('.tile'); if (!t) return;
-    const e2 = col.tcg[t.dataset.key];
-    openTcgCard(t.dataset.key, { lang: e2 && e2.cardLang, serie: e2 && e2.serie, after: draw });
+    openTcgCard(t.dataset.key, { after: draw, list: visibleKeys() });
   };
   draw();
 }
@@ -856,19 +962,31 @@ async function viewTcgSet(id) {
   const serie = set.serie && set.serie.id, cards = set.cards || [];
   const setLang = set.cards && set.cards[0] && set.cards[0].image ? (set.cards[0].image.split('/')[3] || lang) : lang;
   const byId = new Map(cards.map(c => [c.id, c]));
-  const st = { f: 'all', s: '' };
+  const TF = [['all', 'Alle'], ['own', 'Habe ich'], ['miss', 'Fehlen'], ['dup', 'Doppelte'], ['wish', '★ Wunsch']];
+  const TPASS = { all: () => true, own: c => tcgCount(c.id) > 0, miss: c => tcgCount(c.id) === 0, dup: c => tcgCount(c.id) > 1, wish: c => isWishT(c.id) };
+  const TSORT = [['num', 'Nummer'], ['name', 'Name'], ['count', 'Anzahl'], ['added', 'Zuletzt hinzugefügt']];
+  const idx = new Map(cards.map((c, i) => [c.id, i]));
+  const TSF = {
+    num: (a, b) => idx.get(a.id) - idx.get(b.id), name: (a, b) => a.name.localeCompare(b.name, 'de') || idx.get(a.id) - idx.get(b.id),
+    count: (a, b) => tcgCount(b.id) - tcgCount(a.id) || idx.get(a.id) - idx.get(b.id),
+    added: (a, b) => ((col.tcg[b.id] || {}).added || '').localeCompare((col.tcg[a.id] || {}).added || '') || idx.get(a.id) - idx.get(b.id),
+  };
+  const st = { f: TPASS[S.tcgF] ? S.tcgF : 'all', s: '' };
   const meta = c => ({ name: c.name, set: set.id, setName: set.name, serie, num: c.localId, official: set.cardCount && set.cardCount.official, img: c.image || enBase(serie, set.id, c.localId), cardLang: setLang });
-  const tileFor = c => tile({ key: c.id, srcs: tcgSrcs(c.image, enBase(serie, set.id, c.localId)), name: c.name, num: c.localId, count: tcgCount(c.id) });
+  const tileFor = c => tile({ key: c.id, srcs: tcgSrcs(c.image, enBase(serie, set.id, c.localId)), name: c.name, num: c.localId, count: tcgCount(c.id), wish: isWishT(c.id) });
   const logo = imgTag([set.logo && set.logo + '.webp', set.logo && set.logo.replace(/\/[a-z]{2}\//, '/en/') + '.webp'], set.name);
-  V.innerHTML = `<section class="set-head">
+  V.innerHTML = `<div id="setnav"></div><section class="set-head">
       <div class="logo ${logo ? '' : 'broken'}">${logo}<span class="ph">${esc(set.id)}</span></div>
       <div class="info"><h1>${esc(set.name)}</h1>
         <div class="muted">${esc(set.serie ? set.serie.name : '')} · ${esc(set.id)}${set.releaseDate ? ' · ' + fmtDate(set.releaseDate) : ''} · ${cards.length} Karten${set.cardCount && set.cardCount.official ? ` (${set.cardCount.official} regulär)` : ''}</div>
         <div class="headstats" id="hs"></div></div>
     </section>
     <div class="toolbar">
-      <div class="seg" id="segF"><button data-f="all" class="on">Alle</button><button data-f="own">Habe ich</button><button data-f="miss">Fehlen</button></div>
+      <div class="seg" id="segV"><button type="button" data-v="grid" class="${S.tcgView !== 'binder' ? 'on' : ''}">▦ Raster</button><button type="button" data-v="binder" class="${S.tcgView === 'binder' ? 'on' : ''}">📖 Binder</button></div>
+      <div class="gridopts" id="gridopts"><div class="seg" id="segF"></div>
       <input type="search" id="q" placeholder="Name oder Nummer">
+      ${sortSel(TSORT, TSF[S.tcgSort] ? S.tcgSort : 'num')}</div>
+      <div class="binderopts" id="binderopts"><select id="bsize" class="sortsel" aria-label="Taschen pro Seite">${[4, 9, 12].map(n => `<option value="${n}" ${+S.binderSize === n ? 'selected' : ''}>${n}er-Seiten</option>`).join('')}</select></div>
       ${quickSwitch('quickTcg', 'Schnellerfassung')}
     </div>
     <div class="grid" id="grid"></div>`;
@@ -877,23 +995,51 @@ async function viewTcgSet(id) {
     const copies = cards.reduce((a, c) => a + tcgCount(c.id), 0);
     $('#hs', V).innerHTML = `<b>${have} / ${cards.length}</b>${bar(have, cards.length)}<span class="muted">${copies} Exemplare</span>`;
   };
-  const grid = () => {
+  const seg = () => {
     const q = st.s.toLowerCase();
-    const list = cards.filter(c => (st.f === 'all' || (st.f === 'own') === (tcgCount(c.id) > 0)) && (!q || c.name.toLowerCase().includes(q) || String(c.localId).toLowerCase() === q));
-    $('#grid', V).innerHTML = list.map(tileFor).join('') || '<div class="empty" style="grid-column:1/-1">Keine Karten.</div>';
+    const base = cards.filter(c => !q || c.name.toLowerCase().includes(q) || String(c.localId).toLowerCase() === q);
+    $('#segF', V).innerHTML = filterSeg(TF, st.f, Object.fromEntries(TF.map(([k]) => [k, base.filter(TPASS[k]).length])));
+    return base;
+  };
+  const grid = () => {
+    const binder = S.tcgView === 'binder', g = $('#grid', V);
+    $('#gridopts', V).classList.toggle('off', binder); $('#binderopts', V).classList.toggle('off', !binder);
+    if (binder) {
+      const n = [4, 9, 12].includes(+S.binderSize) ? +S.binderSize : 9, cols = n === 4 ? 2 : 3, pages = [];
+      for (let i = 0; i < cards.length; i += n) pages.push(cards.slice(i, i + n));
+      g.className = 'binder';
+      g.innerHTML = pages.map((pg, i) => `<section class="bpage"><div class="bpage-h"><span>Seite ${i + 1} · Nr. ${esc(pg[0].localId)}–${esc(pg[pg.length - 1].localId)}</span><span>${pg.filter(c => tcgCount(c.id) > 0).length} / ${pg.length}</span></div>`
+        + `<div class="bgrid" style="grid-template-columns:repeat(${cols},1fr)">${pg.map(tileFor).join('')}${'<div class="bslot"></div>'.repeat(n - pg.length)}</div></section>`).join('');
+      return;
+    }
+    g.className = 'grid';
+    const base = seg();
+    const list = base.filter(TPASS[st.f] || TPASS.all).sort(TSF[S.tcgSort] || TSF.num);
+    g.innerHTML = list.map(tileFor).join('') || '<div class="empty" style="grid-column:1/-1">Keine Karten.</div>';
   };
   $('#q', V).oninput = e => { st.s = e.target.value; grid(); };
-  V.onchange = handleQuickSwitch;
+  V.onchange = e => {
+    if (handleQuickSwitch(e)) return;
+    if (e.target.id === 'sort') { S.tcgSort = e.target.value; saveSettings(); grid(); }
+    if (e.target.id === 'bsize') { S.binderSize = +e.target.value; saveSettings(); grid(); }
+  };
   V.onclick = e => {
+    const vb = e.target.closest('[data-v]');
+    if (vb) { S.tcgView = vb.dataset.v; saveSettings(); for (const b of $('#segV', V).children) b.classList.toggle('on', b === vb); grid(); return; }
     const sb = e.target.closest('[data-f]');
-    if (sb) { st.f = sb.dataset.f; for (const b of $('#segF', V).children) b.classList.toggle('on', b === sb); grid(); return; }
+    if (sb) { st.f = S.tcgF = sb.dataset.f; saveSettings(); grid(); return; }
     const t = e.target.closest('.tile'); if (!t) return;
     const c = byId.get(t.dataset.key);
-    const after = () => { replaceTile(c.id, tileFor(c)); head(); };
-    if (S.quickTcg && tcgQuickToggle(c.id, meta(c))) { after(); return; }
-    openTcgCard(c.id, { lang, serie, after });
+    const after = k => { const x = byId.get(k); if (x) replaceTile(k, tileFor(x)); head(); if (S.tcgView !== 'binder') seg(); else grid(); };
+    if (S.quickTcg && tcgQuickToggle(c.id, meta(c))) { after(c.id); return; }
+    openTcgCard(c.id, { lang, serie, after, list: visibleKeys() });
   };
   head(); grid();
+  tcgCatalog(S.tcgLang).then(cat => {
+    if (rid !== renderId) return;
+    const flat = cat.flatMap(sr => sr.sets || []), i = flat.findIndex(x => x.id === set.id);
+    if (i >= 0) $('#setnav', V).innerHTML = setNavHtml(flat[i - 1], flat[i + 1], 'tcg');
+  }).catch(() => { });
 }
 
 async function viewTcgSearch(q0) {
@@ -914,7 +1060,7 @@ async function viewTcgSearch(q0) {
       results = results.filter(c => !(c.image || '').includes('/tcgp/') && !/^([AB]\d+[a-z]?|P-[AB])-/.test(c.id));
       $('#res', V).innerHTML = results.length ? `<p class="muted">${results.length}${results.length >= 250 ? '+' : ''} Treffer</p><div class="grid">${results.map(c => {
         const setId = c.id.slice(0, c.id.length - String(c.localId).length - 1);
-        return tile({ key: c.id, srcs: tcgSrcs(c.image, ''), name: c.name, num: c.localId, count: tcgCount(c.id), sub: esc(setId) });
+        return tile({ key: c.id, srcs: tcgSrcs(c.image, ''), name: c.name, num: c.localId, count: tcgCount(c.id), sub: esc(setId), wish: isWishT(c.id) });
       }).join('')}</div>` : '<div class="empty">Keine Karten gefunden.</div>';
     } catch (e) { $('#res', V).innerHTML = errBox('Suche fehlgeschlagen.', e); }
   };
@@ -923,20 +1069,23 @@ async function viewTcgSearch(q0) {
     const l = e.target.dataset && e.target.dataset.l;
     if (l) { S.tcgLang = l; saveSettings(); for (const b of $('#lang', V).children) b.classList.toggle('on', b.dataset.l === l); run(); return; }
     const tl = e.target.closest('.tile'); if (!tl) return;
-    const c = results.find(x => x.id === tl.dataset.key);
-    openTcgCard(tl.dataset.key, { lang: S.tcgLang, after: () => replaceTile(c.id, tile({ key: c.id, srcs: tcgSrcs(c.image, ''), name: c.name, num: c.localId, count: tcgCount(c.id), sub: esc(c.id.slice(0, c.id.length - String(c.localId).length - 1)) })) });
+    const after = k => { const c = results.find(x => x.id === k); if (c) replaceTile(k, tile({ key: k, srcs: tcgSrcs(c.image, ''), name: c.name, num: c.localId, count: tcgCount(k), sub: esc(k.slice(0, k.length - String(c.localId).length - 1)), wish: isWishT(k) })); };
+    openTcgCard(tl.dataset.key, { lang: S.tcgLang, after, list: visibleKeys() });
   };
   if (q0) run();
 }
 
 async function openTcgCard(id, ctx = {}) {
-  openModal(loading('Lade Karte …'));
-  let card, lang = ctx.lang || S.tcgLang;
+  const tok = ++modalTok, nav = navHtml(ctx.list, id);
+  setModalNav(ctx.list, id, k => openTcgCard(k, ctx));
+  openModal(`<div style="padding:22px">${nav}${loading('Lade Karte …')}</div>`);
+  let card, lang = ctx.lang || (col.tcg[id] && col.tcg[id].cardLang) || (col.wish.tcg[id] && col.wish.tcg[id].cardLang) || S.tcgLang;
   try { card = await getJSON(`${TDX}/${lang}/cards/${encodeURIComponent(id)}`); }
   catch (e) {
     try { lang = 'en'; card = await getJSON(`${TDX}/en/cards/${encodeURIComponent(id)}`); }
-    catch { $('#modalBody').innerHTML = `<div style="padding:24px">${errBox('Karte konnte nicht geladen werden.', e)}</div>`; return; }
+    catch { if (tok === modalTok) $('#modalBody').innerHTML = `<div style="padding:22px">${nav}${errBox('Karte konnte nicht geladen werden.', e)}</div>`; return; }
   }
+  if (tok !== modalTok || !modal.open) return;
   const serie = card.image ? card.image.split('/')[4] : (ctx.serie || (col.tcg[id] && col.tcg[id].serie));
   const base = card.image || enBase(serie, card.set.id, card.localId);
   const en = enBase(serie, card.set.id, card.localId);
@@ -952,15 +1101,16 @@ async function openTcgCard(id, ctx = {}) {
     const e = col.tcg[id] || { v: {}, added: new Date().toISOString() };
     Object.assign(e, meta()); mut(e);
     if (tcgTotal(e) === 0 && !e.note) delete col.tcg[id]; else col.tcg[id] = e;
-    saveCol(); ctx.after && ctx.after();
+    saveCol(); ctx.after && ctx.after(id);
   };
   const e0 = col.tcg[id] || {};
   const allVars = [...new Set([...vars, ...Object.keys(e0.v || {}).filter(k => VAR_LABEL[k])])];
   const priceRows = cm ? `<dt>Cardmarket</dt><dd>Trend ${eur(cm.trend)} · Ø 30 Tage ${eur(cm.avg30)}${cm['trend-holo'] != null ? `<br>Holo/Reverse: Trend ${eur(cm['trend-holo'])}` : ''}<br><span class="muted" style="font-size:12px">Stand ${fmtDate(cm.updated)}</span></dd>` : '';
-  $('#modalBody').innerHTML = `<div class="card-detail">
+  $('#modalBody').innerHTML = `<div class="card-detail">${nav}
     <div class="big">${imgTag(tcgSrcs(base, en, 'high'), card.name)}<span class="ph">Kein Bild verfügbar</span></div>
     <div>
       <h2>${esc(card.name)}</h2>
+      <div id="wishWrap">${wishBtn(isWishT(id))}</div>
       <dl class="kv">
         <dt>Set</dt><dd><a href="#/tcg/set/${encodeURIComponent(card.set.id)}" data-close>${esc(card.set.name)}</a> · ${esc(card.localId)}${card.set.cardCount && card.set.cardCount.official ? '/' + card.set.cardCount.official : ''}</dd>
         ${card.rarity ? `<dt>Seltenheit</dt><dd>${esc(card.rarity)}</dd>` : ''}
@@ -980,6 +1130,11 @@ async function openTcgCard(id, ctx = {}) {
   const body = $('#modalBody');
   body.onclick = e => {
     if (e.target.closest('[data-close]')) { modal.close(); return; }
+    if (e.target.closest('[data-wish]')) {
+      if (isWishT(id)) delete col.wish.tcg[id];
+      else { const m = meta(); col.wish.tcg[id] = { name: m.name, set: m.set, setName: m.setName, serie: m.serie, num: m.num, official: m.official, img: m.img, cardLang: m.cardLang, added: new Date().toISOString() }; }
+      saveCol(); $('#wishWrap').innerHTML = wishBtn(isWishT(id)); ctx.after && ctx.after(id); return;
+    }
     const b = e.target.closest('[data-d]'); if (!b) return;
     const row = b.closest('[data-var]'), k = row.dataset.var, d = +b.dataset.d;
     commit(en2 => { en2.v[k] = Math.max(0, (en2.v[k] || 0) + d); if (!en2.v[k]) delete en2.v[k]; if (!en2.lng) en2.lng = $('#fLng').value; });
@@ -1003,6 +1158,9 @@ const rarIcon = r => { const x = RAR[r]; return x ? `<span class="rar r-${x[2]}"
 const SLOT_MAP = { RF: 'R', UF: 'U', CF: 'C' };
 let P = null;
 const pc = key => +(col.pocket[key] || 0);
+const isWishP = key => !!col.wish.pocket[key];
+const RAR_ORDER = ['C', 'U', 'R', 'RR', 'AR', 'SR', 'SAR', 'IM', 'S', 'SSR', 'UR'];
+const rarIdx = r => { const i = RAR_ORDER.indexOf(r); return i < 0 ? 99 : i; };
 const tdxSet = code => code.replace(/^PROMO-/, 'P-');
 const grpOf = r => (P.rar[r] && P.rar[r].group) || 'Diamond';
 const thumb = c => `${GH_IMG}thumbnails/${c.set}/${c.number}.webp`;
@@ -1058,13 +1216,15 @@ function packVariants(code) {
   }
   return P.vars.get(code);
 }
-function packStats(code, pack, inc) {
+/* opt.rel: nur diese Karten zählen (z. B. Wunschliste); opt.all: alle Seltenheiten statt nur gewählte */
+function packStats(code, pack, inc, opt = {}) {
   const pools = packPools(code, pack), vs = packVariants(code);
   const frac = {}; let total = 0, missing = 0, cost = 0;
-  for (const [r, arr] of Object.entries(pools)) {
-    if (!inc.has(grpOf(r))) { frac[r] = 0; continue; }
+  for (const [r, pool0] of Object.entries(pools)) {
+    if (!opt.all && !inc.has(grpOf(r))) { frac[r] = 0; continue; }
+    const arr = opt.rel ? pool0.filter(opt.rel) : pool0;
     const m = arr.filter(c => !pc(c.key)).length;
-    frac[r] = m / arr.length; total += arr.length; missing += m; cost += m * ((P.rar[r] && P.rar[r].points) || 0);
+    frac[r] = m / pool0.length; total += arr.length; missing += m; cost += m * ((P.rar[r] && P.rar[r].points) || 0);
   }
   let pAny = 0, exp = 0;
   for (const v of vs) {
@@ -1114,7 +1274,7 @@ function toggleGroup(g) {
   if (!on.size) return false;
   S.groups = GROUPS.map(x => x[0]).filter(x => on.has(x)); saveSettings(); return true;
 }
-const pocketTile = c => tile({ key: c.key, srcs: [thumb(c)], name: pName(c), num: '#' + c.number, count: pc(c.key), sub: rarIcon(c.rarity) });
+const pocketTile = c => tile({ key: c.key, srcs: [thumb(c)], name: pName(c), num: '#' + c.number, count: pc(c.key), sub: rarIcon(c.rarity), wish: isWishP(c.key) });
 /* Schnellerfassung: Antippen setzt auf 1 bzw. 2 (Deck-Maximum) und beim nächsten Antippen zurück auf 0.
    Hat eine Karte schon mehr als den Zielwert, öffnet sich stattdessen die Kartenansicht. */
 function pocketQuick(key) {
@@ -1175,9 +1335,21 @@ async function viewPocketSet(code, q) {
   try { await pocketDeSet(code); } catch { }
   if (rid !== renderId) return;
   const cards = P.bySet[code];
-  const st = { pack: (q && q.get('pack')) || '', f: 'all', s: '' };
+  const PF = [['all', 'Alle'], ['own', 'Habe ich'], ['miss', 'Fehlen'], ['half', '1 von 2'], ['trade', 'Zum Tauschen'], ['wish', '★ Wunsch']];
+  const PPASS = {
+    all: () => true, own: c => pc(c.key) > 0, miss: c => pc(c.key) === 0, half: c => pc(c.key) === 1,
+    trade: c => pc(c.key) > 2 && (P.rar[c.rarity] || {}).tradeable !== false, wish: c => isWishP(c.key),
+  };
+  const PSORT = [['num', 'Nummer'], ['name', 'Name'], ['rar', 'Seltenheit'], ['count', 'Anzahl']];
+  const PSF = {
+    num: (a, b) => a.number - b.number, name: (a, b) => pName(a).localeCompare(pName(b), 'de') || a.number - b.number,
+    rar: (a, b) => rarIdx(a.rarity) - rarIdx(b.rarity) || a.number - b.number, count: (a, b) => pc(b.key) - pc(a.key) || a.number - b.number,
+  };
+  const st = { pack: (q && q.get('pack')) || '', f: PPASS[S.pocketF] ? S.pocketF : 'all', s: '' };
+  const order = [...P.setList.filter(x => !/^PROMO/.test(x.code)).sort((a, b) => (a.releaseDate || '').localeCompare(b.releaseDate || '') || natCmp(a.code, b.code)), ...P.setList.filter(x => /^PROMO/.test(x.code))];
+  const oi = order.findIndex(x => x.code === code), nb = x => x && { id: x.code, name: setTitle(x) };
   const hasRates = !!P.pull[code];
-  V.innerHTML = `<section class="set-head">
+  V.innerHTML = `<div id="setnav">${setNavHtml(nb(order[oi - 1]), nb(order[oi + 1]), 'pocket')}</div><section class="set-head">
       ${pocketLogo(code)}
       <div class="info"><h1>${esc(setTitle(set))}</h1>
         <div class="muted">${esc(code)}${set.releaseDate ? ' · ' + fmtDate(set.releaseDate) : ''} · ${cards.length} Karten</div>
@@ -1185,8 +1357,9 @@ async function viewPocketSet(code, q) {
     </section>
     <section class="packs" id="packs"></section>
     <div class="toolbar">${groupChips()}
-      <div class="seg" id="segF"><button data-f="all" class="on">Alle</button><button data-f="own">Habe ich</button><button data-f="miss">Fehlen</button></div>
+      <div class="seg" id="segF"></div>
       <input type="search" id="q" placeholder="Name oder Nummer">
+      ${sortSel(PSORT, PSF[S.pocketSort] ? S.pocketSort : 'num')}
       ${quickSwitch('quickPocket', 'Schnellerfassung')}
       <div class="seg" id="segN" title="Auf welche Anzahl Antippen eine Karte setzt"><button type="button" data-qn="1" class="${S.quickPocketN === 1 ? 'on' : ''}">Antippen = 1</button><button type="button" data-qn="2" class="${S.quickPocketN === 1 ? '' : 'on'}">Antippen = 2</button></div>
     </div>
@@ -1215,14 +1388,21 @@ async function viewPocketSet(code, q) {
   };
   const grid = () => {
     const inc = new Set(S.groups), q = st.s.toLowerCase();
-    const list = cards.filter(c => (!st.pack || (c.packs || []).includes(st.pack)) && inc.has(grpOf(c.rarity))
-      && (st.f === 'all' || (st.f === 'own') === (pc(c.key) > 0))
+    const base = cards.filter(c => (!st.pack || (c.packs || []).includes(st.pack)) && inc.has(grpOf(c.rarity))
       && (!q || pName(c).toLowerCase().includes(q) || c.name.toLowerCase().includes(q) || String(c.number) === q));
+    const counts = Object.fromEntries(PF.map(([k]) => [k, base.filter(PPASS[k]).length]));
+    $('#segF', V).innerHTML = filterSeg(PF, st.f, counts);
+    const list = base.filter(PPASS[st.f] || PPASS.all).sort(PSF[S.pocketSort] || PSF.num);
     $('#grid', V).innerHTML = list.map(pocketTile).join('') || '<div class="empty" style="grid-column:1/-1">Keine Karten.</div>';
   };
-  const refresh = key => { if (key) replaceTile(key, pocketTile(P.byKey[key])); head(); packs(); };
+  const refresh = key => {
+    if (key) replaceTile(key, pocketTile(P.byKey[key])); head(); packs();
+    const qq = st.s.toLowerCase(), inc = new Set(S.groups);
+    const base = cards.filter(c => (!st.pack || (c.packs || []).includes(st.pack)) && inc.has(grpOf(c.rarity)) && (!qq || pName(c).toLowerCase().includes(qq) || c.name.toLowerCase().includes(qq) || String(c.number) === qq));
+    $('#segF', V).innerHTML = filterSeg(PF, st.f, Object.fromEntries(PF.map(([k]) => [k, base.filter(PPASS[k]).length])));
+  };
   $('#q', V).oninput = e => { st.s = e.target.value; grid(); };
-  V.onchange = handleQuickSwitch;
+  V.onchange = e => { if (handleQuickSwitch(e)) return; if (e.target.id === 'sort') { S.pocketSort = e.target.value; saveSettings(); grid(); } };
   V.onclick = e => {
     const g = e.target.closest('[data-grp]');
     if (g) { if (toggleGroup(g.dataset.grp)) { for (const b of $('#grp', V).children) b.classList.toggle('on', S.groups.includes(b.dataset.grp)); head(); packs(); grid(); } return; }
@@ -1231,44 +1411,50 @@ async function viewPocketSet(code, q) {
     const pk = e.target.closest('[data-pack]');
     if (pk) { st.pack = pk.dataset.pack === st.pack ? '' : pk.dataset.pack; packs(); grid(); return; }
     const sb = e.target.closest('[data-f]');
-    if (sb) { st.f = sb.dataset.f; for (const b of $('#segF', V).children) b.classList.toggle('on', b === sb); grid(); return; }
+    if (sb) { st.f = S.pocketF = sb.dataset.f; saveSettings(); grid(); return; }
     const t = e.target.closest('.tile'); if (!t) return;
     const key = t.dataset.key;
     if (S.quickPocket && pocketQuick(key)) { refresh(key); return; }
-    openPocketCard(key, () => refresh(key));
+    openPocketCard(key, refresh, visibleKeys());
   };
   head(); packs(); grid();
 }
 
-async function viewPocketPacks() {
+async function viewPocketPacks(q) {
   const rid = ++renderId;
   if (!await pocketReady(rid)) return;
+  if (q && q.get('mode')) { S.advMode = q.get('mode') === 'wish' ? 'wish' : 'new'; saveSettings(); }
   const draw = () => {
     if (rid !== renderId) return;
+    const wishMode = S.advMode === 'wish', nWish = Object.keys(col.wish.pocket).filter(k => P.byKey[k] && !pc(k)).length;
+    const opt = wishMode ? { rel: c => isWishP(c.key), all: true } : {};
     const inc = new Set(S.groups), rows = [], gone = [];
     for (const s of P.setList) {
       if (!P.pull[s.code]) continue;
       for (const p of s.packs || []) {
-        const st = packStats(s.code, p, inc); if (!st.total) continue;
+        const st = packStats(s.code, p, inc, opt); if (!st.total || (wishMode && !st.missing)) continue;
         (packOpen(s.code, p) ? rows : gone).push({ s, p, ...st, av: packAvail(s.code, p) });
       }
     }
     rows.sort((a, b) => b.pAny - a.pAny || b.exp - a.exp);
     V.innerHTML = `<h1 style="font-size:24px;letter-spacing:-.02em">Welches Pack soll ich öffnen?</h1>
-      <p class="muted" style="margin:6px 0 0">Sortiert nach der Chance, mindestens eine Karte zu ziehen, die dir noch fehlt.</p>
-      <div class="toolbar">${groupChips()}</div>
+      <p class="muted" style="margin:6px 0 0">${wishMode ? 'Sortiert nach der Chance, mindestens eine Karte von deiner Wunschliste zu ziehen.' : 'Sortiert nach der Chance, mindestens eine Karte zu ziehen, die dir noch fehlt.'}</p>
+      <div class="toolbar"><div class="seg" id="segM"><button type="button" data-m="new" class="${wishMode ? '' : 'on'}">Neue Karten</button><button type="button" data-m="wish" class="${wishMode ? 'on' : ''}">★ Wunschliste<small>${nWish}</small></button></div>${wishMode ? '' : groupChips()}</div>
       <div class="adv">${rows.map((r, i) => `<a class="panel" href="#/pocket/set/${encodeURIComponent(r.s.code)}?pack=${encodeURIComponent(r.p)}">
           <span class="rank">${i + 1}</span>
-          <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · fehlen ${r.missing}/${r.total}</span>${r.av ? `<span style="display:block;margin-top:4px">${availTag(r.av)}</span>` : ''}</span>
-          <span><span class="v">${pct(r.pAny)}</span><br><span class="k">Chance auf neue Karte</span></span>
+          <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · ${wishMode ? `${r.missing} Wunschkarte${r.missing === 1 ? '' : 'n'} offen` : `fehlen ${r.missing}/${r.total}`}</span>${r.av ? `<span style="display:block;margin-top:4px">${availTag(r.av)}</span>` : ''}</span>
+          <span><span class="v">${pct(r.pAny)}</span><br><span class="k">${wishMode ? 'Chance auf Wunschkarte' : 'Chance auf neue Karte'}</span></span>
           <span class="hide-s"><span class="v">${r.exp.toLocaleString('de-DE', { maximumFractionDigits: 2 })}</span><br><span class="k">Ø neue Karten/Pack</span></span>
           <span class="hide-s"><span class="v">${nf(r.cost)}</span><br><span class="k">Pack-Punkte für Rest</span></span>
-        </a>`).join('') || '<div class="empty">Alles komplett – Glückwunsch! 🎉</div>'}
+        </a>`).join('') || (wishMode ? `<div class="empty">${nWish ? 'Deine offenen Wunschkarten gibt es in keinem erhältlichen Pack.' : 'Keine offenen Wünsche. Markiere Karten in der Kartenansicht mit ☆.'}</div>` : '<div class="empty">Alles komplett – Glückwunsch! 🎉</div>')}
         ${gone.length ? `<div class="sec-t" style="margin-top:22px">Nicht mehr erhältlich – zählt nicht mit</div><div class="gone-list">${gone.map(r => `<a class="panel" href="#/pocket/set/${encodeURIComponent(r.s.code)}?pack=${encodeURIComponent(r.p)}">
             <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · fehlen ${r.missing}/${r.total}</span></span>${availTag(r.av)}</a>`).join('')}</div>` : ''}</div>
       <p class="note">Berechnet aus den offiziellen Raten je Kartenplatz (inkl. seltener Packs und 6-Karten-Packs) und deinem aktuellen Stand. Innerhalb einer Seltenheit gilt jede Karte eines Packs als gleich wahrscheinlich. Karten, die in mehreren Packs eines Sets vorkommen, zählen für jedes dieser Packs.</p>`;
   };
-  V.onclick = e => { const g = e.target.closest('[data-grp]'); if (g && toggleGroup(g.dataset.grp)) draw(); };
+  V.onclick = e => {
+    const m = e.target.closest('[data-m]'); if (m) { S.advMode = m.dataset.m; saveSettings(); draw(); return; }
+    const g = e.target.closest('[data-grp]'); if (g && toggleGroup(g.dataset.grp)) draw();
+  };
   draw();
   loadAllDe().then(() => { if (rid === renderId) draw(); });
 }
@@ -1284,29 +1470,33 @@ async function viewPocketSearch(q0) {
     history.replaceState(null, '', '#/pocket/search' + (q ? '?q=' + encodeURIComponent(qi.value.trim()) : ''));
     if (q.length < 2) { $('#res', V).innerHTML = '<div class="empty">Mindestens zwei Buchstaben eingeben.</div>'; return; }
     const res = P.cards.filter(c => c.name.toLowerCase().includes(q) || pName(c).toLowerCase().includes(q));
-    $('#res', V).innerHTML = res.length ? `<p class="muted">${res.length} Treffer</p><div class="grid">${res.slice(0, 300).map(c => tile({ key: c.key, srcs: [thumb(c)], name: pName(c), num: '#' + c.number, count: pc(c.key), sub: `${rarIcon(c.rarity)} ${esc(c.set)}` })).join('')}</div>` : '<div class="empty">Keine Karten gefunden.</div>';
+    $('#res', V).innerHTML = res.length ? `<p class="muted">${res.length} Treffer</p><div class="grid">${res.slice(0, 300).map(c => tile({ key: c.key, srcs: [thumb(c)], name: pName(c), num: '#' + c.number, count: pc(c.key), sub: `${rarIcon(c.rarity)} ${esc(c.set)}`, wish: isWishP(c.key) })).join('')}</div>` : '<div class="empty">Keine Karten gefunden.</div>';
   };
   qi.oninput = run;
   V.onclick = e => {
     const t = e.target.closest('.tile'); if (!t) return;
-    openPocketCard(t.dataset.key, run);
+    openPocketCard(t.dataset.key, () => run(), visibleKeys());
   };
   run();
   loadAllDe().then(() => { if (qi.value.trim().length >= 2) run(); });
 }
 
-function openPocketCard(key, after) {
+function openPocketCard(key, after, list) {
+  ++modalTok;
+  setModalNav(list, key, k => openPocketCard(k, after, list));
+  const nav = navHtml(list, key);
   const c = P.byKey[key], set = P.setMap[c.set] || { code: c.set }, r = P.rar[c.rarity] || {};
   const id = tdxSet(c.set), pad = String(c.number).padStart(3, '0');
   const srcs = [P.deAvail.has(id) && `https://assets.tcgdex.net/de/tcgp/${id}/${pad}/high.webp`, `https://assets.tcgdex.net/en/tcgp/${id}/${pad}/high.webp`, thumb(c)];
   const packs = c.packs || [], hasRates = !!P.pull[c.set];
   const draw = () => {
     const n = pc(key);
-    $('#modalBody').innerHTML = `<div class="card-detail">
+    $('#modalBody').innerHTML = `<div class="card-detail">${nav}
       <div class="big">${imgTag(srcs, pName(c))}<span class="ph">Kein Bild verfügbar</span></div>
       <div>
         <h2>${esc(pName(c))}</h2>
         ${pName(c) !== c.name ? `<div class="muted">${esc(c.name)}</div>` : ''}
+        ${wishBtn(isWishP(key))}
         <dl class="kv">
           <dt>Set</dt><dd><a href="#/pocket/set/${encodeURIComponent(c.set)}" data-close>${esc(setTitle(set))}</a> · #${c.number}</dd>
           <dt>Seltenheit</dt><dd>${rarIcon(c.rarity)} ${esc(RAR[c.rarity] ? RAR[c.rarity][3] : c.rarity)}</dd>
@@ -1329,11 +1519,248 @@ function openPocketCard(key, after) {
   draw();
   $('#modalBody').onclick = e => {
     if (e.target.closest('[data-close]')) { modal.close(); return; }
+    if (e.target.closest('[data-wish]')) {
+      if (isWishP(key)) delete col.wish.pocket[key]; else col.wish.pocket[key] = new Date().toISOString();
+      saveCol(); draw(); after && after(key); return;
+    }
     const sb = e.target.closest('[data-set]'), b = e.target.closest('[data-d]'); if (!sb && !b) return;
     const v = sb ? +sb.dataset.set : Math.max(0, pc(key) + +b.dataset.d);
     if (v) col.pocket[key] = v; else delete col.pocket[key];
-    saveCol(); draw(); after && after();
+    saveCol(); draw(); after && after(key);
   };
+}
+
+
+/* ================= Wunschliste ================= */
+function viewTcgWish() {
+  const rid = ++renderId;
+  const wTile = id => { const w = col.wish.tcg[id]; return tile({ key: id, srcs: tcgSrcs(w.img, enBase(w.serie, w.set, w.num)), name: w.name, num: w.num, count: tcgCount(id), wish: true }); };
+  const draw = () => {
+    if (rid !== renderId) return;
+    const ids = Object.keys(col.wish.tcg), open = ids.filter(id => !tcgCount(id)), show = S.wishOpenOnly ? open : ids;
+    if (!ids.length) { V.innerHTML = `<div class="panel empty"><h2 style="margin-bottom:8px">Deine Wunschliste ist leer</h2><p>Öffne eine Karte und tippe auf „☆ Auf die Wunschliste“. Gesuchte Karten bekommen dann überall einen ★.</p></div>`; return; }
+    const groups = {};
+    for (const id of show) { const w = col.wish.tcg[id]; (groups[w.set] = groups[w.set] || { name: w.setName || w.set, ids: [] }).ids.push(id); }
+    V.innerHTML = `<div class="stats"><div class="panel stat"><b>${open.length}</b><span>noch gesucht</span></div><div class="panel stat"><b>${ids.length - open.length}</b><span>schon gefunden</span></div></div>
+      <div class="toolbar"><div class="seg"><button type="button" data-wo="1" class="${S.wishOpenOnly ? 'on' : ''}">Noch gesucht</button><button type="button" data-wo="0" class="${S.wishOpenOnly ? '' : 'on'}">Alle</button></div>
+        ${ids.length > open.length ? '<button class="btn" type="button" data-wa="clean">Gefundene entfernen</button>' : ''}
+        ${open.length ? '<button class="btn" type="button" data-wa="copy">📋 Suchliste kopieren</button>' : ''}</div>
+      ${Object.entries(groups).map(([set, g]) => `<div class="group-title"><h2>${esc(g.name)}</h2><a href="#/tcg/set/${encodeURIComponent(set)}">Set öffnen →</a></div>
+        <div class="grid">${g.ids.sort((a, b) => natCmp(col.wish.tcg[a].num, col.wish.tcg[b].num)).map(wTile).join('')}</div>`).join('') || '<div class="empty">Alles gefunden – Glückwunsch! 🎉</div>'}`;
+  };
+  V.onclick = e => {
+    const wo = e.target.closest('[data-wo]'); if (wo) { S.wishOpenOnly = wo.dataset.wo === '1'; saveSettings(); draw(); return; }
+    const wa = e.target.closest('[data-wa]');
+    if (wa && wa.dataset.wa === 'clean') { for (const id of Object.keys(col.wish.tcg)) if (tcgCount(id)) delete col.wish.tcg[id]; saveCol(); draw(); return; }
+    if (wa && wa.dataset.wa === 'copy') {
+      copyText(Object.keys(col.wish.tcg).filter(id => !tcgCount(id)).map(id => { const w = col.wish.tcg[id]; return `${w.name} – ${w.setName || w.set} ${w.num}${w.official ? '/' + w.official : ''}`; }).join('\n')); return;
+    }
+    const t = e.target.closest('.tile'); if (!t) return;
+    openTcgCard(t.dataset.key, { after: draw, list: visibleKeys() });
+  };
+  draw();
+}
+
+/* beste aktuell erhältliche Quelle unter mehreren Drucken einer Karte */
+function bestSource(prints) {
+  let best = null;
+  for (const k of prints) for (const p of (k.packs || [])) {
+    if (!P.pull[k.set] || !packOpen(k.set, p)) continue;
+    const ch = cardChance(k, p); if (!best || ch > best.ch) best = { k, p, ch };
+  }
+  return best;
+}
+function sourceText(prints) {
+  const b = bestSource(prints);
+  if (b) return `${esc(packName(b.k.set, b.p))} · ${pct(b.ch)}/Pack`;
+  return prints.some(k => (k.packs || []).length) ? 'in keinem erhältlichen Pack' : 'Promo / Event';
+}
+
+async function viewPocketWish() {
+  const rid = ++renderId;
+  if (!await pocketReady(rid)) return;
+  const setIdx = new Map(P.setList.map((s, i) => [s.code, i]));
+  const draw = () => {
+    if (rid !== renderId) return;
+    const keys = Object.keys(col.wish.pocket).filter(k => P.byKey[k]), open = keys.filter(k => !pc(k)), show = S.pWishOpenOnly ? open : keys;
+    if (!keys.length) { V.innerHTML = `<div class="panel empty"><h2 style="margin-bottom:8px">Deine Wunschliste ist leer</h2><p>Öffne eine Karte und tippe auf „☆ Auf die Wunschliste“ – oder lass dir im Deck-Check fehlende Karten eintragen.</p></div>`; return; }
+    let pts = 0; for (const k of open) pts += (P.rar[P.byKey[k].rarity] || {}).points || 0;
+    const groups = {}; for (const k of show) { const c = P.byKey[k]; (groups[c.set] = groups[c.set] || []).push(c); }
+    const order = Object.keys(groups).sort((a, b) => (setIdx.get(b) ?? 0) - (setIdx.get(a) ?? 0));
+    V.innerHTML = `<div class="stats"><div class="panel stat"><b>${open.length}</b><span>noch gesucht</span></div><div class="panel stat"><b>${keys.length - open.length}</b><span>schon gezogen</span></div><div class="panel stat"><b>${nf(pts)}</b><span>Pack-Punkte für alle offenen</span></div></div>
+      <div class="toolbar"><div class="seg"><button type="button" data-wo="1" class="${S.pWishOpenOnly ? 'on' : ''}">Noch gesucht</button><button type="button" data-wo="0" class="${S.pWishOpenOnly ? '' : 'on'}">Alle</button></div>
+        ${open.length ? '<a class="btn primary" href="#/pocket/packs?mode=wish">Welches Pack für meine Wünsche? →</a>' : ''}
+        ${keys.length > open.length ? '<button class="btn" type="button" data-wa="clean">Gezogene entfernen</button>' : ''}
+        ${open.length ? '<button class="btn" type="button" data-wa="copy">📋 Suchliste kopieren</button>' : ''}</div>
+      ${order.map(code => `<div class="group-title"><h2>${esc(setTitle(P.setMap[code] || { code }))}</h2><a href="#/pocket/set/${encodeURIComponent(code)}">Set öffnen →</a></div>
+        <div class="grid">${groups[code].sort((a, b) => a.number - b.number).map(c => tile({ key: c.key, srcs: [thumb(c)], name: pName(c), num: '#' + c.number, count: pc(c.key), wish: true, sub: `${rarIcon(c.rarity)} ${pc(c.key) ? '' : sourceText([c])}` })).join('')}</div>`).join('') || '<div class="empty">Alles gezogen – Glückwunsch! 🎉</div>'}`;
+  };
+  V.onclick = e => {
+    const wo = e.target.closest('[data-wo]'); if (wo) { S.pWishOpenOnly = wo.dataset.wo === '1'; saveSettings(); draw(); return; }
+    const wa = e.target.closest('[data-wa]');
+    if (wa && wa.dataset.wa === 'clean') { for (const k of Object.keys(col.wish.pocket)) if (pc(k)) delete col.wish.pocket[k]; saveCol(); draw(); return; }
+    if (wa && wa.dataset.wa === 'copy') {
+      copyText(Object.keys(col.wish.pocket).filter(k => P.byKey[k] && !pc(k)).map(k => { const c = P.byKey[k]; return `${pName(c)} (${setTitle(P.setMap[c.set] || { code: c.set })} #${c.number}, ${RAR[c.rarity] ? RAR[c.rarity][3] : c.rarity})`; }).join('\n')); return;
+    }
+    const t = e.target.closest('.tile'); if (!t) return;
+    openPocketCard(t.dataset.key, () => draw(), visibleKeys());
+  };
+  draw();
+  loadAllDe().then(() => { if (rid === renderId) draw(); });
+}
+
+/* ================= Deck-Check (Pocket) ================= */
+async function pocketExtra() {
+  if (P.extra) return P.extra;
+  const m = {};
+  try { for (const c of await getJSON(PDB + 'cards.extra.json')) m[`${c.set}-${c.number}`] = c; } catch { }
+  P.extra = m; P.sigs = null;
+  return m;
+}
+/* Drucke derselben Karte (gleicher Name + gleiche Werte) gelten im Deck als austauschbar */
+function sigOf(c) {
+  const x = (P.extra && P.extra[c.key]) || {};
+  if (x.type && x.type !== 'pokemon') return `${norm(c.name)}|${x.type}`;
+  return `${norm(c.name)}|${x.health ?? ''}|${x.element ?? ''}|${x.stage ?? ''}|${x.retreatCost ?? ''}`;
+}
+function printsOf(c) {
+  if (!P.sigs) { P.sigs = new Map(); for (const k of P.cards) { const s = sigOf(k); if (!P.sigs.has(s)) P.sigs.set(s, []); P.sigs.get(s).push(k); } }
+  return P.sigs.get(sigOf(c)) || [c];
+}
+const findByName = name => { const n = norm(name); return n ? P.cards.filter(c => norm(c.name) === n || norm(pName(c)) === n) : []; };
+const pickCanon = list => list.slice().sort((a, b) => rarIdx(a.rarity) - rarIdx(b.rarity) || (setIdxOf(a.set) - setIdxOf(b.set)) || a.number - b.number)[0];
+const setIdxOf = code => { const i = P.setList.findIndex(s => s.code === code); return i < 0 ? 999 : i; };
+
+function parseDeck(text) {
+  const out = [];
+  for (const raw of String(text || '').split(/\r?\n/)) {
+    let line = raw.replace(/\t/g, ' ').replace(/\s+/g, ' ').trim(), m;
+    if (!line || /^(#|\/\/)/.test(line)) continue;
+    if (/^(pok[eé]mon|trainer|energ(y|ie)|deck|total|gesamt)\b[^a-z0-9]*\d*\s*$/i.test(line) || /^(pok[eé]mon|trainer|energ(y|ie))\s*[:(]/i.test(line)) continue;
+    let n = 1;
+    if ((m = line.match(/^(\d+)\s*[x×]?\s+(.+)$/i))) { n = +m[1]; line = m[2]; }
+    else if ((m = line.match(/^(.+?)\s+[x×]\s*(\d+)$/i))) { n = +m[2]; line = m[1]; }
+    let setCode = null, num = null;
+    if ((m = line.match(/^(.*?)[\s(]+(P-[AB]|PROMO-[AB]|[A-Z]\d+[a-z]?)[\s\-#/]*0*(\d+)\)?$/))) { line = m[1]; setCode = m[2].replace(/^P-/, 'PROMO-'); num = +m[3]; }
+    out.push({ raw: raw.trim(), n, name: line.replace(/[\s,;:\-]+$/, '').trim(), setCode, num });
+  }
+  return out;
+}
+function analyzeDeck(text) {
+  const lines = parseDeck(text), rows = [], bySig = new Map(), byName = new Map();
+  for (const l of lines) {
+    let c = l.setCode ? P.byKey[`${l.setCode}-${l.num}`] : null, ambiguous = false;
+    if (c && l.name && norm(c.name) !== norm(l.name) && norm(pName(c)) !== norm(l.name) && findByName(l.name).length) c = null;
+    if (!c && l.name) { const alt = findByName(l.name); if (alt.length) { c = pickCanon(alt); ambiguous = new Set(alt.map(sigOf)).size > 1; } }
+    const row = { l, c, ambiguous };
+    if (c) {
+      row.sig = sigOf(c); row.prints = printsOf(c);
+      const g = bySig.get(row.sig) || { need: 0, have: row.prints.reduce((a, k) => a + pc(k.key), 0), prints: row.prints, rows: [] };
+      g.need += l.n; g.rows.push(row); bySig.set(row.sig, g);
+      byName.set(norm(c.name), (byName.get(norm(c.name)) || 0) + l.n);
+    }
+    rows.push(row);
+  }
+  let okCards = 0, missing = 0, pts = 0;
+  for (const g of bySig.values()) {
+    const ok = Math.min(g.have, g.need); okCards += ok;
+    const miss = g.need - ok; missing += miss;
+    const minPts = Math.min(...g.prints.map(k => (P.rar[k.rarity] || {}).points).filter(v => v > 0));
+    if (miss && Number.isFinite(minPts)) pts += miss * minPts;
+  }
+  const total = lines.reduce((a, l) => a + l.n, 0);
+  const tooMany = [...byName.entries()].filter(([, n]) => n > 2).map(([k]) => k);
+  return { rows, bySig, total, okCards, missing, pts, unknown: rows.filter(r => !r.c).length, tooMany };
+}
+const newDeckId = () => 'd' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+
+async function viewPocketDecks() {
+  const rid = ++renderId;
+  if (!await pocketReady(rid)) return;
+  V.innerHTML = loading('Prüfe Decks …');
+  await Promise.all([pocketExtra(), loadAllDe()]);
+  if (rid !== renderId) return;
+  const decks = col.decks.slice().sort((a, b) => (b.updated || '').localeCompare(a.updated || ''));
+  V.innerHTML = `<div class="toolbar" style="margin-top:0"><h1 style="font-size:24px;letter-spacing:-.02em;margin-right:auto">Deck-Check</h1><a class="btn primary" href="#/pocket/deck/new">＋ Neues Deck</a></div>
+    ${decks.length ? `<div class="decks">${decks.map(d => {
+      const a = analyzeDeck(d.text);
+      return `<a class="panel deckcard" href="#/pocket/deck/${encodeURIComponent(d.id)}"><h3>${esc(d.name || 'Ohne Namen')}</h3>
+        <div class="row"><span>${a.okCards} / ${a.total} Karten vorhanden</span><span>${a.missing ? `fehlen ${a.missing}` : a.total ? '✓ komplett' : 'leer'}</span></div>${bar(a.okCards, a.total)}
+        ${a.unknown ? `<span class="dwarn">${a.unknown} Zeile${a.unknown === 1 ? '' : 'n'} nicht erkannt</span>` : ''}</a>`;
+    }).join('')}</div>`
+      : `<div class="panel empty"><h2 style="margin-bottom:8px">Noch keine Decks</h2><p>Füge eine Deckliste ein (z. B. von einer Deck-Seite kopiert) und sieh sofort, welche Karten dir fehlen und aus welchem Pack du sie bekommst.</p><p><a class="btn primary" href="#/pocket/deck/new">＋ Neues Deck</a></p></div>`}`;
+}
+
+async function viewPocketDeck(id) {
+  const rid = ++renderId;
+  if (!await pocketReady(rid)) return;
+  if (id === 'new') {
+    const d = { id: newDeckId(), name: 'Neues Deck', text: '', updated: new Date().toISOString() };
+    col.decks.push(d); saveCol();
+    history.replaceState(null, '', '#/pocket/deck/' + d.id); id = d.id;
+  }
+  const deck = col.decks.find(d => d.id === id);
+  if (!deck) { V.innerHTML = errBox('Deck nicht gefunden.') + '<p><a class="btn" href="#/pocket/decks">‹ Alle Decks</a></p>'; return; }
+  V.innerHTML = loading('Lade Kartendaten …');
+  await Promise.all([pocketExtra(), loadAllDe()]);
+  if (rid !== renderId) return;
+  V.innerHTML = `<nav class="setnav"><a href="#/pocket/decks">‹ Alle Decks</a><span></span></nav>
+    <div class="deck-edit">
+      <div class="panel deck-in">
+        <input type="text" id="dName" value="${esc(deck.name)}" placeholder="Deckname" aria-label="Deckname">
+        <textarea id="dText" spellcheck="false" placeholder="Eine Karte pro Zeile, z. B.&#10;2 Pikachu ex A1 96&#10;2 Zapdos ex A1 104&#10;2 Professor's Research P-A 7&#10;2 Schiggy&#10;Pokéball x2">${esc(deck.text)}</textarea>
+        <p class="muted" style="font-size:12px;margin:0">Anzahl, Name und optional Set + Nummer (z. B. „A1 96“, „A1-096“, „P-A 7“). Namen gehen auf Deutsch oder Englisch. Überschriften wie „Pokémon: 12“ werden ignoriert. Wird automatisch gespeichert.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" type="button" id="dWish">★ Fehlende auf Wunschliste</button><button class="btn" type="button" id="dDel">Deck löschen</button></div>
+      </div>
+      <div id="dRes"></div>
+    </div>`;
+  let keys = [];
+  const render = () => {
+    const a = analyzeDeck($('#dText', V).value);
+    keys = a.rows.filter(r => r.c).map(r => r.c.key);
+    const warn = [];
+    if (a.total && a.total !== 20) warn.push(`Ein Deck hat genau 20 Karten – hier sind es ${a.total}.`);
+    if (a.tooMany.length) warn.push('Von einer Karte dürfen höchstens 2 mit gleichem Namen ins Deck.');
+    if (a.unknown) warn.push(`${a.unknown} Zeile${a.unknown === 1 ? '' : 'n'} nicht erkannt – Schreibweise oder Set/Nummer prüfen.`);
+    $('#dRes', V).innerHTML = !a.rows.length ? '<div class="panel empty">Füge links eine Deckliste ein.</div>'
+      : `<div class="panel dsum"><b>${a.okCards} / ${a.total}</b><span>Karten vorhanden</span>${bar(a.okCards, a.total).replace('class="bar"', 'class="bar" style="flex:1 1 140px"')}
+          ${a.missing ? `<span class="muted">fehlen ${a.missing} · per Pack-Punkte ca. ${nf(a.pts)}</span>` : '<span style="color:var(--ok);font-weight:700">✓ Du kannst das Deck komplett bauen</span>'}
+          ${warn.length ? `<div style="flex-basis:100%">${warn.map(w => `<div class="dwarn">⚠ ${esc(w)}</div>`).join('')}</div>` : ''}</div>
+        <div class="drows">${a.rows.map(r => {
+          if (!r.c) return `<div class="panel drow unk"><span></span><span class="dn"><b>${esc(r.l.name || r.l.raw)}</b><span>nicht gefunden: „${esc(r.l.raw)}“</span></span><span class="ds">?</span></div>`;
+          const g = a.bySig.get(r.sig), cls = g.have >= g.need ? 'ok' : g.have > 0 ? 'part' : 'miss';
+          const other = g.prints.filter(k => k.key !== r.c.key && pc(k.key));
+          const info = cls === 'ok' ? (other.length && !pc(r.c.key) ? `vorhanden als ${other.map(k => `${k.set} #${k.number}`).join(', ')}` : 'vorhanden')
+            : `holen: ${sourceText(g.prints)}`;
+          return `<button type="button" class="panel drow ${cls}" data-key="${esc(r.c.key)}"><img src="${esc(thumb(r.c))}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
+            <span class="dn"><b>${r.l.n}× ${esc(pName(r.c))}</b><span>${esc(r.c.set)} #${r.c.number} · ${rarIcon(r.c.rarity)} · ${info}${r.ambiguous ? ' · ⚠ mehrere Versionen – Set + Nummer angeben' : ''}</span></span>
+            <span class="ds">${Math.min(g.have, g.need)} / ${g.need}</span></button>`;
+        }).join('')}</div>`;
+  };
+  let saveT;
+  const save = () => { clearTimeout(saveT); saveT = setTimeout(() => { deck.text = $('#dText', V).value; deck.name = $('#dName', V).value.trim() || 'Ohne Namen'; deck.updated = new Date().toISOString(); saveCol(); }, 500); };
+  $('#dText', V).oninput = () => { render(); save(); };
+  $('#dName', V).oninput = save;
+  V.onclick = e => {
+    if (e.target.id === 'dDel') {
+      if (!confirm(`Deck „${deck.name}“ löschen?`)) return;
+      clearTimeout(saveT); col.decks = col.decks.filter(d => d.id !== deck.id); saveCol(); location.hash = '#/pocket/decks'; return;
+    }
+    if (e.target.id === 'dWish') {
+      const a = analyzeDeck($('#dText', V).value); let n = 0;
+      for (const g of a.bySig.values()) {
+        if (g.have >= g.need) continue;
+        const b = bestSource(g.prints), k = (b && b.k) || pickCanon(g.prints);
+        if (!isWishP(k.key)) { col.wish.pocket[k.key] = new Date().toISOString(); n++; }
+      }
+      if (n) saveCol();
+      toast(n ? `${n} Karte${n === 1 ? '' : 'n'} auf die Wunschliste gesetzt ★` : 'Nichts zu tun – alles vorhanden oder schon auf der Wunschliste');
+      return;
+    }
+    const r = e.target.closest('.drow[data-key]'); if (!r) return;
+    openPocketCard(r.dataset.key, () => render(), [...new Set(keys)]);
+  };
+  render();
 }
 
 /* ================= Start ================= */
