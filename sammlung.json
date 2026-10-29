@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:37:31.174Z",
+ "updated": "2026-10-29T19:38:46.099Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -1918,6 +1918,279 @@
     "at": "2026-10-29T17:48:09.133Z"
    },
    "rarity": "Common"
+  },
+  "hgss4-1": {
+   "name": "Aggron",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "1",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/1",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:09.454Z",
+   "price": {
+    "trend": 3.44,
+    "avg30": 4.09,
+    "trendHolo": 3.33,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "hgss4-10": {
+   "name": "Spiritomb",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "10",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/10",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:11.471Z",
+   "price": {
+    "trend": 8.55,
+    "avg30": 10.75,
+    "trendHolo": 4.46,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "hgss4-22": {
+   "name": "Golduck",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "22",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/22",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:16.203Z",
+   "price": {
+    "trend": 1.17,
+    "avg30": 0.93,
+    "trendHolo": 4.65,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss4-24": {
+   "name": "Kricketune",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "24",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/24",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:19.804Z",
+   "price": {
+    "trend": 1.54,
+    "avg30": 1.89,
+    "trendHolo": 9.71,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss4-26": {
+   "name": "Machamp",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "26",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/26",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:23.208Z",
+   "price": {
+    "trend": 1.17,
+    "avg30": 1,
+    "trendHolo": 5.18,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss4-27": {
+   "name": "Magmortar",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "27",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/27",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:24.903Z",
+   "price": {
+    "trend": 2.33,
+    "avg30": 1.96,
+    "trendHolo": 2.79,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss4-31": {
+   "name": "Wailord",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "31",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/31",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:30.244Z",
+   "price": {
+    "trend": 1.86,
+    "avg30": 2.01,
+    "trendHolo": 6.03,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss4-32": {
+   "name": "Dragonair",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "32",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/32",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:32.455Z",
+   "price": {
+    "trend": 1.24,
+    "avg30": 0.98,
+    "trendHolo": 10.1,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-33": {
+   "name": "Electabuzz",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "33",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/33",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:35.629Z",
+   "price": {
+    "trend": 0.6,
+    "avg30": 0.71,
+    "trendHolo": 9.25,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-40": {
+   "name": "Machoke",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "40",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:38.733Z",
+   "price": {
+    "trend": 0.55,
+    "avg30": 0.29,
+    "trendHolo": 4.86,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-41": {
+   "name": "Magby",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "41",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/41",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:41.276Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.46,
+    "trendHolo": 3.76,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-42": {
+   "name": "Magmar",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "42",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/42",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:42.468Z",
+   "price": {
+    "trend": 0.39,
+    "avg30": 0.42,
+    "trendHolo": 2.2,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss4-43": {
+   "name": "Magneton",
+   "set": "hgss4",
+   "setName": "Triumphant",
+   "serie": "hgss",
+   "num": "43",
+   "official": 102,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss4/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:38:46.099Z",
+   "price": {
+    "trend": 0.54,
+    "avg30": 0.54,
+    "trendHolo": 4.46,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
