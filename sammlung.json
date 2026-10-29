@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:00:11.228Z",
+ "updated": "2026-10-29T20:01:30.526Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -15490,6 +15490,393 @@
     "at": "2026-10-29T17:48:09.133Z"
    },
    "rarity": "Uncommon"
+  },
+  "dp2-15": {
+   "name": "Raichu",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "15",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/15",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:05.775Z",
+   "price": {
+    "trend": 10.21,
+    "avg30": 9.32,
+    "trendHolo": 9.49,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Rare Holo"
+  },
+  "dp2-24": {
+   "name": "Exeggutor",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "24",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/24",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:07.365Z",
+   "price": {
+    "trend": 1.74,
+    "avg30": 1.32,
+    "trendHolo": 2.69,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp2-29": {
+   "name": "Mantine",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "29",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/29",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:09.067Z",
+   "price": {
+    "trend": 0.5,
+    "avg30": 0.54,
+    "trendHolo": 1.47,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Rare"
+  },
+  "dp2-55": {
+   "name": "Masquerain",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "55",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:13.523Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.15,
+    "trendHolo": 1.54,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp2-58": {
+   "name": "Parasect",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "58",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:14.362Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.23,
+    "trendHolo": 0.72,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp2-67": {
+   "name": "Unown T",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "67",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/67",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:16.365Z",
+   "rarity": "Uncommon"
+  },
+  "dp2-68": {
+   "name": "Vigoroth",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "68",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:16.654Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.28,
+    "trendHolo": 1.29,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp2-71": {
+   "name": "Aron",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "71",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:16.920Z",
+   "price": {
+    "trend": 0.95,
+    "avg30": 1.56,
+    "trendHolo": 4.82,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "dp2-92": {
+   "name": "Paras",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "92",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:22.808Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.23,
+    "trendHolo": 0.72,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "dp2-91": {
+   "name": "Nidoran♀",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "91",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:23.108Z",
+   "rarity": "Common"
+  },
+  "dp2-94": {
+   "name": "Pikachu",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "94",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:23.430Z",
+   "price": {
+    "trend": 7.85,
+    "avg30": 6.3,
+    "trendHolo": 42.6,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "dp2-97": {
+   "name": "Seel",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "97",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:24.195Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.19,
+    "trendHolo": 1.29,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "dp2-101": {
+   "name": "Snover",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "101",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/101",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:25.718Z",
+   "price": {
+    "trend": 0.08,
+    "avg30": 0.27,
+    "trendHolo": 0.96,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "dp2-103": {
+   "name": "Spinarak",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "103",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/103",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:26.048Z",
+   "price": {
+    "trend": 0.08,
+    "avg30": 0.1,
+    "trendHolo": 0.52,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "dp2-104": {
+   "name": "Surskit",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "104",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/104",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:26.355Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.09,
+    "trendHolo": 1.38,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "dp2-107": {
+   "name": "Vulpix",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "107",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/107",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:26.671Z",
+   "price": {
+    "trend": 0.68,
+    "avg30": 0.57,
+    "trendHolo": 3.51,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "dp2-110": {
+   "name": "Dusk Ball",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "110",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/110",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:28.973Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.12,
+    "trendHolo": 2.23,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp2-113": {
+   "name": "Night Maintenance",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "113",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/113",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:29.265Z",
+   "price": {
+    "trend": 0.33,
+    "avg30": 0.27,
+    "trendHolo": 1.46,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "dp2-118": {
+   "name": "Multi Energy",
+   "set": "dp2",
+   "setName": "Mysterious Treasures",
+   "serie": "dp",
+   "num": "118",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/dp/dp2/118",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:01:30.526Z",
+   "price": {
+    "trend": 1.07,
+    "avg30": 1.04,
+    "trendHolo": 1.29,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Rare"
   }
  },
  "pocket": {
