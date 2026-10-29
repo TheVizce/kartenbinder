@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:44:49.180Z",
+ "updated": "2026-10-29T19:46:13.509Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -4270,6 +4270,987 @@
     "at": "2026-10-29T08:33:43.523Z"
    },
    "rarity": "Holo Rare"
+  },
+  "hgss1-12": {
+   "name": "Slowking",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "12",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/12",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:07.892Z",
+   "price": {
+    "trend": 3.4,
+    "avg30": 7.94,
+    "trendHolo": 12.43,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Holo Rare"
+  },
+  "hgss1-16": {
+   "name": "Butterfree",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "16",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/16",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:08.423Z",
+   "price": {
+    "trend": 6.39,
+    "avg30": 7.17,
+    "trendHolo": 10.15,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss1-19": {
+   "name": "Farfetch'd",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "19",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/19",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:10.772Z",
+   "rarity": "Rare"
+  },
+  "hgss1-28": {
+   "name": "Pichu",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "28",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/28",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:15.039Z",
+   "price": {
+    "trend": 5.28,
+    "avg30": 7.52,
+    "trendHolo": 66.79,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss1-32": {
+   "name": "Typhlosion",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "32",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/32",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:15.323Z",
+   "price": {
+    "trend": 2.26,
+    "avg30": 2.77,
+    "trendHolo": 12.11,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss1-34": {
+   "name": "Weezing",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "34",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/34",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:15.653Z",
+   "price": {
+    "trend": 1.49,
+    "avg30": 1.47,
+    "trendHolo": 5,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Rare"
+  },
+  "hgss1-38": {
+   "name": "Croconaw",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "38",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/38",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:18.459Z",
+   "price": {
+    "trend": 0.74,
+    "avg30": 0.59,
+    "trendHolo": 10.4,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-40": {
+   "name": "Donphan",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "40",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:19.337Z",
+   "price": {
+    "trend": 0.33,
+    "avg30": 0.53,
+    "trendHolo": 2.27,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-41": {
+   "name": "Dunsparce",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "41",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/41",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:19.673Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.4,
+    "trendHolo": 1.86,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-42": {
+   "name": "Flaaffy",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "42",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/42",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:19.968Z",
+   "price": {
+    "trend": 0.32,
+    "avg30": 0.42,
+    "trendHolo": 3.01,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-45": {
+   "name": "Mantine",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "45",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/45",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:20.273Z",
+   "price": {
+    "trend": 0.51,
+    "avg30": 0.55,
+    "trendHolo": 1.54,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-43": {
+   "name": "Heracross",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "43",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:22.921Z",
+   "price": {
+    "trend": 0.98,
+    "avg30": 1.29,
+    "trendHolo": 4.82,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-46": {
+   "name": "Metapod",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "46",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/46",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:26.873Z",
+   "price": {
+    "trend": 1.06,
+    "avg30": 1.05,
+    "trendHolo": 4.6,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-49": {
+   "name": "Quilava",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "49",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/49",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:27.226Z",
+   "price": {
+    "trend": 0.5,
+    "avg30": 0.48,
+    "trendHolo": 4.84,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-50": {
+   "name": "Qwilfish",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "50",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:27.699Z",
+   "price": {
+    "trend": 0.5,
+    "avg30": 0.51,
+    "trendHolo": 2.95,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-55": {
+   "name": "Unown",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "55",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:34.329Z",
+   "price": {
+    "trend": 1.43,
+    "avg30": 1.02,
+    "trendHolo": 4.36,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-57": {
+   "name": "Caterpie",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "57",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/57",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:35.672Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.59,
+    "trendHolo": 6.28,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-61": {
+   "name": "Cyndaquil",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "61",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:36.115Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.37,
+    "trendHolo": 4.93,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-62": {
+   "name": "Drowzee",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "62",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:36.421Z",
+   "price": {
+    "trend": 0.1,
+    "avg30": 0.24,
+    "trendHolo": 4.59,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-63": {
+   "name": "Exeggcute",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "63",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/63",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:36.751Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.16,
+    "trendHolo": 2.17,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-66": {
+   "name": "Hoothoot",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "66",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:42.137Z",
+   "price": {
+    "trend": 0.12,
+    "avg30": 0.18,
+    "trendHolo": 3.37,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-65": {
+   "name": "Growlithe",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "65",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:42.564Z",
+   "price": {
+    "trend": 1.35,
+    "avg30": 0.49,
+    "trendHolo": 10.81,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-68": {
+   "name": "Jigglypuff",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "68",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/68",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:43.479Z",
+   "price": {
+    "trend": 0.59,
+    "avg30": 0.56,
+    "trendHolo": 6.17,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-71": {
+   "name": "Ledyba",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "71",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/71",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:43.959Z",
+   "price": {
+    "trend": 0.59,
+    "avg30": 0.64,
+    "trendHolo": 2.01,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-72": {
+   "name": "Magikarp",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "72",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/72",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:44.282Z",
+   "price": {
+    "trend": 0.74,
+    "avg30": 0.71,
+    "trendHolo": 14.93,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-73": {
+   "name": "Mareep",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "73",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/73",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:46.756Z",
+   "price": {
+    "trend": 0.21,
+    "avg30": 0.27,
+    "trendHolo": 6.49,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-75": {
+   "name": "Meowth",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "75",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/75",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:47.800Z",
+   "price": {
+    "trend": 0.35,
+    "avg30": 0.46,
+    "trendHolo": 6.14,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-78": {
+   "name": "Pikachu",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "78",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/78",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:48.145Z",
+   "price": {
+    "trend": 3.94,
+    "avg30": 2.8,
+    "trendHolo": 70.62,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-77": {
+   "name": "Phanpy",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "77",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/77",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:48.490Z",
+   "price": {
+    "trend": 0.27,
+    "avg30": 0.29,
+    "trendHolo": 4.48,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-79": {
+   "name": "Sandshrew",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "79",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/79",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:49.396Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.16,
+    "trendHolo": 3.39,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-81": {
+   "name": "Slowpoke",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "81",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/81",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:49.756Z",
+   "price": {
+    "trend": 0.99,
+    "avg30": 0.58,
+    "trendHolo": 6.59,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-82": {
+   "name": "Snubbull",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "82",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/82",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:53.521Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.17,
+    "trendHolo": 2.38,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-85": {
+   "name": "Sunkern",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "85",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:54.444Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.47,
+    "trendHolo": 4.98,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-89": {
+   "name": "Bill",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "89",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/89",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:55.982Z",
+   "price": {
+    "trend": 0.09,
+    "avg30": 0.13,
+    "trendHolo": 1.34,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-84": {
+   "name": "Staryu",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "84",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:45:56.461Z",
+   "price": {
+    "trend": 0.35,
+    "avg30": 0.34,
+    "trendHolo": 2.58,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "hgss1-91": {
+   "name": "Energy Switch",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "91",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:00.106Z",
+   "price": {
+    "trend": 1.46,
+    "avg30": 1.46,
+    "trendHolo": 8.31,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-93": {
+   "name": "Full Heal",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "93",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/93",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:00.961Z",
+   "price": {
+    "trend": 0.16,
+    "avg30": 0.15,
+    "trendHolo": 1.23,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-94": {
+   "name": "Moomoo Milk",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "94",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/94",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:02.035Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.19,
+    "trendHolo": 2.26,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-95": {
+   "name": "Poké Ball",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "95",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/95",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:02.446Z",
+   "price": {
+    "trend": 0.17,
+    "avg30": 0.15,
+    "trendHolo": 1.66,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-97": {
+   "name": "Pokémon Collector",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "97",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/97",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:03.250Z",
+   "price": {
+    "trend": 2.84,
+    "avg30": 3.13,
+    "trendHolo": 7.95,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-98": {
+   "name": "Pokémon Communication",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "98",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/98",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:03.684Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.33,
+    "trendHolo": 9.6,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-99": {
+   "name": "Pokémon Reversal",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "99",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/99",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:04.135Z",
+   "price": {
+    "trend": 0.28,
+    "avg30": 0.25,
+    "trendHolo": 3.56,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-100": {
+   "name": "Professor Elm's Training Method",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "100",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/100",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:05.612Z",
+   "price": {
+    "trend": 0.33,
+    "avg30": 0.16,
+    "trendHolo": 0.91,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-101": {
+   "name": "Professor Oak's New Theory",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "101",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/101",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:05.934Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.19,
+    "trendHolo": 2.74,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-102": {
+   "name": "Switch",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "102",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/102",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:06.249Z",
+   "price": {
+    "trend": 0.69,
+    "avg30": 0.49,
+    "trendHolo": 8.5,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-103": {
+   "name": "Double Colorless Energy",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "103",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/103",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:07.389Z",
+   "price": {
+    "trend": 1.62,
+    "avg30": 1.71,
+    "trendHolo": 5.73,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "hgss1-119": {
+   "name": "Psychic Energy",
+   "set": "hgss1",
+   "setName": "HeartGold SoulSilver",
+   "serie": "hgss",
+   "num": "119",
+   "official": 123,
+   "img": "https://assets.tcgdex.net/en/hgss/hgss1/119",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:46:13.509Z",
+   "price": {
+    "trend": 27.3,
+    "avg30": 22.3,
+    "trendHolo": 21.26,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
   }
  },
  "pocket": {
