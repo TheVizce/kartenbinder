@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:14:13.477Z",
+ "updated": "2026-10-29T20:15:08.648Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -21730,6 +21730,237 @@
     "at": "2026-10-29T08:33:43.526Z"
    },
    "rarity": "Common"
+  },
+  "ecard3-76": {
+   "name": "Magnemite",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "76",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/76",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:14:54.570Z",
+   "price": {
+    "trend": 10.36,
+    "avg30": 5.41,
+    "trendHolo": 50.02,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard3-77": {
+   "name": "Mantine",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "77",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/77",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:14:54.893Z",
+   "price": {
+    "trend": 4.78,
+    "avg30": 4.07,
+    "trendHolo": 78.5,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard3-87": {
+   "name": "Poliwag",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "87",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:14:58.064Z",
+   "price": {
+    "trend": 3.69,
+    "avg30": 4.05,
+    "trendHolo": 20.71,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard3-96": {
+   "name": "Shuckle",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "96",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/96",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:14:59.445Z",
+   "price": {
+    "trend": 10.49,
+    "avg30": 7.43,
+    "trendHolo": 52.33,
+    "at": "2026-10-29T17:48:09.101Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard3-110": {
+   "name": "Ursaring",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "110",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/110",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:02.182Z",
+   "price": {
+    "trend": 5.8,
+    "avg30": 5.35,
+    "trendHolo": 60.99,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard3-113": {
+   "name": "Voltorb",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "113",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/113",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:02.527Z",
+   "price": {
+    "trend": 2.15,
+    "avg30": 1.86,
+    "trendHolo": 19.79,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard3-116": {
+   "name": "Yanma",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "116",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/116",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:02.879Z",
+   "price": {
+    "trend": 3.32,
+    "avg30": 2.97,
+    "trendHolo": 10.91,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Common"
+  },
+  "ecard3-124": {
+   "name": "Fast Ball",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "124",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/124",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:04.598Z",
+   "price": {
+    "trend": 1.69,
+    "avg30": 1.92,
+    "trendHolo": 10.67,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ecard3-129": {
+   "name": "Miracle Sphere α",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "129",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/129",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:05.939Z",
+   "price": {
+    "trend": 0.93,
+    "avg30": 0.85,
+    "trendHolo": 11.11,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ecard3-142": {
+   "name": "Bounce Energy",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "142",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/142",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:07.703Z",
+   "price": {
+    "trend": 1.37,
+    "avg30": 2.26,
+    "trendHolo": 8.67,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ecard3-141": {
+   "name": "Underground Lake",
+   "set": "ecard3",
+   "setName": "Skyridge",
+   "serie": "ecard",
+   "num": "141",
+   "official": 144,
+   "img": "https://assets.tcgdex.net/en/ecard/ecard3/141",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:15:08.647Z",
+   "price": {
+    "trend": 1.62,
+    "avg30": 3.09,
+    "trendHolo": 14.2,
+    "at": "2026-10-29T08:33:43.582Z"
+   },
+   "rarity": "Uncommon"
   }
  },
  "pocket": {
