@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:05:37.467Z",
+ "updated": "2026-10-29T20:06:23.458Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -17467,6 +17467,552 @@
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Uncommon"
+  },
+  "ex13-12": {
+   "name": "Latios δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "12",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/12",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:53.838Z",
+   "price": {
+    "trend": 60.04,
+    "avg30": 48.47,
+    "trendHolo": 237.83,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex13-20": {
+   "name": "Blaziken",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "20",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/20",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:55.414Z",
+   "price": {
+    "trend": 3.81,
+    "avg30": 2.82,
+    "trendHolo": 61.63,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex13-30": {
+   "name": "Relicanth",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "30",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/30",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:57.259Z",
+   "price": {
+    "trend": 1.79,
+    "avg30": 1.85,
+    "trendHolo": 12.34,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex13-38": {
+   "name": "Claydol",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "38",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/38",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:05:59.404Z",
+   "price": {
+    "trend": 1.03,
+    "avg30": 0.66,
+    "trendHolo": 10.28,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex13-39": {
+   "name": "Combusken",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "39",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/39",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:00.522Z",
+   "price": {
+    "trend": 0.53,
+    "avg30": 0.47,
+    "trendHolo": 93.31,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex13-42": {
+   "name": "Gloom δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "42",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/42",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:00.911Z",
+   "price": {
+    "trend": 0.71,
+    "avg30": 0.58,
+    "trendHolo": 13.27,
+    "at": "2026-10-29T08:33:43.523Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex13-43": {
+   "name": "Golduck δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "43",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/43",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:02.081Z",
+   "price": {
+    "trend": 1.74,
+    "avg30": 1.95,
+    "trendHolo": 27.22,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex13-50": {
+   "name": "Primeape δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "50",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/50",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:03.754Z",
+   "price": {
+    "trend": 1.24,
+    "avg30": 1.28,
+    "trendHolo": 21.72,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex13-60": {
+   "name": "Barboach",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "60",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:05.607Z",
+   "price": {
+    "trend": 0.05,
+    "avg30": 0.27,
+    "trendHolo": 5.34,
+    "at": "2026-10-29T08:33:43.526Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-59": {
+   "name": "Baltoy",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "59",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/59",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:05.870Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.24,
+    "trendHolo": 8.17,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-62": {
+   "name": "Corphish",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "62",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/62",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:06.199Z",
+   "price": {
+    "trend": 1.48,
+    "avg30": 0.77,
+    "trendHolo": 8.38,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-64": {
+   "name": "Electrike",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "64",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:10.541Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.23,
+    "trendHolo": 5.63,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-65": {
+   "name": "Exeggcute δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "65",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/65",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:10.835Z",
+   "price": {
+    "trend": 0.28,
+    "avg30": 0.32,
+    "trendHolo": 8.4,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-70": {
+   "name": "Mankey δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "70",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/70",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:11.861Z",
+   "price": {
+    "trend": 0.25,
+    "avg30": 0.27,
+    "trendHolo": 20.03,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-73": {
+   "name": "Oddish δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "73",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/73",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:13.414Z",
+   "price": {
+    "trend": 0.46,
+    "avg30": 0.36,
+    "trendHolo": 22.91,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-74": {
+   "name": "Omanyte δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "74",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/74",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:13.676Z",
+   "price": {
+    "trend": 0.65,
+    "avg30": 0.6,
+    "trendHolo": 19.06,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-78": {
+   "name": "Pikachu",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "78",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/78",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:14.051Z",
+   "price": {
+    "trend": 4.21,
+    "avg30": 6.4,
+    "trendHolo": 387.52,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-80": {
+   "name": "Poochyena",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "80",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:14.719Z",
+   "price": {
+    "trend": 0.24,
+    "avg30": 0.46,
+    "trendHolo": 8.26,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-83": {
+   "name": "Torchic",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "83",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/83",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:16.205Z",
+   "price": {
+    "trend": 2.39,
+    "avg30": 1.96,
+    "trendHolo": 297.52,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-84": {
+   "name": "Trapinch δ",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "84",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:17.141Z",
+   "price": {
+    "trend": 0.56,
+    "avg30": 0.45,
+    "trendHolo": 8.73,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-89": {
+   "name": "Professor Cozmo's Discovery",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "89",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/89",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:18.026Z",
+   "price": {
+    "trend": 0.19,
+    "avg30": 0.14,
+    "trendHolo": 6.85,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex13-85": {
+   "name": "Holon Adventurer",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "85",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/85",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:18.446Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.4,
+    "trendHolo": 9.7,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex13-87": {
+   "name": "Holon Lake",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "87",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:18.821Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.3,
+    "trendHolo": 5.36,
+    "at": "2026-10-29T17:48:09.205Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex13-92": {
+   "name": "Mysterious Fossil",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "92",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/92",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:20.503Z",
+   "price": {
+    "trend": 0.2,
+    "avg30": 0.27,
+    "trendHolo": 6.19,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
+  },
+  "ex13-107": {
+   "name": "Water Energy",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "107",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/107",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:22.003Z",
+   "price": {
+    "trend": 9.95,
+    "avg30": 6.27,
+    "trendHolo": 3.42,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex13-110": {
+   "name": "Fighting Energy",
+   "set": "ex13",
+   "setName": "Holon Phantoms",
+   "serie": "ex",
+   "num": "110",
+   "official": 110,
+   "img": "https://assets.tcgdex.net/en/ex/ex13/110",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:06:23.458Z",
+   "price": {
+    "trend": 2.67,
+    "avg30": 2.78,
+    "trendHolo": 2.19,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Rare"
   }
  },
  "pocket": {
