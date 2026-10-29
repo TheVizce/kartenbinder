@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T19:27:54.269Z",
+ "updated": "2026-10-29T19:28:31.851Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -64,6 +64,69 @@
     "avg30": 1.17,
     "trendHolo": 8.3,
     "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "bw5-40": {
+   "name": "Minun",
+   "set": "bw5",
+   "setName": "Dark Explorers",
+   "serie": "bw",
+   "num": "40",
+   "official": 108,
+   "img": "https://assets.tcgdex.net/en/bw/bw5/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:28:22.993Z",
+   "price": {
+    "trend": 2.06,
+    "avg30": 3.04,
+    "trendHolo": 8.27,
+    "at": "2026-10-29T17:48:09.208Z"
+   },
+   "rarity": "Common"
+  },
+  "bw5-55": {
+   "name": "Drilbur",
+   "set": "bw5",
+   "setName": "Dark Explorers",
+   "serie": "bw",
+   "num": "55",
+   "official": 108,
+   "img": "https://assets.tcgdex.net/en/bw/bw5/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:28:28.132Z",
+   "price": {
+    "trend": 0.36,
+    "avg30": 0.39,
+    "trendHolo": 7.32,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "bw5-80": {
+   "name": "Chansey",
+   "set": "bw5",
+   "setName": "Dark Explorers",
+   "serie": "bw",
+   "num": "80",
+   "official": 108,
+   "img": "https://assets.tcgdex.net/en/bw/bw5/80",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T19:28:31.851Z",
+   "price": {
+    "trend": 0.44,
+    "avg30": 0.47,
+    "trendHolo": 4.97,
+    "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Common"
   }
