@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:24:28.337Z",
+ "updated": "2026-10-29T20:24:39.985Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -23579,6 +23579,27 @@
     "normal": 1
    },
    "added": "2026-10-29T20:24:28.337Z",
+   "rarity": "None"
+  },
+  "tk-ex-latia-6": {
+   "name": "Skitty",
+   "set": "tk-ex-latia",
+   "setName": "EX trainer Kit (Latias)",
+   "serie": "tk",
+   "num": "6",
+   "official": 10,
+   "img": "https://assets.tcgdex.net/en/tk/tk-ex-latia/6",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:24:39.985Z",
+   "price": {
+    "trend": 0.3,
+    "avg30": 0.27,
+    "trendHolo": 0.06,
+    "at": "2026-10-29T17:48:09.151Z"
+   },
    "rarity": "None"
   }
  },
