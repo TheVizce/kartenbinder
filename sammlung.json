@@ -1,6 +1,6 @@
 {
  "schema": 1,
- "updated": "2026-10-29T20:09:49.412Z",
+ "updated": "2026-10-29T20:11:13.301Z",
  "tcg": {
   "bw6-27": {
    "v": {
@@ -20218,6 +20218,531 @@
     "at": "2026-10-29T08:33:43.529Z"
    },
    "rarity": "Uncommon"
+  },
+  "ex6-31": {
+   "name": "Charmeleon",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "31",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/31",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:50.425Z",
+   "price": {
+    "trend": 1.57,
+    "avg30": 1.95,
+    "trendHolo": 31.87,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-35": {
+   "name": "Ivysaur",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "35",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/35",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:50.905Z",
+   "price": {
+    "trend": 1.03,
+    "avg30": 1.56,
+    "trendHolo": 48.04,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-40": {
+   "name": "Nidorina",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "40",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/40",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:52.728Z",
+   "price": {
+    "trend": 1.69,
+    "avg30": 1.77,
+    "trendHolo": 21.2,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-45": {
+   "name": "Pidgeotto",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "45",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/45",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:53.118Z",
+   "price": {
+    "trend": 0.55,
+    "avg30": 0.75,
+    "trendHolo": 23.02,
+    "at": "2026-10-29T08:33:43.529Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-61": {
+   "name": "Diglett",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "61",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/61",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:55.789Z",
+   "price": {
+    "trend": 10.6,
+    "avg30": 0.87,
+    "trendHolo": 12.31,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-58": {
+   "name": "Charmander",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "58",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/58",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:56.163Z",
+   "price": {
+    "trend": 5.04,
+    "avg30": 3.03,
+    "trendHolo": 53.3,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-55": {
+   "name": "Bulbasaur",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "55",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/55",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:57.146Z",
+   "price": {
+    "trend": 1.38,
+    "avg30": 1.99,
+    "trendHolo": 50.46,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-56": {
+   "name": "Caterpie",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "56",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/56",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:57.438Z",
+   "price": {
+    "trend": 0.43,
+    "avg30": 0.42,
+    "trendHolo": 15.12,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-60": {
+   "name": "Cubone",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "60",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/60",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:10:57.806Z",
+   "price": {
+    "trend": 5.37,
+    "avg30": 7.89,
+    "trendHolo": 114.15,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-64": {
+   "name": "Growlithe",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "64",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/64",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:01.098Z",
+   "price": {
+    "trend": 0.28,
+    "avg30": 0.44,
+    "trendHolo": 79.29,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-66": {
+   "name": "Krabby",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "66",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/66",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:01.413Z",
+   "price": {
+    "trend": 0.4,
+    "avg30": 0.54,
+    "trendHolo": 4.32,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-69": {
+   "name": "Meowth",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "69",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/69",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:01.752Z",
+   "price": {
+    "trend": 0.93,
+    "avg30": 0.81,
+    "trendHolo": 19.78,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-73": {
+   "name": "Pidgey",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "73",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/73",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:03.468Z",
+   "price": {
+    "trend": 0.57,
+    "avg30": 0.48,
+    "trendHolo": 9.35,
+    "at": "2026-10-29T17:48:09.159Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-74": {
+   "name": "Pikachu",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "74",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/74",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:03.746Z",
+   "price": {
+    "trend": 8.39,
+    "avg30": 9.53,
+    "trendHolo": 93.06,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-78": {
+   "name": "Seel",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "78",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/78",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:04.601Z",
+   "price": {
+    "trend": 0.02,
+    "avg30": 16.9,
+    "trendHolo": 26.47,
+    "at": "2026-10-29T08:33:43.532Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-81": {
+   "name": "Spearow",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "81",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/81",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:04.886Z",
+   "price": {
+    "trend": 3.85,
+    "avg30": 1.22,
+    "trendHolo": 12.06,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-88": {
+   "name": "Celio's Network",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "88",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/88",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:06.678Z",
+   "price": {
+    "trend": 0.83,
+    "avg30": 0.52,
+    "trendHolo": 6.93,
+    "at": "2026-10-29T08:33:43.492Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-87": {
+   "name": "Bill's Maintenance",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "87",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/87",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:07.091Z",
+   "price": {
+    "trend": 0.22,
+    "avg30": 0.38,
+    "trendHolo": 3.08,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-84": {
+   "name": "Venonat",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "84",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/84",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:07.421Z",
+   "price": {
+    "trend": 0.48,
+    "avg30": 0.47,
+    "trendHolo": 12.28,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-91": {
+   "name": "EXP. ALL",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "91",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/91",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:09.243Z",
+   "price": {
+    "trend": 1.27,
+    "avg30": 1.54,
+    "trendHolo": 5.04,
+    "at": "2026-10-29T17:48:09.269Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-98": {
+   "name": "Prof. Oak's Research",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "98",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/98",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:10.451Z",
+   "price": {
+    "trend": 2.49,
+    "avg30": 1.73,
+    "trendHolo": 3.02,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-93": {
+   "name": "Life Herb",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "93",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/93",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:10.818Z",
+   "price": {
+    "trend": 0.18,
+    "avg30": 0.26,
+    "trendHolo": 7.3,
+    "at": "2026-10-29T17:48:09.171Z"
+   },
+   "rarity": "Uncommon"
+  },
+  "ex6-103": {
+   "name": "Multi Energy",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "103",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/103",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:12.664Z",
+   "price": {
+    "trend": 2.5,
+    "avg30": 1.84,
+    "trendHolo": 5.12,
+    "at": "2026-10-29T08:33:43.572Z"
+   },
+   "rarity": "Rare"
+  },
+  "ex6-101": {
+   "name": "Potion",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "101",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/101",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:12.987Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.1,
+    "trendHolo": 5.9,
+    "at": "2026-10-29T08:33:43.567Z"
+   },
+   "rarity": "Common"
+  },
+  "ex6-102": {
+   "name": "Switch",
+   "set": "ex6",
+   "setName": "FireRed & LeafGreen",
+   "serie": "ex",
+   "num": "102",
+   "official": 112,
+   "img": "https://assets.tcgdex.net/en/ex/ex6/102",
+   "cardLang": "en",
+   "v": {
+    "normal": 1
+   },
+   "added": "2026-10-29T20:11:13.301Z",
+   "price": {
+    "trend": 0.11,
+    "avg30": 0.13,
+    "trendHolo": 7.83,
+    "at": "2026-10-29T17:48:09.133Z"
+   },
+   "rarity": "Common"
   }
  },
  "pocket": {
