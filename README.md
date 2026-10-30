@@ -57,10 +57,15 @@ const PACK_END = {
 
 `*` steht für alle Packs des Sets. Für einen neuen Eintrag das Set-Kürzel (steht in jeder Set-Kachel) und das Enddatum eintragen. Winterzeit ist `+01:00`, Sommerzeit `+02:00`. Ab dem Zeitpunkt zählt das Pack im Pack-Berater nicht mehr mit und wird überall als „nicht mehr erhältlich“ markiert. Vorher steht dort „⏳ nur noch bis …“.
 
+## Neue Sets, bevor die Datenbank sie hat
+
+`extra-sets.json` enthält vorläufige Kartenlisten für Sets, die in der Pocket-Datenbank noch fehlen (aktuell Dual Fusion `C1` und Spezialpack Erste Partner `SP1`, Quelle: Serebii). Sobald die Datenbank ein Set selbst enthält, wird der Eintrag dort automatisch ignoriert. Deine Einträge bleiben erhalten, solange Set-Kürzel und Kartennummern gleich sind.
+
 ## Datenquellen
 
 - [TCGdex](https://tcgdex.dev) – Karten, Bilder, Preise (Cardmarket)
 - [pokemon-tcg-pocket-database](https://github.com/flibustier/pokemon-tcg-pocket-database) – Pocket-Packs, Zieh-Raten, Pack-Punkte
+- [Serebii](https://www.serebii.net/tcgpocket/) – vorläufige Kartenlisten und Raten neuer Sets (`extra-sets.json`)
 - [PokeAPI](https://github.com/PokeAPI/pokeapi) – deutsche Pokémon-Namen (`pokemon-namen.json`) für Pocket-Karten, zu denen TCGdex noch keine deutschen Daten hat
 
 Neue Sets erscheinen automatisch, sobald die Datenquellen aktualisiert sind – am Tool muss nichts geändert werden.
