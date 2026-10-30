@@ -1294,7 +1294,7 @@ function packStats(code, pack, inc, opt = {}) {
 /* ---- Garantie-Ticket ★★ (2. Jubiläum, Kampagne 30.10.–22.12.2026) ----
    Ein Ticket tauscht man gegen ein reguläres Booster-Pack (keine Deluxepacks) mit garantierter ★★-Karte.
    Ende anpassen, falls das Spiel eine andere Uhrzeit nennt. */
-const GUARANTEE = { from: '2026-10-30T00:00:00+01:00', until: '2026-12-23T00:00:00+01:00', label: '22.12.2026' };
+const GUARANTEE = { from: '2026-10-30T07:00:00+01:00', until: '2026-12-23T07:00:00+01:00', label: '22.12.2026 (Spieltag endet 23.12., 7 Uhr)' };   // Tageswechsel im Spiel: 7 Uhr
 const guaranteeActive = () => Date.now() >= Date.parse(GUARANTEE.from) && Date.now() < Date.parse(GUARANTEE.until);
 const isTwoStar = r => { const x = P.rar[r]; return !!x && x.group === 'Star' && x.count === 2; };
 const DELUXE = /^(A4b|B4b)$/;
