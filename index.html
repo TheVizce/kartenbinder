@@ -1229,6 +1229,7 @@ async function pocketData() {
       for (const [k, v] of Object.entries(xs.pullRates || {})) if (xCodes.has(k) && !pull[k]) pull[k] = v;
     }
     for (const [k, v] of Object.entries(xs.rarities || {})) if (!rar[k]) rar[k] = v;
+    for (const [k, v] of Object.entries(xs.cardInfo || {})) if (!xInfo[k]) xInfo[k] = { ...v, _fill: true };
   }
   const data = { cards, pull, rar, setList: setList0, xInfo, xCodes, setMap: {}, bySet: {}, byKey: {}, deNames: {}, dePacks: {}, deAvail: new Set(), pools: new Map(), vars: new Map() };
   for (const s of data.setList) data.setMap[s.code] = s;
@@ -1671,7 +1672,7 @@ function openPocketCard(key, after, list) {
 
 /* ================= Alle Karten (Pocket) ================= */
 const EL = { grass: 'Pflanze', fire: 'Feuer', water: 'Wasser', lightning: 'Elektro', psychic: 'Psycho', fighting: 'Kampf', darkness: 'Finsternis', metal: 'Metall', dragon: 'Drache', colorless: 'Farblos' };
-const TYPES = { pokemon: 'Pokémon', supporter: 'Unterstützer', item: 'Item', tool: 'Ausrüstung', fossil: 'Fossil' };
+const TYPES = { pokemon: 'Pokémon', supporter: 'Unterstützer', item: 'Item', tool: 'Ausrüstung', stadium: 'Stadion', fossil: 'Fossil' };
 async function viewPocketAll() {
   const rid = ++renderId;
   if (!await pocketReady(rid)) return;
@@ -1731,7 +1732,7 @@ async function viewPocketAll() {
     list = b0.filter(OP[F.own] || OP.all).sort(SF[F.sort] || SF.set);
     const have = b0.filter(c => pc(c.key) > 0).length, two = b0.filter(c => pc(c.key) >= 2).length;
     $('#cnt', V).textContent = `${nf(list.length)} Karten · von ${nf(b0.length)} passenden hast du ${nf(have)} (${b0.length ? pct(have / b0.length) : '–'}), 2 von 2: ${nf(two)}`
-      + ((F.el || F.type) ? ' · Typ/Kartenart ist nicht für jede Karte in der Datenbank hinterlegt' : '');
+      + ((F.el || F.type) && (P.noInfo ??= P.cards.filter(c => !ex(c).type).length) ? ` · für ${nf(P.noInfo)} Karten ist Typ/Kartenart nicht hinterlegt` : '');
     $('#grid', V).innerHTML = list.slice(0, st.limit).map(tileOf).join('') || '<div class="empty" style="grid-column:1/-1">Keine Karten für diese Filter.</div>';
     $('#moreWrap', V).innerHTML = list.length > st.limit ? `<button class="btn more" type="button" id="more">Weitere ${nf(Math.min(240, list.length - st.limit))} von ${nf(list.length - st.limit)} anzeigen</button>` : '';
   };
@@ -1839,7 +1840,7 @@ async function pocketExtra() {
   if (P.extra) return P.extra;
   const m = {};
   try { for (const c of await getJSON(PDB + 'cards.extra.json')) m[`${c.set}-${c.number}`] = c; } catch { }
-  Object.assign(m, P.xInfo || {});
+  for (const [k, v] of Object.entries(P.xInfo || {})) if (!v._fill || !m[k] || !m[k].type) m[k] = { ...(m[k] || {}), ...v };
   P.extra = m; P.sigs = null;
   return m;
 }
