@@ -1442,9 +1442,9 @@ async function viewPocketSet(code, q) {
   const isReprint = c => ck(c.key) !== c.key;   // ältere Version existiert in einem anderen Set
   const nReprint = allCards.filter(isReprint).length;
   let cards = nReprint && S.hideReprints ? allCards.filter(c => !isReprint(c)) : allCards;
-  const PF = [['all', 'Alle'], ['own', 'Habe ich'], ['miss', 'Fehlen'], ['half', '1 von 2'], ['trade', 'Zum Tauschen'], ['wish', '★ Wunsch']];
+  const PF = [['all', 'Alle'], ['own', 'Habe ich'], ['miss', 'Fehlen'], ['half', '1 von 2'], ['need', 'Fehlen + 1 von 2'], ['trade', 'Zum Tauschen'], ['wish', '★ Wunsch']];
   const PPASS = {
-    all: () => true, own: c => pc(c.key) > 0, miss: c => pc(c.key) === 0, half: c => pc(c.key) === 1,
+    all: () => true, own: c => pc(c.key) > 0, miss: c => pc(c.key) === 0, half: c => pc(c.key) === 1, need: c => pc(c.key) < 2,
     trade: c => pc(c.key) > 2 && (P.rar[c.rarity] || {}).tradeable !== false, wish: c => isWishP(c.key),
   };
   const PSORT = [['num', 'Nummer'], ['name', 'Name'], ['rar', 'Seltenheit'], ['count', 'Anzahl']];
@@ -1686,8 +1686,8 @@ async function viewPocketAll() {
   const ex = c => P.extra[c.key] || (P.extra[ck(c.key)]) || {};
   const elOf = c => String(ex(c).element || '').toLowerCase(), typeOf = c => String(ex(c).type || '').toLowerCase();
   const rarsPresent = RAR_ORDER.filter(r => P.cards.some(c => c.rarity === r));
-  const OWN = [['all', 'Alle'], ['own', 'Habe ich'], ['miss', 'Fehlen'], ['half', '1 von 2'], ['trade', 'Zum Tauschen'], ['wish', '★ Wunsch']];
-  const OP = { all: () => true, own: c => pc(c.key) > 0, miss: c => pc(c.key) === 0, half: c => pc(c.key) === 1, trade: c => pc(c.key) > 2 && (P.rar[c.rarity] || {}).tradeable !== false, wish: c => isWishP(c.key) };
+  const OWN = [['all', 'Alle'], ['own', 'Habe ich'], ['miss', 'Fehlen'], ['half', '1 von 2'], ['need', 'Fehlen + 1 von 2'], ['trade', 'Zum Tauschen'], ['wish', '★ Wunsch']];
+  const OP = { all: () => true, own: c => pc(c.key) > 0, miss: c => pc(c.key) === 0, half: c => pc(c.key) === 1, need: c => pc(c.key) < 2, trade: c => pc(c.key) > 2 && (P.rar[c.rarity] || {}).tradeable !== false, wish: c => isWishP(c.key) };
   const SORT = [['set', 'Set & Nummer'], ['new', 'Neueste zuerst'], ['name', 'Name'], ['rar', 'Seltenheit'], ['count', 'Anzahl']];
   const SF = {
     set: (a, b) => setIdx.get(a.set) - setIdx.get(b.set) || a.number - b.number,
