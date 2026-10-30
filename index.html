@@ -1160,7 +1160,7 @@ async function openTcgCard(id, ctx = {}) {
 const RAR = {
   C: ['◆', 1, 'd', '1 Raute'], U: ['◆', 2, 'd', '2 Rauten'], R: ['◆', 3, 'd', '3 Rauten'], RR: ['◆', 4, 'd', '4 Rauten'],
   AR: ['★', 1, 's', '1 Stern'], SR: ['★', 2, 's', '2 Sterne'], SAR: ['★', 2, 's', '2 Sterne (Spezial)'], IM: ['★', 3, 's', '3 Sterne (Immersiv)'],
-  UR: ['♛', 1, 'c', 'Krone'], S: ['✦', 1, 'sh', '1 Schillernd'], SSR: ['✦', 2, 'sh', '2 Schillernd'],
+  UR: ['♛', 1, 'c', 'Krone'], AN: ['✧', 1, 'sh', 'Anomalie'], S: ['✦', 1, 'sh', '1 Schillernd'], SSR: ['✦', 2, 'sh', '2 Schillernd'],
 };
 const GROUPS = [['Diamond', '◆ Rauten'], ['Star', '★ Sterne'], ['Shiny', '✦ Schillernd'], ['Crown', '♛ Krone']];
 const rarIcon = r => { const x = RAR[r]; return x ? `<span class="rar r-${x[2]}" title="${x[3]}">${x[0].repeat(x[1])}</span>` : esc(r || ''); };
@@ -1187,7 +1187,7 @@ function canonizePocket() {
   if (changed) saveCol();
   return changed;
 }
-const RAR_ORDER = ['C', 'U', 'R', 'RR', 'AR', 'SR', 'SAR', 'IM', 'S', 'SSR', 'UR'];
+const RAR_ORDER = ['C', 'U', 'R', 'RR', 'AR', 'SR', 'SAR', 'IM', 'S', 'SSR', 'UR', 'AN'];
 const rarIdx = r => { const i = RAR_ORDER.indexOf(r); return i < 0 ? 99 : i; };
 const tdxSet = code => code.replace(/^PROMO-/, 'P-');
 const grpOf = r => (P.rar[r] && P.rar[r].group) || 'Diamond';
@@ -1216,8 +1216,21 @@ const packName = (code, p) => {
 
 async function pocketData() {
   if (P) return P;
-  const [cards, sets, pull, rar, enDe] = await Promise.all([...['cards.min.json', 'sets.json', 'pullRates.json', 'rarities.json'].map(f => getJSON(PDB + f)), getJSON('pokemon-namen.json').catch(() => null)]);
-  const data = { cards, pull, rar, setList: Object.values(sets).flat(), setMap: {}, bySet: {}, byKey: {}, deNames: {}, dePacks: {}, deAvail: new Set(), pools: new Map(), vars: new Map() };
+  const [cards0, sets, pull, rar, enDe, xs] = await Promise.all([...['cards.min.json', 'sets.json', 'pullRates.json', 'rarities.json'].map(f => getJSON(PDB + f)), getJSON('pokemon-namen.json').catch(() => null), getJSON('extra-sets.json?v=' + Math.floor(Date.now() / 36e5)).catch(() => null)]);
+  /* extra-sets.json (im Repo): vorläufige Daten für Sets, die in der Datenbank noch fehlen – wird ignoriert, sobald die Datenbank das Set hat */
+  let cards = cards0, setList0 = Object.values(sets).flat(); const xInfo = {}, xCodes = new Set();
+  if (xs && Array.isArray(xs.sets)) {
+    const have = new Set(setList0.map(x => x.code));
+    for (const xset of xs.sets) if (!have.has(xset.code)) { xCodes.add(xset.code); setList0.push(xset); }
+    if (xCodes.size) {
+      const add = (xs.cards || []).filter(c => xCodes.has(c.set));
+      cards = cards0.concat(add.map(({ set, number, rarity, name, packs }) => ({ set, number, rarity, name, packs })));
+      for (const c of add) xInfo[`${c.set}-${c.number}`] = c;
+      for (const [k, v] of Object.entries(xs.pullRates || {})) if (xCodes.has(k) && !pull[k]) pull[k] = v;
+    }
+    for (const [k, v] of Object.entries(xs.rarities || {})) if (!rar[k]) rar[k] = v;
+  }
+  const data = { cards, pull, rar, setList: setList0, xInfo, xCodes, setMap: {}, bySet: {}, byKey: {}, deNames: {}, dePacks: {}, deAvail: new Set(), pools: new Map(), vars: new Map() };
   for (const s of data.setList) data.setMap[s.code] = s;
   for (const c of cards) { c.key = `${c.set}-${c.number}`; data.byKey[c.key] = c; (data.bySet[c.set] = data.bySet[c.set] || []).push(c); }
   for (const k in data.bySet) data.bySet[k].sort((a, b) => a.number - b.number);
@@ -1446,6 +1459,7 @@ async function viewPocketSet(code, q) {
       ${pocketLogo(code)}
       <div class="info"><h1>${esc(setTitle(set))}</h1>
         <div class="muted">${esc(code)}${set.releaseDate ? ' · ' + fmtDate(set.releaseDate) : ''} · ${allCards.length} Karten${nReprint ? `, davon ${allCards.length - nReprint} exklusiv und ${nReprint} Nachdruck${nReprint === 1 ? '' : 'e'}` : ''}</div>
+        ${P.xCodes.has(code) ? '<div class="avail soon" style="margin-top:8px">Vorläufige Daten von Serebii – noch nicht in der Pocket-Datenbank, daher ohne Kartenbilder</div>' : ''}
         <div class="headstats" id="hs"></div></div>
     </section>
     <section class="packs" id="packs"></section>
@@ -1825,6 +1839,7 @@ async function pocketExtra() {
   if (P.extra) return P.extra;
   const m = {};
   try { for (const c of await getJSON(PDB + 'cards.extra.json')) m[`${c.set}-${c.number}`] = c; } catch { }
+  Object.assign(m, P.xInfo || {});
   P.extra = m; P.sigs = null;
   return m;
 }
