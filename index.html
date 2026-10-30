@@ -1291,6 +1291,28 @@ function packStats(code, pack, inc, opt = {}) {
    Packs, die man nicht mehr (oder nur noch begrenzt) öffnen kann.
    Schlüssel: "<Set-Kürzel>|<Packname>" oder "<Set-Kürzel>|*" für alle Packs eines Sets.
    until: Zeitpunkt (mit Zeitzone), ab dem das Pack weg ist; null = schon nicht mehr erhältlich. */
+/* ---- Garantie-Ticket ★★ (2. Jubiläum, Kampagne 30.10.–22.12.2026) ----
+   Ein Ticket tauscht man gegen ein reguläres Booster-Pack (keine Deluxepacks) mit garantierter ★★-Karte.
+   Ende anpassen, falls das Spiel eine andere Uhrzeit nennt. */
+const GUARANTEE = { from: '2026-10-30T00:00:00+01:00', until: '2026-12-23T00:00:00+01:00', label: '22.12.2026' };
+const guaranteeActive = () => Date.now() >= Date.parse(GUARANTEE.from) && Date.now() < Date.parse(GUARANTEE.until);
+const isTwoStar = r => { const x = P.rar[r]; return !!x && x.group === 'Star' && x.count === 2; };
+const DELUXE = /^(A4b|B4b)$/;
+function guaranteeRows() {
+  const rows = [];
+  for (const s of P.setList) {
+    if (/^PROMO/.test(s.code) || DELUXE.test(s.code)) continue;
+    for (const p of s.packs || []) {
+      if (!packOpen(s.code, p)) continue;
+      const seen = new Set(), pool = [];
+      for (const c of P.bySet[s.code] || []) if (isTwoStar(c.rarity) && (c.packs || []).includes(p) && !seen.has(ck(c.key))) { seen.add(ck(c.key)); pool.push(c); }
+      if (!pool.length) continue;
+      const miss = pool.filter(c => !pc(c.key)), wish = miss.filter(c => isWishP(c.key));
+      rows.push({ s, p, total: pool.length, missing: miss.length, wish: wish.length, chance: miss.length / pool.length, wchance: wish.length / pool.length });
+    }
+  }
+  return rows.sort((a, b) => b.wchance - a.wchance || b.chance - a.chance || b.missing - a.missing);
+}
 const PACK_END = {
   'A4b|*': { until: null },                          // Deluxepack-ex
   'B4b|*': { until: '2026-10-29T01:59:00+01:00' },   // Deluxepack: Mega – bis 29.10.2026, 01:59 Uhr
@@ -1497,9 +1519,26 @@ async function viewPocketSet(code, q) {
 async function viewPocketPacks(q) {
   const rid = ++renderId;
   if (!await pocketReady(rid)) return;
-  if (q && q.get('mode')) { S.advMode = q.get('mode') === 'wish' ? 'wish' : 'new'; saveSettings(); }
+  if (q && q.get('mode')) { S.advMode = ['wish', 'g2'].includes(q.get('mode')) ? q.get('mode') : 'new'; saveSettings(); }
+  const g2Btn = () => guaranteeActive() ? `<button type="button" data-m="g2" class="${S.advMode === 'g2' ? 'on' : ''}">★★ Garantie-Ticket</button>` : '';
   const draw = () => {
     if (rid !== renderId) return;
+    if (S.advMode === 'g2' && !guaranteeActive()) S.advMode = 'new';
+    if (S.advMode === 'g2') {
+      const rows = guaranteeRows(), anyWish = rows.some(r => r.wish);
+      V.innerHTML = `<h1 style="font-size:24px;letter-spacing:-.02em">Welches Pack für das ★★-Garantie-Ticket?</h1>
+        <p class="muted" style="margin:6px 0 0">Das Ticket (bis ${GUARANTEE.label}) gibt ein reguläres Pack mit einer garantierten ★★-Karte. Sortiert nach der Chance, dass diese ★★-Karte für dich neu ist${anyWish ? ' – Packs mit ★★-Karten von deiner Wunschliste zuerst' : ''}.</p>
+        <div class="toolbar"><div class="seg" id="segM"><button type="button" data-m="new">Neue Karten</button><button type="button" data-m="wish">★ Wunschliste</button>${g2Btn()}</div></div>
+        <div class="adv">${rows.map((r, i) => `<a class="panel" href="#/pocket/set/${encodeURIComponent(r.s.code)}?pack=${encodeURIComponent(r.p)}">
+            <span class="rank">${i + 1}</span>
+            <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · ★★ fehlen ${r.missing}/${r.total}${r.wish ? ` · ${r.wish} davon auf der Wunschliste` : ''}</span></span>
+            <span><span class="v">${pct(r.chance)}</span><br><span class="k">★★ ist neu</span></span>
+            <span class="hide-s"><span class="v">${r.wish ? pct(r.wchance) : '–'}</span><br><span class="k">★★ ist Wunschkarte</span></span>
+            <span class="hide-s"><span class="v">${r.total}</span><br><span class="k">★★-Karten im Pack</span></span>
+          </a>`).join('') || '<div class="empty">Keine passenden Packs gefunden.</div>'}</div>
+        <p class="note">Annahme: Die garantierte ★★-Karte ist eine der ★★-Karten des gewählten Packs, jede gleich wahrscheinlich. Gezählt werden ★★-Karten (inkl. Spezial-Illustrationen), keine schillernden ✦✦. Die übrigen Karten des Packs sind hier nicht eingerechnet. Deluxepacks sind ausgenommen.</p>`;
+      return;
+    }
     const wishMode = S.advMode === 'wish', nWish = Object.keys(col.wish.pocket).filter(k => P.byKey[k] && !pc(k)).length;
     const opt = wishMode ? { rel: c => isWishP(c.key), all: true } : newOpt(), l = L();
     const inc = new Set(S.groups), rows = [], gone = [];
@@ -1514,7 +1553,7 @@ async function viewPocketPacks(q) {
     rows.sort(S.adv2 && !wishMode ? (a, b) => b.exp - a.exp || b.pAny - a.pAny : (a, b) => b.pAny - a.pAny || b.exp - a.exp);
     V.innerHTML = `<h1 style="font-size:24px;letter-spacing:-.02em">Welches Pack soll ich öffnen?</h1>
       <p class="muted" style="margin:6px 0 0">${wishMode ? 'Sortiert nach der Chance, mindestens eine Karte von deiner Wunschliste zu ziehen.' : l.sort}</p>
-      <div class="toolbar"><div class="seg" id="segM"><button type="button" data-m="new" class="${wishMode ? '' : 'on'}">Neue Karten</button><button type="button" data-m="wish" class="${wishMode ? 'on' : ''}">★ Wunschliste<small>${nWish}</small></button></div>${wishMode ? '' : groupChips() + adv2Switch()}</div>
+      <div class="toolbar"><div class="seg" id="segM"><button type="button" data-m="new" class="${wishMode ? '' : 'on'}">Neue Karten</button><button type="button" data-m="wish" class="${wishMode ? 'on' : ''}">★ Wunschliste<small>${nWish}</small></button>${g2Btn()}</div>${wishMode ? '' : groupChips() + adv2Switch()}</div>
       <div class="adv">${rows.map((r, i) => `<a class="panel" href="#/pocket/set/${encodeURIComponent(r.s.code)}?pack=${encodeURIComponent(r.p)}">
           <span class="rank">${i + 1}</span>
           <span class="nm"><b>${esc(packName(r.s.code, r.p))}</b><span>${esc(setTitle(r.s))} · ${wishMode ? `${r.missing} Wunschkarte${r.missing === 1 ? '' : 'n'} offen` : `${l.miss} ${r.missing}/${r.total}`}</span>${r.av ? `<span style="display:block;margin-top:4px">${availTag(r.av)}</span>` : ''}</span>
