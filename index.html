@@ -1211,7 +1211,9 @@ const packName = (code, p) => {
   const de = P.dePacks[code] && P.dePacks[code][norm(p)];
   if (de) return de;
   const s = P.setMap[code];
-  return s && (s.packs || []).length === 1 && !/^PROMO/.test(code) ? setTitle(s) : p;
+  if (s && (s.packs || []).length === 1 && !/^PROMO/.test(code)) return setTitle(s);
+  const en = s && s.name && s.name.en;   // z. B. „Dual Fusion Mega Mewtwo X“ → „Mega Mewtwo X“
+  return en && p.startsWith(en + ' ') ? p.slice(en.length + 1) : p;
 };
 
 async function pocketData() {
@@ -1221,13 +1223,19 @@ async function pocketData() {
   let cards = cards0, setList0 = Object.values(sets).flat(); const xInfo = {}, xCodes = new Set();
   if (xs && Array.isArray(xs.sets)) {
     const have = new Set(setList0.map(x => x.code));
-    for (const xset of xs.sets) if (!have.has(xset.code)) { xCodes.add(xset.code); setList0.push(xset); }
+    for (const xset of xs.sets) {
+      if (!have.has(xset.code)) { xCodes.add(xset.code); setList0.push(xset); continue; }
+      const db = setList0.find(x => x.code === xset.code);   // deutscher Name aus dem Spiel hat Vorrang
+      if (db && xset.name && xset.name.de) db.name = { ...(db.name || {}), de: xset.name.de };
+    }
     if (xCodes.size) {
       const add = (xs.cards || []).filter(c => xCodes.has(c.set));
       cards = cards0.concat(add.map(({ set, number, rarity, name, packs }) => ({ set, number, rarity, name, packs })));
       for (const c of add) xInfo[`${c.set}-${c.number}`] = c;
-      for (const [k, v] of Object.entries(xs.pullRates || {})) if (xCodes.has(k) && !pull[k]) pull[k] = v;
     }
+    // Set ist inzwischen in der Datenbank: Zieh-Raten (pro Set) und Kartendetails nur ergänzen, wo sie dort fehlen
+    for (const [k, v] of Object.entries(xs.pullRates || {})) if (!pull[k]) pull[k] = v;
+    for (const c of xs.cards || []) if (!xCodes.has(c.set)) xInfo[`${c.set}-${c.number}`] = { type: c.type, element: c.element, elements: c.elements, health: c.health, _fill: true };
     for (const [k, v] of Object.entries(xs.rarities || {})) if (!rar[k]) rar[k] = v;
     for (const [k, v] of Object.entries(xs.cardInfo || {})) if (!xInfo[k]) xInfo[k] = { ...v, _fill: true };
   }
@@ -1364,8 +1372,10 @@ function cardChance(c, pack) {
 }
 function pocketLogo(code, cls = 'logo') {
   const up = code.replace(/([a-z])$/, m => m.toUpperCase());
-  const srcs = [`${GH_IMG}sets/LOGO_expansion_${code}_de_DE.webp`, `${GH_IMG}sets/LOGO_expansion_${code}_en_US.webp`];
-  if (up !== code) srcs.push(`${GH_IMG}sets/LOGO_expansion_${up}_de_DE.webp`, `${GH_IMG}sets/LOGO_expansion_${up}_en_US.webp`);
+  // Logos liegen seit 31.10.2026 in der Pocket-Datenbank (dist/images/sets); alter Ort als Rückfall
+  const DBI = 'https://raw.githubusercontent.com/flibustier/pokemon-tcg-pocket-database/main/dist/images/sets/';
+  const srcs = [];
+  for (const c of up !== code ? [code, up] : [code]) for (const base of [DBI, GH_IMG + 'sets/']) srcs.push(`${base}LOGO_expansion_${c}_de_DE.webp`, `${base}LOGO_expansion_${c}_en_US.webp`);
   const im = /^PROMO/.test(code) ? '' : imgTag(srcs, code);
   return `<div class="${cls} ${im ? '' : 'broken'}">${im}<span class="ph">${esc(code)}</span></div>`;
 }
