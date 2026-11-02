@@ -263,6 +263,10 @@ footer{font-size:12px;color:var(--muted);padding:24px 0 40px;border-top:1px soli
   .set-head h1{font-size:22px}
   .settings .grid2,.fields{grid-template-columns:1fr}
 }
+
+/* Home-Bildschirm-App am iPhone: nicht unter Statusleiste/Notch zeichnen */
+.top{padding-top:env(safe-area-inset-top)}
+body{padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right)}
 </style>
 </head>
 <body data-sec="pocket">
