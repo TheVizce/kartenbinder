@@ -5,19 +5,18 @@ Meine Pokémon-Kartensammlung – das echte Sammelkartenspiel (TCG) und TCG Pock
 ## Einrichten (einmalig, ca. 5 Minuten)
 
 1. Auf GitHub ein neues Repository anlegen, z. B. `kartenbinder` (öffentlich, sonst braucht GitHub Pages ein Bezahl-Abo).
-2. `index.html`, `sammlung.json` und diese `README.md` hochladen (**Add file → Upload files**).
+2. `index.html` und diese `README.md` hochladen (**Add file → Upload files**).
 3. **Settings → Pages**: unter *Branch* `main` und `/ (root)` wählen, speichern.
 4. Nach ca. einer Minute ist das Tool erreichbar unter `https://<dein-name>.github.io/kartenbinder/`.
 
 ## Wo wird meine Sammlung gespeichert?
 
-- **Automatisch im Browser** – jede Änderung wird sofort lokal gesichert, und zwar in der IndexedDB-Datenbank `kartenbinder` (Sammlung, GitHub-Einstellungen, Zwischenspeicher für Kartendaten). Im localStorage liegt nur `kartenbinder.settings` (Ansicht und Filter, wenige hundert Byte). So nimmt das Tool den übrigen GitHub-Pages-Tools auf derselben Adresse keinen localStorage-Platz weg.
+- **Automatisch im Browser** – jede Änderung wird sofort lokal gesichert, in der IndexedDB-Datenbank `kartenbinder` (Sammlung, Zwischenspeicher für Kartendaten). Im localStorage liegt nur `kartenbinder.settings` (Ansicht und Filter, wenige hundert Byte).
 - Schlägt das Speichern fehl (z. B. Speicher voll), erscheint oben ein roter Hinweis mit „Exportieren“ und „Erneut speichern“. Solange er sichtbar ist, warnt der Browser auch beim Schließen der Seite.
-- **Dauerhaft im Repo** als `sammlung.json`. Zwei Wege dorthin:
-  - **Einfach:** ⚙︎ → *Sammlung exportieren* und die Datei im Repo ersetzen.
-  - **Komfortabel (empfohlen fürs Handy):** ⚙︎ → *Direkt auf GitHub speichern*. Dafür einmal einen Token erstellen: GitHub → *Settings → Developer settings → Personal access tokens → Fine-grained tokens* → *Only select repositories* → dein Kartenbinder-Repo → *Repository permissions → Contents: Read and write*. Token im Tool eintragen. Ab dann wird jede Änderung nach ein paar Sekunden automatisch committet, und jedes Gerät lädt beim Öffnen den neuesten Stand.
+- **Auf allen Geräten** über den gemeinsamen GitHub-Sync der Tools (`/startseite/sync-v1.js`): privates Repo `tool-daten`, Ordner `kartenbinder/` (main.json + 16 Teildateien). Repo und Token werden einmal pro Gerät auf der Startseite eingetragen. Pro Karte gewinnt die jüngste Änderung; beim ersten Abgleich eines Geräts wird der vorhandene Cloud-Stand übernommen (der lokale Stand landet vorher in einer Sicherheitskopie, Startseite → GitHub-Sync).
+- Zusätzlich: ⚙︎ → *Sammlung exportieren* als JSON-Sicherung.
 
-Der Token wird nur im jeweiligen Browser gespeichert, nie im Repo.
+Bis 02.11.2026 lag die Sammlung als `sammlung.json` in diesem öffentlichen Repo; sie wird nicht mehr geschrieben oder gelesen.
 
 ## Funktionen
 

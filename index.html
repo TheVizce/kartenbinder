@@ -265,10 +265,10 @@ footer{font-size:12px;color:var(--muted);padding:24px 0 40px;border-top:1px soli
 }
 </style>
 </head>
-<body data-sec="tcg">
+<body data-sec="pocket">
 <header class="top"><div class="wrap">
-  <a class="brand" href="#/tcg"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="#fff" stroke="#222" stroke-width="5"/><path d="M3 32a29 29 0 0 1 58 0z" fill="#e8432f" stroke="#222" stroke-width="5"/><circle cx="32" cy="32" r="9" fill="#fff" stroke="#222" stroke-width="5"/></svg><span>Kartenbinder</span></a>
-  <nav class="tabs"><a data-sec="tcg" href="#/tcg">Sammelkarten</a><a data-sec="pocket" href="#/pocket">TCG Pocket</a></nav>
+  <a class="brand" href="#/pocket"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="#fff" stroke="#222" stroke-width="5"/><path d="M3 32a29 29 0 0 1 58 0z" fill="#e8432f" stroke="#222" stroke-width="5"/><circle cx="32" cy="32" r="9" fill="#fff" stroke="#222" stroke-width="5"/></svg><span>Kartenbinder</span></a>
+  <nav class="tabs"><a data-sec="pocket" href="#/pocket">TCG Pocket</a><a data-sec="tcg" href="#/tcg">Sammelkarten</a></nav>
   <div class="spacer"></div>
   <button id="syncState" class="sync" type="button"></button>
   <button id="btnSettings" class="icon-btn" type="button" title="Speichern &amp; Einstellungen" aria-label="Einstellungen">⚙︎</button>
@@ -283,6 +283,8 @@ footer{font-size:12px;color:var(--muted);padding:24px 0 40px;border-top:1px soli
 <input type="file" id="importFile" accept="application/json,.json" hidden>
 <div id="toast"></div>
 
+<!-- GitHub-Sync (gemeinsam für alle Tools, Einstellungen auf der Startseite) -->
+<script src="/startseite/sync-v1.js"></script>
 <script>
 'use strict';
 /* ================= Basics ================= */
@@ -541,7 +543,7 @@ function normalizeCol(d) {
 }
 let col = emptyCol(), hadLocal = false, dirty = false, gh = null, ghSeen = null;
 
-function persist() { queueSave('collection', col); }
+function persist() { return queueSave('collection', col); }
 function setDirty(v) { dirty = v; queueSave('dirty', v); updateSyncState(); }
 function setGh(cfg) { gh = cfg; queueSave('gh', cfg); }
 function setSeen(v) { ghSeen = v; queueSave('ghSeen', v); }
@@ -550,91 +552,54 @@ function saveCol() {
   persist(); setDirty(true); scheduleAutoSync();
 }
 
-/* ================= GitHub sync ================= */
-function ghDefaults() {
-  const h = location.hostname, owner = h.endsWith('.github.io') ? h.split('.')[0] : '';
-  const first = location.pathname.split('/').filter(Boolean)[0];
-  const repo = first && !first.includes('.') ? first : (owner ? owner + '.github.io' : '');
-  return { owner, repo, branch: 'main', path: DATA_FILE, token: '', auto: true };
-}
-const ghCfg = () => Object.assign(ghDefaults(), gh || {});
-const b64enc = s => { const b = new TextEncoder().encode(s); let bin = ''; for (let i = 0; i < b.length; i += 0x8000) bin += String.fromCharCode.apply(null, b.subarray(i, i + 0x8000)); return btoa(bin); };
-const b64dec = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g, '')), c => c.charCodeAt(0)));
-const ghUrl = c => `https://api.github.com/repos/${encodeURIComponent(c.owner)}/${encodeURIComponent(c.repo)}/contents/${c.path.split('/').map(encodeURIComponent).join('/')}`;
-const ghHeaders = c => ({ Accept: 'application/vnd.github+json', Authorization: 'Bearer ' + c.token });
-async function ghGet(c) {
-  const r = await fetch(ghUrl(c) + '?ref=' + encodeURIComponent(c.branch) + '&t=' + Date.now(), { headers: ghHeaders(c), cache: 'no-store' });
-  if (r.status === 404) return { sha: null, data: null };
-  if (!r.ok) throw new Error(r.status === 401 ? 'Token ungültig (401)' : `GitHub ${r.status}`);
-  const j = await r.json();
-  return { sha: j.sha, data: j.content ? JSON.parse(b64dec(j.content)) : null };
-}
-async function ghPut(c, data, sha) {
-  const body = { message: `Sammlung aktualisiert (${new Date().toLocaleString('de-DE')})`, content: b64enc(JSON.stringify(data, null, 1) + '\n'), branch: c.branch };
-  if (sha) body.sha = sha;
-  const r = await fetch(ghUrl(c), { method: 'PUT', headers: { ...ghHeaders(c), 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-  if (!r.ok) { let m = `GitHub ${r.status}`; try { m += ': ' + (await r.json()).message; } catch { } throw new Error(m); }
-}
-let syncing = false, autoT;
-function scheduleAutoSync() {
-  const c = ghCfg(); if (!c.token || !c.auto) return;
-  clearTimeout(autoT); autoT = setTimeout(() => syncNow(true), 8000);
-}
-async function syncNow(silent) {
-  const c = ghCfg();
-  if (!c.token) { openSettings(); return; }
-  if (syncing) return; syncing = true; updateSyncState();
-  try {
-    const remote = await ghGet(c);
-    const ru = remote.data && remote.data.updated, lastSeen = ghSeen;
-    if (ru && ru !== lastSeen && col.updated && ru > col.updated && !confirm('Auf GitHub liegt ein neuerer Stand (von einem anderen Gerät?). Trotzdem mit diesem Gerät überschreiben?')) return;
-    await ghPut(c, col, remote.sha);
-    setSeen(col.updated);
-    setDirty(false);
-    if (!silent) toast('Auf GitHub gespeichert ✓');
-  } catch (e) { toast('Speichern auf GitHub fehlgeschlagen – ' + e.message, true); }
-  finally { syncing = false; updateSyncState(); }
+/* ================= GitHub-Sync =================
+   Gemeinsamer Sync aller Tools (/startseite/sync-v1.js): privates Repo tool-daten, Ordner kartenbinder/
+   (main.json + 16 Teildateien). Token und Repo werden einmal pro Gerät auf der Startseite eingetragen.
+   Bis 02.11.2026 lag die Sammlung als sammlung.json im (öffentlichen) Repo dieses Tools. */
+let SYNC = null, syncStatus = 'off';
+function scheduleAutoSync() { if (SYNC) SYNC.changed(); }
+function initSync() {
+  if (gh && gh.token) setGh(null);   // alten Token aus dem früheren Sync nicht weiter aufbewahren
+  if (!window.ToolSync) return;
+  SYNC = ToolSync.create({
+    tool: 'kartenbinder',
+    collections: {
+      tcg: { type: 'map', shard: true }, pocket: { type: 'map', shard: true },
+      wishTcg: { type: 'map', shard: true }, wishPocket: { type: 'map', shard: true }, decks: 'array'
+    },
+    fields: ['updated'],
+    shards: 16,
+    firstSync: 'cloud',   // wie bisher: ein gemeinsamer Stand; ältere Geräte übernehmen beim ersten Mal den Cloud-Stand
+    get: () => ({ tcg: col.tcg, pocket: col.pocket, wishTcg: col.wish.tcg, wishPocket: col.wish.pocket, decks: col.decks, updated: col.updated }),
+    apply: async d => {
+      col = normalizeCol({ schema: 1, updated: d.updated || col.updated, tcg: d.tcg, pocket: d.pocket, wish: { tcg: d.wishTcg, pocket: d.wishPocket }, decks: d.decks });
+      storeErr = null;
+      await persist();
+      route();
+      return !storeErr;
+    },
+    onStatus: st => { syncStatus = st; if (st === 'ok') { dirty = false; queueSave('dirty', false); } updateSyncState(); }
+  });
+  SYNC.start();
 }
 function updateSyncState() {
-  const el = $('#syncState'), c = ghCfg();
+  const el = $('#syncState');
   el.className = 'sync';
-  if (syncing) { el.textContent = 'Speichere …'; return; }
-  if (c.token) {
-    if (dirty) { el.textContent = '● Nicht auf GitHub gespeichert'; el.classList.add('dirty'); }
-    else { el.textContent = '✓ Auf GitHub gespeichert'; el.classList.add('ok'); }
-  } else {
-    if (dirty) { el.textContent = '● Nur in diesem Browser'; el.classList.add('dirty'); }
-    else el.textContent = 'Gespeichert';
-  }
-}
-async function fetchRemote() {
-  const c = ghCfg();
-  if (c.token && c.owner && c.repo) return (await ghGet(c)).data;
-  const r = await fetch(DATA_FILE + '?t=' + Date.now(), { cache: 'no-store' });
-  if (!r.ok) return null;
-  return await r.json();
+  if (SYNC && SYNC.configured) {
+    const L = { ok: '✓ Synchron', pending: '● Wird abgeglichen …', syncing: 'Gleiche ab …', offline: '○ Offline – wird nachgeholt', error: '⚠ Sync-Fehler' };
+    el.textContent = L[syncStatus] || '';
+    el.classList.add(syncStatus === 'ok' ? 'ok' : 'dirty');
+  } else if (dirty) { el.textContent = '● Nur in diesem Browser'; el.classList.add('dirty'); }
+  else el.textContent = 'Gespeichert';
 }
 function showBanner(html) { $('#banner').innerHTML = html ? `<div class="wrap">${html}</div>` : ''; }
-async function checkRemote() {
-  let rd;
-  try { rd = await fetchRemote(); } catch { return; }
-  if (!rd || !rd.updated) return;
-  rd = normalizeCol(rd);
-  if (rd.updated === col.updated) return;
-  const apply = () => { col = rd; persist(); setDirty(false); setSeen(rd.updated); showBanner(''); route(); };
-  if (!hadLocal || (!dirty && (!col.updated || rd.updated > col.updated))) { apply(); if (hadLocal) toast('Neuester Stand geladen'); return; }
-  if (rd.updated > (col.updated || '')) {
-    showBanner(`<span>Es gibt einen neueren gespeicherten Stand vom ${new Date(rd.updated).toLocaleString('de-DE')}.</span><button class="btn primary" id="bnLoad">Übernehmen</button><button class="btn" id="bnKeep">Diesen Browser behalten</button>`);
-    $('#bnLoad').onclick = apply; $('#bnKeep').onclick = () => showBanner('');
-  }
-}
 
 /* export / import */
 function exportCol() {
   const blob = new Blob([JSON.stringify(col, null, 1) + '\n'], { type: 'application/json' });
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = DATA_FILE; a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
-  if (!ghCfg().token) setDirty(false);
+  if (!(SYNC && SYNC.configured)) setDirty(false);
 }
 $('#importFile').addEventListener('change', async e => {
   const f = e.target.files[0]; e.target.value = ''; if (!f) return;
@@ -650,27 +615,18 @@ $('#importFile').addEventListener('change', async e => {
 });
 
 function openSettings() {
-  const c = ghCfg(), dlg = $('#settingsDlg');
+  const dlg = $('#settingsDlg');
   const nT = Object.keys(col.tcg).length, nP = Object.keys(col.pocket).length;
   $('#settingsBody').innerHTML = `<div class="settings">
     <h2>Speichern &amp; Einstellungen</h2>
-    <p>Deine Sammlung wird automatisch in diesem Browser gespeichert (${nf(nT)} Sammelkarten, ${nf(nP)} Pocket-Karten${col.updated ? ', zuletzt ' + new Date(col.updated).toLocaleString('de-DE') : ''}). Damit sie dauerhaft und auf allen Geräten verfügbar ist, liegt sie als <code>${DATA_FILE}</code> im Repository.</p>
+    <p>Deine Sammlung wird automatisch in diesem Browser gespeichert (${nf(nT)} Sammelkarten, ${nf(nP)} Pocket-Karten${col.updated ? ', zuletzt ' + new Date(col.updated).toLocaleString('de-DE') : ''}). Exportiere ab und zu eine Sicherung.</p>
     <div class="row"><button class="btn" id="stExport">⬇ Sammlung exportieren</button><button class="btn" id="stImport">⬆ Datei importieren</button>${db ? '<button class="btn" id="stCache">Zwischenspeicher leeren</button>' : ''}</div>
     <p id="stInfo" style="font-size:12px">Speicherort: ${db ? 'IndexedDB „' + DB_NAME + '“' : '<b style="color:var(--danger)">nur im Arbeitsspeicher – nicht dauerhaft!</b>'}</p>
     <hr>
-    <h2 style="font-size:17px">Direkt auf GitHub speichern <span class="muted" style="font-weight:400;font-size:13px">(optional)</span></h2>
-    <p>Mit einem Token schreibt das Tool Änderungen selbst als Commit in dein Repo – praktisch fürs Handy. Erstelle auf GitHub unter <i>Settings → Developer settings → Fine-grained tokens</i> einen Token nur für dieses Repository mit <b>Contents: Read and write</b>. Der Token bleibt nur in diesem Browser gespeichert.</p>
-    <div class="grid2">
-      <label>Benutzer / Organisation<input type="text" id="ghOwner" value="${esc(c.owner)}" autocomplete="off"></label>
-      <label>Repository<input type="text" id="ghRepo" value="${esc(c.repo)}" autocomplete="off"></label>
-      <label>Branch<input type="text" id="ghBranch" value="${esc(c.branch)}" autocomplete="off"></label>
-      <label>Datei<input type="text" id="ghPath" value="${esc(c.path)}" autocomplete="off"></label>
-    </div>
-    <label>Token<input type="password" id="ghToken" value="${esc(c.token)}" placeholder="github_pat_…" autocomplete="off"></label>
-    <label class="switch" style="flex-direction:row"><input type="checkbox" id="ghAuto" ${c.auto ? 'checked' : ''}> Änderungen automatisch speichern</label>
-    <div class="row"><button class="btn primary" id="ghSave">Übernehmen &amp; jetzt speichern</button><button class="btn" id="ghLoad">Stand von GitHub laden</button>${c.token ? '<button class="btn" id="ghForget">Token entfernen</button>' : ''}</div>
+    <h2 style="font-size:17px">Auf allen Geräten</h2>
+    <p>Die Sammlung wird über den gemeinsamen GitHub-Sync deiner Tools mit deinem <b>privaten</b> Daten-Repo abgeglichen (Ordner <code>kartenbinder/</code>). Repo und Token trägst du einmal pro Gerät auf der Startseite ein.</p>
+    <div class="row"><a class="btn" href="/startseite/#sync">Sync-Einstellungen öffnen</a>${SYNC && SYNC.configured ? '<button class="btn" id="stSyncNow">Jetzt abgleichen</button>' : ''}</div>
   </div>`;
-  const read = () => ({ owner: $('#ghOwner').value.trim(), repo: $('#ghRepo').value.trim(), branch: $('#ghBranch').value.trim() || 'main', path: $('#ghPath').value.trim() || DATA_FILE, token: $('#ghToken').value.trim(), auto: $('#ghAuto').checked });
   $('#stExport').onclick = exportCol;
   if ($('#stCache')) $('#stCache').onclick = () => clearCache().then(() => { memo.clear(); toast('Zwischenspeicher geleert'); }).catch(e => toast(e.message, true));
   if (db && navigator.storage) (async () => {
@@ -680,20 +636,11 @@ function openSettings() {
     const el = $('#stInfo'); if (el) el.insertAdjacentText('beforeend', t);
   })();
   $('#stImport').onclick = () => $('#importFile').click();
-  $('#ghSave').onclick = async () => { setGh(read()); updateSyncState(); dlg.close(); await syncNow(false); };
-  $('#ghLoad').onclick = async () => {
-    const cfg = read(); if (!cfg.token) return toast('Bitte zuerst einen Token eintragen', true);
-    setGh(cfg);
-    try { const r = await ghGet(cfg); if (!r.data) return toast('Auf GitHub gibt es noch keine Sammlung', true);
-      if (!confirm('Sammlung in diesem Browser durch den Stand auf GitHub ersetzen?')) return;
-      col = normalizeCol(r.data); persist(); setDirty(false); setSeen(col.updated); dlg.close(); route(); toast('Von GitHub geladen ✓');
-    } catch (e) { toast(e.message, true); }
-  };
-  if ($('#ghForget')) $('#ghForget').onclick = () => { const k = read(); k.token = ''; setGh(k); updateSyncState(); openSettings(); };
+  if ($('#stSyncNow')) $('#stSyncNow').onclick = () => { SYNC.syncNow(); dlg.close(); };
   if (!dlg.open) dlg.showModal();
 }
 $('#btnSettings').onclick = openSettings;
-$('#syncState').onclick = () => ghCfg().token ? syncNow(false) : openSettings();
+$('#syncState').onclick = () => (SYNC && SYNC.configured) ? SYNC.syncNow() : (location.href = '/startseite/#sync');
 
 /* modal */
 const modal = $('#modal');
@@ -760,11 +707,11 @@ const SUB = {
   pocket: [['', 'Sets & Fortschritt'], ['all', 'Alle Karten'], ['packs', 'Pack-Berater'], ['decks', 'Decks'], ['wish', 'Wunschliste'], ['search', 'Suche']],
 };
 function route() {
-  const h = location.hash.replace(/^#\/?/, '') || 'tcg';
+  const h = location.hash.replace(/^#\/?/, '') || 'pocket';
   const [path, qs] = h.split('?');
   const parts = path.split('/').map(decodeURIComponent);
   const q = new URLSearchParams(qs || '');
-  const sec = parts[0] === 'pocket' ? 'pocket' : 'tcg';
+  const sec = parts[0] === 'tcg' ? 'tcg' : 'pocket';
   const sub = parts[1] || '';
   document.body.dataset.sec = sec;
   for (const a of document.querySelectorAll('.tabs a')) a.classList.toggle('on', a.dataset.sec === sec);
@@ -2005,12 +1952,10 @@ async function viewPocketDeck(id) {
   V.innerHTML = loading('Lade Sammlung …');
   await initStore();
   window.addEventListener('hashchange', route);
-  updateSyncState();
   route();
-  checkRemote();
+  initSync();
+  updateSyncState();
 })();
 </script>
-<!-- Zurück zur Startseite (gemeinsam für alle Tools) -->
-<script src="/startseite/nav-v1.js" defer></script>
 </body>
 </html>
