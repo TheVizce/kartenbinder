@@ -1,7 +1,7 @@
 # Kartenbinder – Hinweise für Claude
 
 ## Dieses Tool
-- Repo ist **privat**. IndexedDB `kartenbinder`, localStorage-Präfixe `kartenbinder.`, `kb.`.
+- Repo ist öffentlich (für GitHub Pages). Sammlungsdaten gehören **nicht** ins Repo, nur nach `tool-daten` über den Sync. IndexedDB `kartenbinder`, localStorage-Präfixe `kartenbinder.`, `kb.`.
 - Sync: Ordner `kartenbinder/` (16 Teildateien). `collections: tcg, pocket, wishTcg, wishPocket` (geteilte Maps), `decks` (array), Feld `updated`; `firstSync: 'cloud'`.
 - `SYNC.changed()` über `scheduleAutoSync()`. TCG Pocket ist Standard-Route und erster Reiter.
 
